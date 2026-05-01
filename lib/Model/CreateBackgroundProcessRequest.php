@@ -58,6 +58,7 @@ class CreateBackgroundProcessRequest implements ModelInterface, ArrayAccess, \Js
       */
     protected static $openAPITypes = [
         'name' => 'string',
+        'site_id' => 'int',
         'command' => 'string',
         'user' => 'string',
         'directory' => 'string',
@@ -76,6 +77,7 @@ class CreateBackgroundProcessRequest implements ModelInterface, ArrayAccess, \Js
       */
     protected static $openAPIFormats = [
         'name' => null,
+        'site_id' => null,
         'command' => null,
         'user' => null,
         'directory' => null,
@@ -92,6 +94,7 @@ class CreateBackgroundProcessRequest implements ModelInterface, ArrayAccess, \Js
       */
     protected static array $openAPINullables = [
         'name' => false,
+        'site_id' => false,
         'command' => false,
         'user' => false,
         'directory' => true,
@@ -188,6 +191,7 @@ class CreateBackgroundProcessRequest implements ModelInterface, ArrayAccess, \Js
      */
     protected static $attributeMap = [
         'name' => 'name',
+        'site_id' => 'site_id',
         'command' => 'command',
         'user' => 'user',
         'directory' => 'directory',
@@ -204,6 +208,7 @@ class CreateBackgroundProcessRequest implements ModelInterface, ArrayAccess, \Js
      */
     protected static $setters = [
         'name' => 'setName',
+        'site_id' => 'setSiteId',
         'command' => 'setCommand',
         'user' => 'setUser',
         'directory' => 'setDirectory',
@@ -220,6 +225,7 @@ class CreateBackgroundProcessRequest implements ModelInterface, ArrayAccess, \Js
      */
     protected static $getters = [
         'name' => 'getName',
+        'site_id' => 'getSiteId',
         'command' => 'getCommand',
         'user' => 'getUser',
         'directory' => 'getDirectory',
@@ -302,6 +308,7 @@ class CreateBackgroundProcessRequest implements ModelInterface, ArrayAccess, \Js
     public function __construct(?array $data = null)
     {
         $this->setIfExists('name', $data ?? [], null);
+        $this->setIfExists('site_id', $data ?? [], null);
         $this->setIfExists('command', $data ?? [], null);
         $this->setIfExists('user', $data ?? [], null);
         $this->setIfExists('directory', $data ?? [], null);
@@ -409,6 +416,33 @@ class CreateBackgroundProcessRequest implements ModelInterface, ArrayAccess, \Js
             throw new \InvalidArgumentException('non-nullable name cannot be null');
         }
         $this->container['name'] = $name;
+
+        return $this;
+    }
+
+    /**
+     * Gets site_id
+     *
+     * @return int|null
+     */
+    public function getSiteId()
+    {
+        return $this->container['site_id'];
+    }
+
+    /**
+     * Sets site_id
+     *
+     * @param int|null $site_id The site to associate the background process with.
+     *
+     * @return self
+     */
+    public function setSiteId($site_id)
+    {
+        if (is_null($site_id)) {
+            throw new \InvalidArgumentException('non-nullable site_id cannot be null');
+        }
+        $this->container['site_id'] = $site_id;
 
         return $this;
     }

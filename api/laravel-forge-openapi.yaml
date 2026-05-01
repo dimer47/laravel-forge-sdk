@@ -16845,6 +16845,10 @@ components:
           type: string
           description: The name of the background process.
           example: Custom command runner
+        site_id:
+          type: integer
+          description: The site to associate the background process with.
+          example: 12345
         command:
           type: string
           description: The command to run.

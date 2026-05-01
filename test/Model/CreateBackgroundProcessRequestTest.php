@@ -89,6 +89,15 @@ class CreateBackgroundProcessRequestTest extends TestCase
     }
 
     /**
+     * Test attribute "site_id"
+     */
+    public function testPropertySiteId()
+    {
+        // TODO: implement
+        self::markTestIncomplete('Not implemented');
+    }
+
+    /**
      * Test attribute "command"
      */
     public function testPropertyCommand()

@@ -5,6 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **string** | The name of the background process. |
+**site_id** | **int** | The site to associate the background process with. | [optional]
 **command** | **string** | The command to run. |
 **user** | **string** | The user to run the background process as. |
 **directory** | **string** | The directory to run the background process from. | [optional]
