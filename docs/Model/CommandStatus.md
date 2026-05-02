@@ -1,4 +1,4 @@
-# # CommandStatus
+# CommandStatus
 
 ## Properties
 

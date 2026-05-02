@@ -1,10 +1,10 @@
-# # CreatePhpVersionRequest
+# CreatePhpVersionRequest
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**version** | [**\Dimer47\Model\PhpVersion**](PhpVersion.md) |  |
+**version** | [**\Dimer47\LaravelForgeSdk\Model\PhpVersion**](PhpVersion.md) |  |
 **cli_default** | **bool** |  | [optional]
 **site_default** | **bool** |  | [optional]
 

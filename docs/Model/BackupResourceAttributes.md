@@ -1,4 +1,4 @@
-# # BackupResourceAttributes
+# BackupResourceAttributes
 
 ## Properties
 

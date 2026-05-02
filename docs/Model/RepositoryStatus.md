@@ -1,4 +1,4 @@
-# # RepositoryStatus
+# RepositoryStatus
 
 ## Properties
 

@@ -1,9 +1,9 @@
-# # CommandOutputResourceAttributes
+# CommandOutputResourceAttributes
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**output** | **string** | The output of the command execution. |
+**output** | [**\Dimer47\LaravelForgeSdk\Model\CommandOutputResourceAttributesOutput**](CommandOutputResourceAttributesOutput.md) |  |
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

@@ -1,4 +1,4 @@
-# # UpdateBackgroundProcessRequest
+# UpdateBackgroundProcessRequest
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # UserResourceIdentifier
+# UserResourceIdentifier
 
 ## Properties
 

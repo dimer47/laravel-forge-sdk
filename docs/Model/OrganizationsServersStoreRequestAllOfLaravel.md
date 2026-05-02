@@ -1,4 +1,4 @@
-# # OrganizationsServersStoreRequestAllOfLaravel
+# OrganizationsServersStoreRequestAllOfLaravel
 
 ## Properties
 

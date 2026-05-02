@@ -1,4 +1,4 @@
-# # OrganizationsServersBackgroundProcessesIndex200ResponseLinks
+# OrganizationsServersBackgroundProcessesIndex200ResponseLinks
 
 ## Properties
 

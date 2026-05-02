@@ -1,4 +1,4 @@
-# # HeartbeatGracePeriod
+# HeartbeatGracePeriod
 
 ## Properties
 

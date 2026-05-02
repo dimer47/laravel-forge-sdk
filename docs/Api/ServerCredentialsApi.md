@@ -1,4 +1,4 @@
-# Dimer47\ServerCredentialsApi
+# Dimer47\LaravelForgeSdk\ServerCredentialsApi
 
 
 
@@ -29,10 +29,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\ServerCredentialsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\ServerCredentialsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -77,7 +77,7 @@ void (empty response body)
 ## `organizationsTeamsServerCredentialsIndex()`
 
 ```php
-organizationsTeamsServerCredentialsIndex($organization, $team, $page_size, $page_cursor): \Dimer47\Model\OrganizationsServerCredentialsIndex200Response
+organizationsTeamsServerCredentialsIndex($organization, $team, $page_size, $page_cursor): \Dimer47\LaravelForgeSdk\Model\OrganizationsServerCredentialsIndex200Response
 ```
 
 List team server credentials
@@ -92,10 +92,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\ServerCredentialsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\ServerCredentialsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -125,7 +125,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServerCredentialsIndex200Response**](../Model/OrganizationsServerCredentialsIndex200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServerCredentialsIndex200Response**](../Model/OrganizationsServerCredentialsIndex200Response.md)
 
 ### Authorization
 
@@ -143,7 +143,7 @@ try {
 ## `organizationsTeamsServerCredentialsStore()`
 
 ```php
-organizationsTeamsServerCredentialsStore($organization, $team, $share_credential_request): \Dimer47\Model\OrganizationsServerCredentialsShow200Response
+organizationsTeamsServerCredentialsStore($organization, $team, $share_credential_request): \Dimer47\LaravelForgeSdk\Model\OrganizationsServerCredentialsShow200Response
 ```
 
 Create a new server credential share
@@ -158,10 +158,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\ServerCredentialsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\ServerCredentialsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -169,7 +169,7 @@ $apiInstance = new Dimer47\Api\ServerCredentialsApi(
 );
 $organization = 'organization_example'; // string | The organization slug
 $team = 56; // int | The team ID
-$share_credential_request = new \Dimer47\Model\ShareCredentialRequest(); // \Dimer47\Model\ShareCredentialRequest
+$share_credential_request = new \Dimer47\LaravelForgeSdk\Model\ShareCredentialRequest(); // \Dimer47\LaravelForgeSdk\Model\ShareCredentialRequest
 
 try {
     $result = $apiInstance->organizationsTeamsServerCredentialsStore($organization, $team, $share_credential_request);
@@ -185,11 +185,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **organization** | **string**| The organization slug | |
 | **team** | **int**| The team ID | |
-| **share_credential_request** | [**\Dimer47\Model\ShareCredentialRequest**](../Model/ShareCredentialRequest.md)|  | |
+| **share_credential_request** | [**\Dimer47\LaravelForgeSdk\Model\ShareCredentialRequest**](../Model/ShareCredentialRequest.md)|  | |
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServerCredentialsShow200Response**](../Model/OrganizationsServerCredentialsShow200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServerCredentialsShow200Response**](../Model/OrganizationsServerCredentialsShow200Response.md)
 
 ### Authorization
 

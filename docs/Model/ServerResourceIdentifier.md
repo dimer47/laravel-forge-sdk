@@ -1,4 +1,4 @@
-# # ServerResourceIdentifier
+# ServerResourceIdentifier
 
 ## Properties
 

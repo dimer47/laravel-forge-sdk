@@ -1,4 +1,4 @@
-# # UpdateBackupConfigurationRequest
+# UpdateBackupConfigurationRequest
 
 ## Properties
 
@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **name** | **string** |  | [optional]
 **bucket** | **string** |  | [optional]
 **directory** | **string** |  | [optional]
-**frequency** | [**\Dimer47\Model\BackupFrequency**](BackupFrequency.md) |  |
+**frequency** | [**\Dimer47\LaravelForgeSdk\Model\BackupFrequency**](BackupFrequency.md) |  |
 **day** | **string** |  | [optional]
 **time** | **string** |  | [optional]
 **cron** | **string** |  | [optional]

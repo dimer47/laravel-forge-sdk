@@ -1,9 +1,9 @@
-# # OrganizationsServersSitesDeploymentsStatusShow200Response
+# OrganizationsServersSitesDeploymentsStatusShow200Response
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**data** | [**\Dimer47\Model\DeploymentStatusResource**](DeploymentStatusResource.md) |  |
+**data** | [**\Dimer47\LaravelForgeSdk\Model\DeploymentStatusResource**](DeploymentStatusResource.md) |  |
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

@@ -1,4 +1,4 @@
-# # CreateSiteRequestSharedPathsInner
+# CreateSiteRequestSharedPathsInner
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # DeployHookResourceAttributes
+# DeployHookResourceAttributes
 
 ## Properties
 

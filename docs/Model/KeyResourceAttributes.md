@@ -1,4 +1,4 @@
-# # KeyResourceAttributes
+# KeyResourceAttributes
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # SourceControlProvider
+# SourceControlProvider
 
 ## Properties
 

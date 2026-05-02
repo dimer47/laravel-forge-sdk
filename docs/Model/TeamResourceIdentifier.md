@@ -1,4 +1,4 @@
-# # TeamResourceIdentifier
+# TeamResourceIdentifier
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # CreateServerRequestAws
+# CreateServerRequestAws
 
 ## Properties
 
@@ -8,6 +8,6 @@ Name | Type | Description | Notes
 **size_id** | **string** |  | [optional]
 **vpc_uuid** | **string** |  | [optional]
 **subnet_uuid** | **string** |  | [optional]
-**disk_size** | **string** |  | [optional]
+**disk_size** | **int** |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

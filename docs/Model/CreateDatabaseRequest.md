@@ -1,4 +1,4 @@
-# # CreateDatabaseRequest
+# CreateDatabaseRequest
 
 ## Properties
 

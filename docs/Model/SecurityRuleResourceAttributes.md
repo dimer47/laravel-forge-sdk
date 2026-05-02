@@ -1,4 +1,4 @@
-# # SecurityRuleResourceAttributes
+# SecurityRuleResourceAttributes
 
 ## Properties
 

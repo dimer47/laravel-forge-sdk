@@ -1,9 +1,9 @@
-# # NginxServiceActionRequest
+# NginxServiceActionRequest
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**action** | [**\Dimer47\Model\NginxAction**](NginxAction.md) |  |
+**action** | [**\Dimer47\LaravelForgeSdk\Model\NginxAction**](NginxAction.md) |  |
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

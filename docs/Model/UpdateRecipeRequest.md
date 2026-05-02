@@ -1,4 +1,4 @@
-# # UpdateRecipeRequest
+# UpdateRecipeRequest
 
 ## Properties
 

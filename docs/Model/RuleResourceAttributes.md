@@ -1,4 +1,4 @@
-# # RuleResourceAttributes
+# RuleResourceAttributes
 
 ## Properties
 

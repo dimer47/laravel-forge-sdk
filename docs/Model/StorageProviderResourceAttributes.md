@@ -1,18 +1,18 @@
-# # StorageProviderResourceAttributes
+# StorageProviderResourceAttributes
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **string** |  |
-**provider** | [**\Dimer47\Model\BackupProvider**](BackupProvider.md) |  |
+**provider** | [**\Dimer47\LaravelForgeSdk\Model\BackupProvider**](BackupProvider.md) |  |
 **provider_name** | **string** |  |
 **region** | **string** |  |
 **bucket** | **string** |  |
 **directory** | **string** |  |
 **endpoint** | **string** |  |
 **assume_role** | **bool** |  |
-**in_use** | **string** |  |
+**in_use** | **bool** |  |
 **created_at** | **\DateTime** |  |
 **updated_at** | **\DateTime** |  |
 

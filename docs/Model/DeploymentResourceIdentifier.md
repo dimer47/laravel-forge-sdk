@@ -1,4 +1,4 @@
-# # DeploymentResourceIdentifier
+# DeploymentResourceIdentifier
 
 ## Properties
 

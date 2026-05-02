@@ -1,4 +1,4 @@
-# # RecipeStatus
+# RecipeStatus
 
 ## Properties
 

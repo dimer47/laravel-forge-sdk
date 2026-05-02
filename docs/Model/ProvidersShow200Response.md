@@ -1,9 +1,9 @@
-# # ProvidersShow200Response
+# ProvidersShow200Response
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**data** | [**\Dimer47\Model\ProviderResource**](ProviderResource.md) |  |
+**data** | [**\Dimer47\LaravelForgeSdk\Model\ProviderResource**](ProviderResource.md) |  |
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

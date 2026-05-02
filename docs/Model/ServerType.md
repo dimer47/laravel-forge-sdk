@@ -1,4 +1,4 @@
-# # ServerType
+# ServerType
 
 ## Properties
 

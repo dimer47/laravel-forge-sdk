@@ -1,4 +1,4 @@
-# Dimer47\LogsApi
+# Dimer47\LaravelForgeSdk\LogsApi
 
 
 
@@ -28,10 +28,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\LogsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\LogsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -76,7 +76,7 @@ void (empty response body)
 ## `organizationsServersLogsShow()`
 
 ```php
-organizationsServersLogsShow($organization, $server, $key): \Dimer47\Model\OrganizationsServersLogsShow200Response
+organizationsServersLogsShow($organization, $server, $key): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersLogsShow200Response
 ```
 
 Get server log content
@@ -91,10 +91,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\LogsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\LogsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -122,7 +122,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersLogsShow200Response**](../Model/OrganizationsServersLogsShow200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersLogsShow200Response**](../Model/OrganizationsServersLogsShow200Response.md)
 
 ### Authorization
 

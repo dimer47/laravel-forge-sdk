@@ -1,4 +1,4 @@
-# # OrganizationsServerCredentialsVpcsIndex200ResponseMeta
+# OrganizationsServerCredentialsVpcsIndex200ResponseMeta
 
 ## Properties
 

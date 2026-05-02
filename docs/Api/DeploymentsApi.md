@@ -1,4 +1,4 @@
-# Dimer47\DeploymentsApi
+# Dimer47\LaravelForgeSdk\DeploymentsApi
 
 
 
@@ -6,6 +6,9 @@ All URIs are relative to https://forge.laravel.com/api, except if the operation 
 
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |
+| [**organizationsServersSitesDeployKeyDestroy()**](DeploymentsApi.md#organizationsServersSitesDeployKeyDestroy) | **DELETE** /orgs/{organization}/servers/{server}/sites/{site}/deploy-key | Delete deploy key |
+| [**organizationsServersSitesDeployKeyShow()**](DeploymentsApi.md#organizationsServersSitesDeployKeyShow) | **GET** /orgs/{organization}/servers/{server}/sites/{site}/deploy-key | Get deploy key |
+| [**organizationsServersSitesDeployKeyStore()**](DeploymentsApi.md#organizationsServersSitesDeployKeyStore) | **POST** /orgs/{organization}/servers/{server}/sites/{site}/deploy-key | Create deploy key |
 | [**organizationsServersSitesDeploymentsDeployHookShow()**](DeploymentsApi.md#organizationsServersSitesDeploymentsDeployHookShow) | **GET** /orgs/{organization}/servers/{server}/sites/{site}/deployments/deploy-hook | Get the deployment trigger URL |
 | [**organizationsServersSitesDeploymentsDeployHookUpdate()**](DeploymentsApi.md#organizationsServersSitesDeploymentsDeployHookUpdate) | **PUT** /orgs/{organization}/servers/{server}/sites/{site}/deployments/deploy-hook | Update deployment trigger URL |
 | [**organizationsServersSitesDeploymentsIndex()**](DeploymentsApi.md#organizationsServersSitesDeploymentsIndex) | **GET** /orgs/{organization}/servers/{server}/sites/{site}/deployments | List deployments |
@@ -24,10 +27,201 @@ All URIs are relative to https://forge.laravel.com/api, except if the operation 
 | [**organizationsServersSitesWebhooksStore()**](DeploymentsApi.md#organizationsServersSitesWebhooksStore) | **POST** /orgs/{organization}/servers/{server}/sites/{site}/webhooks | Create site webhook |
 
 
+## `organizationsServersSitesDeployKeyDestroy()`
+
+```php
+organizationsServersSitesDeployKeyDestroy($organization, $server, $site)
+```
+
+Delete deploy key
+
+Remove the deploy key for the site.  Processing mode: <small><code>sync</code></small>
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+// Configure OAuth2 access token for authorization: oauth2
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
+
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\DeploymentsApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$organization = 'organization_example'; // string | The organization slug
+$server = 56; // int | The server ID
+$site = 56; // int | The site ID
+
+try {
+    $apiInstance->organizationsServersSitesDeployKeyDestroy($organization, $server, $site);
+} catch (Exception $e) {
+    echo 'Exception when calling DeploymentsApi->organizationsServersSitesDeployKeyDestroy: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **organization** | **string**| The organization slug | |
+| **server** | **int**| The server ID | |
+| **site** | **int**| The site ID | |
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[oauth2](../../README.md#oauth2)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
+
+## `organizationsServersSitesDeployKeyShow()`
+
+```php
+organizationsServersSitesDeployKeyShow($organization, $server, $site): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesDeployKeyShow200Response
+```
+
+Get deploy key
+
+Get the deploy key for the site.  Processing mode: <small><code>sync</code></small>
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+// Configure OAuth2 access token for authorization: oauth2
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
+
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\DeploymentsApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$organization = 'organization_example'; // string | The organization slug
+$server = 56; // int | The server ID
+$site = 56; // int | The site ID
+
+try {
+    $result = $apiInstance->organizationsServersSitesDeployKeyShow($organization, $server, $site);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling DeploymentsApi->organizationsServersSitesDeployKeyShow: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **organization** | **string**| The organization slug | |
+| **server** | **int**| The server ID | |
+| **site** | **int**| The site ID | |
+
+### Return type
+
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesDeployKeyShow200Response**](../Model/OrganizationsServersSitesDeployKeyShow200Response.md)
+
+### Authorization
+
+[oauth2](../../README.md#oauth2)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: `application/vnd.api+json`, `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
+
+## `organizationsServersSitesDeployKeyStore()`
+
+```php
+organizationsServersSitesDeployKeyStore($organization, $server, $site): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesDeployKeyShow200Response
+```
+
+Create deploy key
+
+Create a new deploy key for the site. If the site already has a deploy key, the existing key is returned.  Processing mode: <small><code>async</code></small>
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+// Configure OAuth2 access token for authorization: oauth2
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
+
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\DeploymentsApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$organization = 'organization_example'; // string | The organization slug
+$server = 56; // int | The server ID
+$site = 56; // int | The site ID
+
+try {
+    $result = $apiInstance->organizationsServersSitesDeployKeyStore($organization, $server, $site);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling DeploymentsApi->organizationsServersSitesDeployKeyStore: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **organization** | **string**| The organization slug | |
+| **server** | **int**| The server ID | |
+| **site** | **int**| The site ID | |
+
+### Return type
+
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesDeployKeyShow200Response**](../Model/OrganizationsServersSitesDeployKeyShow200Response.md)
+
+### Authorization
+
+[oauth2](../../README.md#oauth2)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: `application/vnd.api+json`, `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
+
 ## `organizationsServersSitesDeploymentsDeployHookShow()`
 
 ```php
-organizationsServersSitesDeploymentsDeployHookShow($organization, $server, $site): \Dimer47\Model\OrganizationsServersSitesDeploymentsDeployHookShow200Response
+organizationsServersSitesDeploymentsDeployHookShow($organization, $server, $site): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesDeploymentsDeployHookShow200Response
 ```
 
 Get the deployment trigger URL
@@ -42,10 +236,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\DeploymentsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\DeploymentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -73,7 +267,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersSitesDeploymentsDeployHookShow200Response**](../Model/OrganizationsServersSitesDeploymentsDeployHookShow200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesDeploymentsDeployHookShow200Response**](../Model/OrganizationsServersSitesDeploymentsDeployHookShow200Response.md)
 
 ### Authorization
 
@@ -91,7 +285,7 @@ try {
 ## `organizationsServersSitesDeploymentsDeployHookUpdate()`
 
 ```php
-organizationsServersSitesDeploymentsDeployHookUpdate($organization, $server, $site): \Dimer47\Model\OrganizationsServersSitesDeploymentsDeployHookShow200Response
+organizationsServersSitesDeploymentsDeployHookUpdate($organization, $server, $site): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesDeploymentsDeployHookShow200Response
 ```
 
 Update deployment trigger URL
@@ -106,10 +300,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\DeploymentsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\DeploymentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -137,7 +331,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersSitesDeploymentsDeployHookShow200Response**](../Model/OrganizationsServersSitesDeploymentsDeployHookShow200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesDeploymentsDeployHookShow200Response**](../Model/OrganizationsServersSitesDeploymentsDeployHookShow200Response.md)
 
 ### Authorization
 
@@ -155,7 +349,7 @@ try {
 ## `organizationsServersSitesDeploymentsIndex()`
 
 ```php
-organizationsServersSitesDeploymentsIndex($organization, $server, $site, $sort, $page_size, $page_cursor, $filter_commit_hash, $filter_commit_message, $filter_commit_author): \Dimer47\Model\OrganizationsServersSitesDeploymentsIndex200Response
+organizationsServersSitesDeploymentsIndex($organization, $server, $site, $sort, $page_size, $page_cursor, $filter_commit_hash, $filter_commit_message, $filter_commit_author): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesDeploymentsIndex200Response
 ```
 
 List deployments
@@ -170,10 +364,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\DeploymentsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\DeploymentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -213,7 +407,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersSitesDeploymentsIndex200Response**](../Model/OrganizationsServersSitesDeploymentsIndex200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesDeploymentsIndex200Response**](../Model/OrganizationsServersSitesDeploymentsIndex200Response.md)
 
 ### Authorization
 
@@ -231,7 +425,7 @@ try {
 ## `organizationsServersSitesDeploymentsLogShow()`
 
 ```php
-organizationsServersSitesDeploymentsLogShow($organization, $server, $site, $deployment): \Dimer47\Model\OrganizationsServersSitesDeploymentsLogShow200Response
+organizationsServersSitesDeploymentsLogShow($organization, $server, $site, $deployment): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesDeploymentsLogShow200Response
 ```
 
 Get deployment output
@@ -246,10 +440,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\DeploymentsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\DeploymentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -279,7 +473,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersSitesDeploymentsLogShow200Response**](../Model/OrganizationsServersSitesDeploymentsLogShow200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesDeploymentsLogShow200Response**](../Model/OrganizationsServersSitesDeploymentsLogShow200Response.md)
 
 ### Authorization
 
@@ -312,10 +506,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\DeploymentsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\DeploymentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -375,10 +569,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\DeploymentsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\DeploymentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -423,7 +617,7 @@ void (empty response body)
 ## `organizationsServersSitesDeploymentsScriptShow()`
 
 ```php
-organizationsServersSitesDeploymentsScriptShow($organization, $server, $site): \Dimer47\Model\OrganizationsServersSitesDeploymentsScriptShow200Response
+organizationsServersSitesDeploymentsScriptShow($organization, $server, $site): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesDeploymentsScriptShow200Response
 ```
 
 Get deployment script
@@ -438,10 +632,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\DeploymentsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\DeploymentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -469,7 +663,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersSitesDeploymentsScriptShow200Response**](../Model/OrganizationsServersSitesDeploymentsScriptShow200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesDeploymentsScriptShow200Response**](../Model/OrganizationsServersSitesDeploymentsScriptShow200Response.md)
 
 ### Authorization
 
@@ -487,7 +681,7 @@ try {
 ## `organizationsServersSitesDeploymentsScriptUpdate()`
 
 ```php
-organizationsServersSitesDeploymentsScriptUpdate($organization, $server, $site, $update_deployment_script_request): \Dimer47\Model\OrganizationsServersSitesDeploymentsScriptShow200Response
+organizationsServersSitesDeploymentsScriptUpdate($organization, $server, $site, $update_deployment_script_request): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesDeploymentsScriptShow200Response
 ```
 
 Update deployment script
@@ -502,10 +696,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\DeploymentsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\DeploymentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -514,7 +708,7 @@ $apiInstance = new Dimer47\Api\DeploymentsApi(
 $organization = 'organization_example'; // string | The organization slug
 $server = 56; // int | The server ID
 $site = 56; // int | The site ID
-$update_deployment_script_request = new \Dimer47\Model\UpdateDeploymentScriptRequest(); // \Dimer47\Model\UpdateDeploymentScriptRequest
+$update_deployment_script_request = new \Dimer47\LaravelForgeSdk\Model\UpdateDeploymentScriptRequest(); // \Dimer47\LaravelForgeSdk\Model\UpdateDeploymentScriptRequest
 
 try {
     $result = $apiInstance->organizationsServersSitesDeploymentsScriptUpdate($organization, $server, $site, $update_deployment_script_request);
@@ -531,11 +725,11 @@ try {
 | **organization** | **string**| The organization slug | |
 | **server** | **int**| The server ID | |
 | **site** | **int**| The site ID | |
-| **update_deployment_script_request** | [**\Dimer47\Model\UpdateDeploymentScriptRequest**](../Model/UpdateDeploymentScriptRequest.md)|  | |
+| **update_deployment_script_request** | [**\Dimer47\LaravelForgeSdk\Model\UpdateDeploymentScriptRequest**](../Model/UpdateDeploymentScriptRequest.md)|  | |
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersSitesDeploymentsScriptShow200Response**](../Model/OrganizationsServersSitesDeploymentsScriptShow200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesDeploymentsScriptShow200Response**](../Model/OrganizationsServersSitesDeploymentsScriptShow200Response.md)
 
 ### Authorization
 
@@ -553,7 +747,7 @@ try {
 ## `organizationsServersSitesDeploymentsShow()`
 
 ```php
-organizationsServersSitesDeploymentsShow($organization, $server, $site, $deployment): \Dimer47\Model\OrganizationsServersSitesDeploymentsStore202Response
+organizationsServersSitesDeploymentsShow($organization, $server, $site, $deployment): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesDeploymentsStore202Response
 ```
 
 Get deployment
@@ -568,10 +762,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\DeploymentsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\DeploymentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -601,7 +795,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersSitesDeploymentsStore202Response**](../Model/OrganizationsServersSitesDeploymentsStore202Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesDeploymentsStore202Response**](../Model/OrganizationsServersSitesDeploymentsStore202Response.md)
 
 ### Authorization
 
@@ -634,10 +828,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\DeploymentsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\DeploymentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -682,7 +876,7 @@ void (empty response body)
 ## `organizationsServersSitesDeploymentsStatusShow()`
 
 ```php
-organizationsServersSitesDeploymentsStatusShow($organization, $server, $site): \Dimer47\Model\OrganizationsServersSitesDeploymentsStatusShow200Response
+organizationsServersSitesDeploymentsStatusShow($organization, $server, $site): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesDeploymentsStatusShow200Response
 ```
 
 Get deployment status
@@ -697,10 +891,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\DeploymentsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\DeploymentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -728,7 +922,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersSitesDeploymentsStatusShow200Response**](../Model/OrganizationsServersSitesDeploymentsStatusShow200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesDeploymentsStatusShow200Response**](../Model/OrganizationsServersSitesDeploymentsStatusShow200Response.md)
 
 ### Authorization
 
@@ -746,7 +940,7 @@ try {
 ## `organizationsServersSitesDeploymentsStore()`
 
 ```php
-organizationsServersSitesDeploymentsStore($organization, $server, $site): \Dimer47\Model\OrganizationsServersSitesDeploymentsStore202Response
+organizationsServersSitesDeploymentsStore($organization, $server, $site): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesDeploymentsStore202Response
 ```
 
 Create deployment
@@ -761,10 +955,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\DeploymentsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\DeploymentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -792,7 +986,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersSitesDeploymentsStore202Response**](../Model/OrganizationsServersSitesDeploymentsStore202Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesDeploymentsStore202Response**](../Model/OrganizationsServersSitesDeploymentsStore202Response.md)
 
 ### Authorization
 
@@ -825,10 +1019,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\DeploymentsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\DeploymentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -875,7 +1069,7 @@ void (empty response body)
 ## `organizationsServersSitesWebhooksIndex()`
 
 ```php
-organizationsServersSitesWebhooksIndex($organization, $server, $site, $sort, $page_size, $page_cursor): \Dimer47\Model\OrganizationsServersSitesWebhooksIndex200Response
+organizationsServersSitesWebhooksIndex($organization, $server, $site, $sort, $page_size, $page_cursor): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesWebhooksIndex200Response
 ```
 
 List site webhooks
@@ -890,10 +1084,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\DeploymentsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\DeploymentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -927,7 +1121,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersSitesWebhooksIndex200Response**](../Model/OrganizationsServersSitesWebhooksIndex200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesWebhooksIndex200Response**](../Model/OrganizationsServersSitesWebhooksIndex200Response.md)
 
 ### Authorization
 
@@ -945,7 +1139,7 @@ try {
 ## `organizationsServersSitesWebhooksShow()`
 
 ```php
-organizationsServersSitesWebhooksShow($organization, $server, $site, $deployment_webhook): \Dimer47\Model\OrganizationsServersSitesWebhooksShow200Response
+organizationsServersSitesWebhooksShow($organization, $server, $site, $deployment_webhook): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesWebhooksShow200Response
 ```
 
 Get site webhook
@@ -960,10 +1154,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\DeploymentsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\DeploymentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -993,7 +1187,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersSitesWebhooksShow200Response**](../Model/OrganizationsServersSitesWebhooksShow200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesWebhooksShow200Response**](../Model/OrganizationsServersSitesWebhooksShow200Response.md)
 
 ### Authorization
 
@@ -1026,10 +1220,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\DeploymentsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\DeploymentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -1038,7 +1232,7 @@ $apiInstance = new Dimer47\Api\DeploymentsApi(
 $organization = 'organization_example'; // string | The organization slug
 $server = 56; // int | The server ID
 $site = 56; // int | The site ID
-$create_deployment_webhook_request = new \Dimer47\Model\CreateDeploymentWebhookRequest(); // \Dimer47\Model\CreateDeploymentWebhookRequest
+$create_deployment_webhook_request = new \Dimer47\LaravelForgeSdk\Model\CreateDeploymentWebhookRequest(); // \Dimer47\LaravelForgeSdk\Model\CreateDeploymentWebhookRequest
 
 try {
     $apiInstance->organizationsServersSitesWebhooksStore($organization, $server, $site, $create_deployment_webhook_request);
@@ -1054,7 +1248,7 @@ try {
 | **organization** | **string**| The organization slug | |
 | **server** | **int**| The server ID | |
 | **site** | **int**| The site ID | |
-| **create_deployment_webhook_request** | [**\Dimer47\Model\CreateDeploymentWebhookRequest**](../Model/CreateDeploymentWebhookRequest.md)|  | |
+| **create_deployment_webhook_request** | [**\Dimer47\LaravelForgeSdk\Model\CreateDeploymentWebhookRequest**](../Model/CreateDeploymentWebhookRequest.md)|  | |
 
 ### Return type
 

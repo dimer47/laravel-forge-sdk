@@ -1,4 +1,4 @@
-# # DomainRecordAction
+# DomainRecordAction
 
 ## Properties
 

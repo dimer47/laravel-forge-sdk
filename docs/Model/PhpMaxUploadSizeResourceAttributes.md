@@ -1,4 +1,4 @@
-# # PhpMaxUploadSizeResourceAttributes
+# PhpMaxUploadSizeResourceAttributes
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # EventResourceAttributes
+# EventResourceAttributes
 
 ## Properties
 

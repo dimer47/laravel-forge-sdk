@@ -1,4 +1,4 @@
-# # RedirectRuleType
+# RedirectRuleType
 
 ## Properties
 

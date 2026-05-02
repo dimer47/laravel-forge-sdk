@@ -1,4 +1,4 @@
-# Dimer47\UserApi
+# Dimer47\LaravelForgeSdk\UserApi
 
 
 
@@ -13,7 +13,7 @@ All URIs are relative to https://forge.laravel.com/api, except if the operation 
 ## `me()`
 
 ```php
-me(): \Dimer47\Model\UserShow200Response
+me(): \Dimer47\LaravelForgeSdk\Model\UserShow200Response
 ```
 
 Get user
@@ -28,10 +28,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\UserApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -52,7 +52,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Dimer47\Model\UserShow200Response**](../Model/UserShow200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\UserShow200Response**](../Model/UserShow200Response.md)
 
 ### Authorization
 
@@ -70,7 +70,7 @@ This endpoint does not need any parameter.
 ## `userShow()`
 
 ```php
-userShow(): \Dimer47\Model\UserShow200Response
+userShow(): \Dimer47\LaravelForgeSdk\Model\UserShow200Response
 ```
 
 Get user
@@ -85,10 +85,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\UserApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -109,7 +109,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Dimer47\Model\UserShow200Response**](../Model/UserShow200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\UserShow200Response**](../Model/UserShow200Response.md)
 
 ### Authorization
 

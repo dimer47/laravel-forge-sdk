@@ -1,4 +1,4 @@
-# # PhpCliConfigurationResourceAttributes
+# PhpCliConfigurationResourceAttributes
 
 ## Properties
 

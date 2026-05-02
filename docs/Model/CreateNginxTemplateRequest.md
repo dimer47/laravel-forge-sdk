@@ -1,4 +1,4 @@
-# # CreateNginxTemplateRequest
+# CreateNginxTemplateRequest
 
 ## Properties
 

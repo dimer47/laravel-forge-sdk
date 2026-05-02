@@ -1,4 +1,4 @@
-# Dimer47\CommandsApi
+# Dimer47\LaravelForgeSdk\CommandsApi
 
 
 
@@ -31,10 +31,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\CommandsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\CommandsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -81,7 +81,7 @@ void (empty response body)
 ## `organizationsServersSitesCommandsIndex()`
 
 ```php
-organizationsServersSitesCommandsIndex($organization, $server, $site, $sort, $page_size, $page_cursor, $filter_user_id, $filter_status, $filter_command): \Dimer47\Model\OrganizationsServersSitesCommandsIndex200Response
+organizationsServersSitesCommandsIndex($organization, $server, $site, $sort, $page_size, $page_cursor, $filter_user_id, $filter_status, $filter_command): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesCommandsIndex200Response
 ```
 
 List commands
@@ -96,10 +96,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\CommandsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\CommandsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -139,7 +139,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersSitesCommandsIndex200Response**](../Model/OrganizationsServersSitesCommandsIndex200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesCommandsIndex200Response**](../Model/OrganizationsServersSitesCommandsIndex200Response.md)
 
 ### Authorization
 
@@ -157,7 +157,7 @@ try {
 ## `organizationsServersSitesCommandsOutputShow()`
 
 ```php
-organizationsServersSitesCommandsOutputShow($organization, $server, $site, $command): \Dimer47\Model\OrganizationsServersSitesCommandsOutputShow200Response
+organizationsServersSitesCommandsOutputShow($organization, $server, $site, $command): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesCommandsOutputShow200Response
 ```
 
 Get command output
@@ -172,10 +172,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\CommandsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\CommandsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -205,7 +205,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersSitesCommandsOutputShow200Response**](../Model/OrganizationsServersSitesCommandsOutputShow200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesCommandsOutputShow200Response**](../Model/OrganizationsServersSitesCommandsOutputShow200Response.md)
 
 ### Authorization
 
@@ -223,7 +223,7 @@ try {
 ## `organizationsServersSitesCommandsShow()`
 
 ```php
-organizationsServersSitesCommandsShow($organization, $server, $site, $command): \Dimer47\Model\OrganizationsServersSitesCommandsShow200Response
+organizationsServersSitesCommandsShow($organization, $server, $site, $command): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesCommandsShow200Response
 ```
 
 Get command
@@ -238,10 +238,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\CommandsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\CommandsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -271,7 +271,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersSitesCommandsShow200Response**](../Model/OrganizationsServersSitesCommandsShow200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesCommandsShow200Response**](../Model/OrganizationsServersSitesCommandsShow200Response.md)
 
 ### Authorization
 
@@ -304,10 +304,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\CommandsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\CommandsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -316,7 +316,7 @@ $apiInstance = new Dimer47\Api\CommandsApi(
 $organization = 'organization_example'; // string | The organization slug
 $server = 56; // int | The server ID
 $site = 56; // int | The site ID
-$run_site_command_request = new \Dimer47\Model\RunSiteCommandRequest(); // \Dimer47\Model\RunSiteCommandRequest
+$run_site_command_request = new \Dimer47\LaravelForgeSdk\Model\RunSiteCommandRequest(); // \Dimer47\LaravelForgeSdk\Model\RunSiteCommandRequest
 
 try {
     $apiInstance->organizationsServersSitesCommandsStore($organization, $server, $site, $run_site_command_request);
@@ -332,7 +332,7 @@ try {
 | **organization** | **string**| The organization slug | |
 | **server** | **int**| The server ID | |
 | **site** | **int**| The site ID | |
-| **run_site_command_request** | [**\Dimer47\Model\RunSiteCommandRequest**](../Model/RunSiteCommandRequest.md)|  | |
+| **run_site_command_request** | [**\Dimer47\LaravelForgeSdk\Model\RunSiteCommandRequest**](../Model/RunSiteCommandRequest.md)|  | |
 
 ### Return type
 

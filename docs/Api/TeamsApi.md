@@ -1,4 +1,4 @@
-# Dimer47\TeamsApi
+# Dimer47\LaravelForgeSdk\TeamsApi
 
 
 
@@ -39,10 +39,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\TeamsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\TeamsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -85,7 +85,7 @@ void (empty response body)
 ## `organizationsTeamsIndex()`
 
 ```php
-organizationsTeamsIndex($organization, $page_size, $page_cursor): \Dimer47\Model\OrganizationsTeamsIndex200Response
+organizationsTeamsIndex($organization, $page_size, $page_cursor): \Dimer47\LaravelForgeSdk\Model\OrganizationsTeamsIndex200Response
 ```
 
 List teams
@@ -100,10 +100,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\TeamsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\TeamsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -131,7 +131,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsTeamsIndex200Response**](../Model/OrganizationsTeamsIndex200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsTeamsIndex200Response**](../Model/OrganizationsTeamsIndex200Response.md)
 
 ### Authorization
 
@@ -164,10 +164,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\TeamsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\TeamsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -212,7 +212,7 @@ void (empty response body)
 ## `organizationsTeamsInvitesIndex()`
 
 ```php
-organizationsTeamsInvitesIndex($organization, $team, $include, $page_size, $page_cursor): \Dimer47\Model\OrganizationsTeamsInvitesIndex200Response
+organizationsTeamsInvitesIndex($organization, $team, $include, $page_size, $page_cursor): \Dimer47\LaravelForgeSdk\Model\OrganizationsTeamsInvitesIndex200Response
 ```
 
 List team invitations
@@ -227,10 +227,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\TeamsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\TeamsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -262,7 +262,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsTeamsInvitesIndex200Response**](../Model/OrganizationsTeamsInvitesIndex200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsTeamsInvitesIndex200Response**](../Model/OrganizationsTeamsInvitesIndex200Response.md)
 
 ### Authorization
 
@@ -280,7 +280,7 @@ try {
 ## `organizationsTeamsInvitesShow()`
 
 ```php
-organizationsTeamsInvitesShow($organization, $team, $invitation): \Dimer47\Model\OrganizationsTeamsInvitesStore200Response
+organizationsTeamsInvitesShow($organization, $team, $invitation): \Dimer47\LaravelForgeSdk\Model\OrganizationsTeamsInvitesStore200Response
 ```
 
 Get team invitation
@@ -295,10 +295,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\TeamsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\TeamsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -326,7 +326,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsTeamsInvitesStore200Response**](../Model/OrganizationsTeamsInvitesStore200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsTeamsInvitesStore200Response**](../Model/OrganizationsTeamsInvitesStore200Response.md)
 
 ### Authorization
 
@@ -344,7 +344,7 @@ try {
 ## `organizationsTeamsInvitesStore()`
 
 ```php
-organizationsTeamsInvitesStore($organization, $team, $create_team_invite_request): \Dimer47\Model\OrganizationsTeamsInvitesStore200Response
+organizationsTeamsInvitesStore($organization, $team, $create_team_invite_request): \Dimer47\LaravelForgeSdk\Model\OrganizationsTeamsInvitesStore200Response
 ```
 
 Create team invite
@@ -359,10 +359,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\TeamsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\TeamsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -370,7 +370,7 @@ $apiInstance = new Dimer47\Api\TeamsApi(
 );
 $organization = 'organization_example'; // string | The organization slug
 $team = 56; // int | The team ID
-$create_team_invite_request = new \Dimer47\Model\CreateTeamInviteRequest(); // \Dimer47\Model\CreateTeamInviteRequest
+$create_team_invite_request = new \Dimer47\LaravelForgeSdk\Model\CreateTeamInviteRequest(); // \Dimer47\LaravelForgeSdk\Model\CreateTeamInviteRequest
 
 try {
     $result = $apiInstance->organizationsTeamsInvitesStore($organization, $team, $create_team_invite_request);
@@ -386,11 +386,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **organization** | **string**| The organization slug | |
 | **team** | **int**| The team ID | |
-| **create_team_invite_request** | [**\Dimer47\Model\CreateTeamInviteRequest**](../Model/CreateTeamInviteRequest.md)|  | |
+| **create_team_invite_request** | [**\Dimer47\LaravelForgeSdk\Model\CreateTeamInviteRequest**](../Model/CreateTeamInviteRequest.md)|  | |
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsTeamsInvitesStore200Response**](../Model/OrganizationsTeamsInvitesStore200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsTeamsInvitesStore200Response**](../Model/OrganizationsTeamsInvitesStore200Response.md)
 
 ### Authorization
 
@@ -423,10 +423,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\TeamsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\TeamsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -471,7 +471,7 @@ void (empty response body)
 ## `organizationsTeamsMembersIndex()`
 
 ```php
-organizationsTeamsMembersIndex($organization, $team, $page_size, $page_cursor): \Dimer47\Model\OrganizationsTeamsMembersIndex200Response
+organizationsTeamsMembersIndex($organization, $team, $page_size, $page_cursor): \Dimer47\LaravelForgeSdk\Model\OrganizationsTeamsMembersIndex200Response
 ```
 
 List team members
@@ -486,10 +486,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\TeamsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\TeamsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -519,7 +519,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsTeamsMembersIndex200Response**](../Model/OrganizationsTeamsMembersIndex200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsTeamsMembersIndex200Response**](../Model/OrganizationsTeamsMembersIndex200Response.md)
 
 ### Authorization
 
@@ -537,7 +537,7 @@ try {
 ## `organizationsTeamsMembersShow()`
 
 ```php
-organizationsTeamsMembersShow($organization, $team, $user): \Dimer47\Model\OrganizationsTeamsMembersShow200Response
+organizationsTeamsMembersShow($organization, $team, $user): \Dimer47\LaravelForgeSdk\Model\OrganizationsTeamsMembersShow200Response
 ```
 
 Get team member
@@ -552,10 +552,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\TeamsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\TeamsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -583,7 +583,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsTeamsMembersShow200Response**](../Model/OrganizationsTeamsMembersShow200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsTeamsMembersShow200Response**](../Model/OrganizationsTeamsMembersShow200Response.md)
 
 ### Authorization
 
@@ -601,7 +601,7 @@ try {
 ## `organizationsTeamsMembersUpdate()`
 
 ```php
-organizationsTeamsMembersUpdate($organization, $team, $user, $update_team_member_request): \Dimer47\Model\OrganizationsTeamsMembersShow200Response
+organizationsTeamsMembersUpdate($organization, $team, $user, $update_team_member_request): \Dimer47\LaravelForgeSdk\Model\OrganizationsTeamsMembersShow200Response
 ```
 
 Update team member
@@ -616,10 +616,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\TeamsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\TeamsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -628,7 +628,7 @@ $apiInstance = new Dimer47\Api\TeamsApi(
 $organization = 'organization_example'; // string | The organization slug
 $team = 56; // int | The team ID
 $user = 56; // int | The user ID
-$update_team_member_request = new \Dimer47\Model\UpdateTeamMemberRequest(); // \Dimer47\Model\UpdateTeamMemberRequest
+$update_team_member_request = new \Dimer47\LaravelForgeSdk\Model\UpdateTeamMemberRequest(); // \Dimer47\LaravelForgeSdk\Model\UpdateTeamMemberRequest
 
 try {
     $result = $apiInstance->organizationsTeamsMembersUpdate($organization, $team, $user, $update_team_member_request);
@@ -645,11 +645,11 @@ try {
 | **organization** | **string**| The organization slug | |
 | **team** | **int**| The team ID | |
 | **user** | **int**| The user ID | |
-| **update_team_member_request** | [**\Dimer47\Model\UpdateTeamMemberRequest**](../Model/UpdateTeamMemberRequest.md)|  | |
+| **update_team_member_request** | [**\Dimer47\LaravelForgeSdk\Model\UpdateTeamMemberRequest**](../Model/UpdateTeamMemberRequest.md)|  | |
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsTeamsMembersShow200Response**](../Model/OrganizationsTeamsMembersShow200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsTeamsMembersShow200Response**](../Model/OrganizationsTeamsMembersShow200Response.md)
 
 ### Authorization
 
@@ -667,7 +667,7 @@ try {
 ## `organizationsTeamsShow()`
 
 ```php
-organizationsTeamsShow($organization, $team): \Dimer47\Model\OrganizationsTeamsStore200Response
+organizationsTeamsShow($organization, $team): \Dimer47\LaravelForgeSdk\Model\OrganizationsTeamsStore200Response
 ```
 
 Get team
@@ -682,10 +682,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\TeamsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\TeamsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -711,7 +711,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsTeamsStore200Response**](../Model/OrganizationsTeamsStore200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsTeamsStore200Response**](../Model/OrganizationsTeamsStore200Response.md)
 
 ### Authorization
 
@@ -729,7 +729,7 @@ try {
 ## `organizationsTeamsStore()`
 
 ```php
-organizationsTeamsStore($organization, $create_team_request): \Dimer47\Model\OrganizationsTeamsStore200Response
+organizationsTeamsStore($organization, $create_team_request): \Dimer47\LaravelForgeSdk\Model\OrganizationsTeamsStore200Response
 ```
 
 Create team
@@ -744,17 +744,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\TeamsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\TeamsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = 'organization_example'; // string | The organization slug
-$create_team_request = new \Dimer47\Model\CreateTeamRequest(); // \Dimer47\Model\CreateTeamRequest
+$create_team_request = new \Dimer47\LaravelForgeSdk\Model\CreateTeamRequest(); // \Dimer47\LaravelForgeSdk\Model\CreateTeamRequest
 
 try {
     $result = $apiInstance->organizationsTeamsStore($organization, $create_team_request);
@@ -769,11 +769,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **organization** | **string**| The organization slug | |
-| **create_team_request** | [**\Dimer47\Model\CreateTeamRequest**](../Model/CreateTeamRequest.md)|  | |
+| **create_team_request** | [**\Dimer47\LaravelForgeSdk\Model\CreateTeamRequest**](../Model/CreateTeamRequest.md)|  | |
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsTeamsStore200Response**](../Model/OrganizationsTeamsStore200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsTeamsStore200Response**](../Model/OrganizationsTeamsStore200Response.md)
 
 ### Authorization
 
@@ -791,7 +791,7 @@ try {
 ## `organizationsTeamsUpdate()`
 
 ```php
-organizationsTeamsUpdate($organization, $team, $update_team_request): \Dimer47\Model\OrganizationsTeamsStore200Response
+organizationsTeamsUpdate($organization, $team, $update_team_request): \Dimer47\LaravelForgeSdk\Model\OrganizationsTeamsStore200Response
 ```
 
 Update team
@@ -806,10 +806,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\TeamsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\TeamsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -817,7 +817,7 @@ $apiInstance = new Dimer47\Api\TeamsApi(
 );
 $organization = 'organization_example'; // string | The organization slug
 $team = 56; // int | The team ID
-$update_team_request = new \Dimer47\Model\UpdateTeamRequest(); // \Dimer47\Model\UpdateTeamRequest
+$update_team_request = new \Dimer47\LaravelForgeSdk\Model\UpdateTeamRequest(); // \Dimer47\LaravelForgeSdk\Model\UpdateTeamRequest
 
 try {
     $result = $apiInstance->organizationsTeamsUpdate($organization, $team, $update_team_request);
@@ -833,11 +833,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **organization** | **string**| The organization slug | |
 | **team** | **int**| The team ID | |
-| **update_team_request** | [**\Dimer47\Model\UpdateTeamRequest**](../Model/UpdateTeamRequest.md)|  | |
+| **update_team_request** | [**\Dimer47\LaravelForgeSdk\Model\UpdateTeamRequest**](../Model/UpdateTeamRequest.md)|  | |
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsTeamsStore200Response**](../Model/OrganizationsTeamsStore200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsTeamsStore200Response**](../Model/OrganizationsTeamsStore200Response.md)
 
 ### Authorization
 

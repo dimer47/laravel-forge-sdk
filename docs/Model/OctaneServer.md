@@ -1,4 +1,4 @@
-# # OctaneServer
+# OctaneServer
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # UpdateNginxTemplateRequest
+# UpdateNginxTemplateRequest
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# Dimer47\NginxApi
+# Dimer47\LaravelForgeSdk\NginxApi
 
 
 
@@ -31,10 +31,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\NginxApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\NginxApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -79,7 +79,7 @@ void (empty response body)
 ## `organizationsServersNginxTemplatesIndex()`
 
 ```php
-organizationsServersNginxTemplatesIndex($organization, $server, $sort, $page_size, $page_cursor, $filter_name): \Dimer47\Model\OrganizationsServersNginxTemplatesIndex200Response
+organizationsServersNginxTemplatesIndex($organization, $server, $sort, $page_size, $page_cursor, $filter_name): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersNginxTemplatesIndex200Response
 ```
 
 List Nginx templates
@@ -94,10 +94,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\NginxApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\NginxApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -131,7 +131,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersNginxTemplatesIndex200Response**](../Model/OrganizationsServersNginxTemplatesIndex200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersNginxTemplatesIndex200Response**](../Model/OrganizationsServersNginxTemplatesIndex200Response.md)
 
 ### Authorization
 
@@ -149,7 +149,7 @@ try {
 ## `organizationsServersNginxTemplatesShow()`
 
 ```php
-organizationsServersNginxTemplatesShow($organization, $server, $nginx_template): \Dimer47\Model\OrganizationsServersNginxTemplatesStore200Response
+organizationsServersNginxTemplatesShow($organization, $server, $nginx_template): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersNginxTemplatesStore200Response
 ```
 
 Get Nginx template
@@ -164,10 +164,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\NginxApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\NginxApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -195,7 +195,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersNginxTemplatesStore200Response**](../Model/OrganizationsServersNginxTemplatesStore200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersNginxTemplatesStore200Response**](../Model/OrganizationsServersNginxTemplatesStore200Response.md)
 
 ### Authorization
 
@@ -213,7 +213,7 @@ try {
 ## `organizationsServersNginxTemplatesStore()`
 
 ```php
-organizationsServersNginxTemplatesStore($organization, $server, $create_nginx_template_request): \Dimer47\Model\OrganizationsServersNginxTemplatesStore200Response
+organizationsServersNginxTemplatesStore($organization, $server, $create_nginx_template_request): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersNginxTemplatesStore200Response
 ```
 
 Create Nginx template
@@ -228,10 +228,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\NginxApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\NginxApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -239,7 +239,7 @@ $apiInstance = new Dimer47\Api\NginxApi(
 );
 $organization = 'organization_example'; // string | The organization slug
 $server = 56; // int | The server ID
-$create_nginx_template_request = new \Dimer47\Model\CreateNginxTemplateRequest(); // \Dimer47\Model\CreateNginxTemplateRequest
+$create_nginx_template_request = new \Dimer47\LaravelForgeSdk\Model\CreateNginxTemplateRequest(); // \Dimer47\LaravelForgeSdk\Model\CreateNginxTemplateRequest
 
 try {
     $result = $apiInstance->organizationsServersNginxTemplatesStore($organization, $server, $create_nginx_template_request);
@@ -255,11 +255,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **organization** | **string**| The organization slug | |
 | **server** | **int**| The server ID | |
-| **create_nginx_template_request** | [**\Dimer47\Model\CreateNginxTemplateRequest**](../Model/CreateNginxTemplateRequest.md)|  | |
+| **create_nginx_template_request** | [**\Dimer47\LaravelForgeSdk\Model\CreateNginxTemplateRequest**](../Model/CreateNginxTemplateRequest.md)|  | |
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersNginxTemplatesStore200Response**](../Model/OrganizationsServersNginxTemplatesStore200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersNginxTemplatesStore200Response**](../Model/OrganizationsServersNginxTemplatesStore200Response.md)
 
 ### Authorization
 
@@ -277,7 +277,7 @@ try {
 ## `organizationsServersNginxTemplatesUpdate()`
 
 ```php
-organizationsServersNginxTemplatesUpdate($organization, $server, $nginx_template, $update_nginx_template_request): \Dimer47\Model\OrganizationsServersNginxTemplatesStore200Response
+organizationsServersNginxTemplatesUpdate($organization, $server, $nginx_template, $update_nginx_template_request): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersNginxTemplatesStore200Response
 ```
 
 Update Nginx template
@@ -292,10 +292,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\NginxApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\NginxApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -304,7 +304,7 @@ $apiInstance = new Dimer47\Api\NginxApi(
 $organization = 'organization_example'; // string | The organization slug
 $server = 56; // int | The server ID
 $nginx_template = 56; // int | The nginx template ID
-$update_nginx_template_request = new \Dimer47\Model\UpdateNginxTemplateRequest(); // \Dimer47\Model\UpdateNginxTemplateRequest
+$update_nginx_template_request = new \Dimer47\LaravelForgeSdk\Model\UpdateNginxTemplateRequest(); // \Dimer47\LaravelForgeSdk\Model\UpdateNginxTemplateRequest
 
 try {
     $result = $apiInstance->organizationsServersNginxTemplatesUpdate($organization, $server, $nginx_template, $update_nginx_template_request);
@@ -321,11 +321,11 @@ try {
 | **organization** | **string**| The organization slug | |
 | **server** | **int**| The server ID | |
 | **nginx_template** | **int**| The nginx template ID | |
-| **update_nginx_template_request** | [**\Dimer47\Model\UpdateNginxTemplateRequest**](../Model/UpdateNginxTemplateRequest.md)|  | |
+| **update_nginx_template_request** | [**\Dimer47\LaravelForgeSdk\Model\UpdateNginxTemplateRequest**](../Model/UpdateNginxTemplateRequest.md)|  | |
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersNginxTemplatesStore200Response**](../Model/OrganizationsServersNginxTemplatesStore200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersNginxTemplatesStore200Response**](../Model/OrganizationsServersNginxTemplatesStore200Response.md)
 
 ### Authorization
 

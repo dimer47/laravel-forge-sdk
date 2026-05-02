@@ -1,4 +1,4 @@
-# Dimer47\RecipesApi
+# Dimer47\LaravelForgeSdk\RecipesApi
 
 
 
@@ -25,7 +25,7 @@ All URIs are relative to https://forge.laravel.com/api, except if the operation 
 ## `forgeRecipesIndex()`
 
 ```php
-forgeRecipesIndex($page_size, $page_cursor): \Dimer47\Model\ForgeRecipesIndex200Response
+forgeRecipesIndex($page_size, $page_cursor): \Dimer47\LaravelForgeSdk\Model\ForgeRecipesIndex200Response
 ```
 
 List Forge's recipes
@@ -40,10 +40,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\RecipesApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\RecipesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -69,7 +69,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\ForgeRecipesIndex200Response**](../Model/ForgeRecipesIndex200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\ForgeRecipesIndex200Response**](../Model/ForgeRecipesIndex200Response.md)
 
 ### Authorization
 
@@ -102,17 +102,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\RecipesApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\RecipesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $forge_recipe = 56; // int | The forge recipe ID
-$run_recipe_request = new \Dimer47\Model\RunRecipeRequest(); // \Dimer47\Model\RunRecipeRequest
+$run_recipe_request = new \Dimer47\LaravelForgeSdk\Model\RunRecipeRequest(); // \Dimer47\LaravelForgeSdk\Model\RunRecipeRequest
 
 try {
     $apiInstance->forgeRecipesRunsStore($forge_recipe, $run_recipe_request);
@@ -126,7 +126,7 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **forge_recipe** | **int**| The forge recipe ID | |
-| **run_recipe_request** | [**\Dimer47\Model\RunRecipeRequest**](../Model/RunRecipeRequest.md)|  | |
+| **run_recipe_request** | [**\Dimer47\LaravelForgeSdk\Model\RunRecipeRequest**](../Model/RunRecipeRequest.md)|  | |
 
 ### Return type
 
@@ -148,7 +148,7 @@ void (empty response body)
 ## `forgeRecipesShow()`
 
 ```php
-forgeRecipesShow($forge_recipe): \Dimer47\Model\ForgeRecipesShow200Response
+forgeRecipesShow($forge_recipe): \Dimer47\LaravelForgeSdk\Model\ForgeRecipesShow200Response
 ```
 
 Get Forge recipe
@@ -163,10 +163,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\RecipesApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\RecipesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -190,7 +190,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\ForgeRecipesShow200Response**](../Model/ForgeRecipesShow200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\ForgeRecipesShow200Response**](../Model/ForgeRecipesShow200Response.md)
 
 ### Authorization
 
@@ -208,7 +208,7 @@ try {
 ## `organizationRecipesStore()`
 
 ```php
-organizationRecipesStore($organization, $create_recipe_request): \Dimer47\Model\OrganizationRecipesStore200Response
+organizationRecipesStore($organization, $create_recipe_request): \Dimer47\LaravelForgeSdk\Model\OrganizationRecipesStore200Response
 ```
 
 Create recipe
@@ -223,17 +223,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\RecipesApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\RecipesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = 'organization_example'; // string | The organization slug
-$create_recipe_request = new \Dimer47\Model\CreateRecipeRequest(); // \Dimer47\Model\CreateRecipeRequest
+$create_recipe_request = new \Dimer47\LaravelForgeSdk\Model\CreateRecipeRequest(); // \Dimer47\LaravelForgeSdk\Model\CreateRecipeRequest
 
 try {
     $result = $apiInstance->organizationRecipesStore($organization, $create_recipe_request);
@@ -248,11 +248,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **organization** | **string**| The organization slug | |
-| **create_recipe_request** | [**\Dimer47\Model\CreateRecipeRequest**](../Model/CreateRecipeRequest.md)|  | |
+| **create_recipe_request** | [**\Dimer47\LaravelForgeSdk\Model\CreateRecipeRequest**](../Model/CreateRecipeRequest.md)|  | |
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationRecipesStore200Response**](../Model/OrganizationRecipesStore200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationRecipesStore200Response**](../Model/OrganizationRecipesStore200Response.md)
 
 ### Authorization
 
@@ -285,10 +285,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\RecipesApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\RecipesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -331,7 +331,7 @@ void (empty response body)
 ## `organizationsRecipesIndex()`
 
 ```php
-organizationsRecipesIndex($organization, $page_size, $page_cursor): \Dimer47\Model\OrganizationsRecipesIndex200Response
+organizationsRecipesIndex($organization, $page_size, $page_cursor): \Dimer47\LaravelForgeSdk\Model\OrganizationsRecipesIndex200Response
 ```
 
 List organization recipes
@@ -346,10 +346,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\RecipesApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\RecipesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -377,7 +377,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsRecipesIndex200Response**](../Model/OrganizationsRecipesIndex200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsRecipesIndex200Response**](../Model/OrganizationsRecipesIndex200Response.md)
 
 ### Authorization
 
@@ -395,7 +395,7 @@ try {
 ## `organizationsRecipesRunsIndex()`
 
 ```php
-organizationsRecipesRunsIndex($organization, $recipe, $page_size, $page_cursor): \Dimer47\Model\OrganizationsRecipesRunsIndex200Response
+organizationsRecipesRunsIndex($organization, $recipe, $page_size, $page_cursor): \Dimer47\LaravelForgeSdk\Model\OrganizationsRecipesRunsIndex200Response
 ```
 
 List recipe runs
@@ -410,10 +410,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\RecipesApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\RecipesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -443,7 +443,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsRecipesRunsIndex200Response**](../Model/OrganizationsRecipesRunsIndex200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsRecipesRunsIndex200Response**](../Model/OrganizationsRecipesRunsIndex200Response.md)
 
 ### Authorization
 
@@ -461,7 +461,7 @@ try {
 ## `organizationsRecipesRunsShow()`
 
 ```php
-organizationsRecipesRunsShow($organization, $recipe, $log): \Dimer47\Model\OrganizationsRecipesRunsShow200Response
+organizationsRecipesRunsShow($organization, $recipe, $log): \Dimer47\LaravelForgeSdk\Model\OrganizationsRecipesRunsShow200Response
 ```
 
 Get recipe run
@@ -476,10 +476,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\RecipesApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\RecipesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -507,7 +507,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsRecipesRunsShow200Response**](../Model/OrganizationsRecipesRunsShow200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsRecipesRunsShow200Response**](../Model/OrganizationsRecipesRunsShow200Response.md)
 
 ### Authorization
 
@@ -540,10 +540,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\RecipesApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\RecipesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -551,7 +551,7 @@ $apiInstance = new Dimer47\Api\RecipesApi(
 );
 $organization = 'organization_example'; // string | The organization slug
 $recipe = 56; // int | The recipe ID
-$run_recipe_request = new \Dimer47\Model\RunRecipeRequest(); // \Dimer47\Model\RunRecipeRequest
+$run_recipe_request = new \Dimer47\LaravelForgeSdk\Model\RunRecipeRequest(); // \Dimer47\LaravelForgeSdk\Model\RunRecipeRequest
 
 try {
     $apiInstance->organizationsRecipesRunsStore($organization, $recipe, $run_recipe_request);
@@ -566,7 +566,7 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **organization** | **string**| The organization slug | |
 | **recipe** | **int**| The recipe ID | |
-| **run_recipe_request** | [**\Dimer47\Model\RunRecipeRequest**](../Model/RunRecipeRequest.md)|  | |
+| **run_recipe_request** | [**\Dimer47\LaravelForgeSdk\Model\RunRecipeRequest**](../Model/RunRecipeRequest.md)|  | |
 
 ### Return type
 
@@ -588,7 +588,7 @@ void (empty response body)
 ## `organizationsRecipesShow()`
 
 ```php
-organizationsRecipesShow($organization, $recipe): \Dimer47\Model\OrganizationRecipesStore200Response
+organizationsRecipesShow($organization, $recipe): \Dimer47\LaravelForgeSdk\Model\OrganizationRecipesStore200Response
 ```
 
 Get recipe
@@ -603,10 +603,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\RecipesApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\RecipesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -632,7 +632,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationRecipesStore200Response**](../Model/OrganizationRecipesStore200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationRecipesStore200Response**](../Model/OrganizationRecipesStore200Response.md)
 
 ### Authorization
 
@@ -650,7 +650,7 @@ try {
 ## `organizationsRecipesUpdate()`
 
 ```php
-organizationsRecipesUpdate($organization, $recipe, $update_recipe_request): \Dimer47\Model\OrganizationRecipesStore200Response
+organizationsRecipesUpdate($organization, $recipe, $update_recipe_request): \Dimer47\LaravelForgeSdk\Model\OrganizationRecipesStore200Response
 ```
 
 Update recipe
@@ -665,10 +665,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\RecipesApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\RecipesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -676,7 +676,7 @@ $apiInstance = new Dimer47\Api\RecipesApi(
 );
 $organization = 'organization_example'; // string | The organization slug
 $recipe = 56; // int | The recipe ID
-$update_recipe_request = new \Dimer47\Model\UpdateRecipeRequest(); // \Dimer47\Model\UpdateRecipeRequest
+$update_recipe_request = new \Dimer47\LaravelForgeSdk\Model\UpdateRecipeRequest(); // \Dimer47\LaravelForgeSdk\Model\UpdateRecipeRequest
 
 try {
     $result = $apiInstance->organizationsRecipesUpdate($organization, $recipe, $update_recipe_request);
@@ -692,11 +692,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **organization** | **string**| The organization slug | |
 | **recipe** | **int**| The recipe ID | |
-| **update_recipe_request** | [**\Dimer47\Model\UpdateRecipeRequest**](../Model/UpdateRecipeRequest.md)|  | [optional] |
+| **update_recipe_request** | [**\Dimer47\LaravelForgeSdk\Model\UpdateRecipeRequest**](../Model/UpdateRecipeRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationRecipesStore200Response**](../Model/OrganizationRecipesStore200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationRecipesStore200Response**](../Model/OrganizationRecipesStore200Response.md)
 
 ### Authorization
 
@@ -729,10 +729,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\RecipesApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\RecipesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -777,7 +777,7 @@ void (empty response body)
 ## `organizationsTeamsRecipesIndex()`
 
 ```php
-organizationsTeamsRecipesIndex($organization, $team, $page_size, $page_cursor): \Dimer47\Model\OrganizationsRecipesIndex200Response
+organizationsTeamsRecipesIndex($organization, $team, $page_size, $page_cursor): \Dimer47\LaravelForgeSdk\Model\OrganizationsRecipesIndex200Response
 ```
 
 List team recipes
@@ -792,10 +792,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\RecipesApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\RecipesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -825,7 +825,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsRecipesIndex200Response**](../Model/OrganizationsRecipesIndex200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsRecipesIndex200Response**](../Model/OrganizationsRecipesIndex200Response.md)
 
 ### Authorization
 
@@ -843,7 +843,7 @@ try {
 ## `organizationsTeamsRecipesStore()`
 
 ```php
-organizationsTeamsRecipesStore($organization, $team, $share_recipe_request): \Dimer47\Model\OrganizationRecipesStore200Response
+organizationsTeamsRecipesStore($organization, $team, $share_recipe_request): \Dimer47\LaravelForgeSdk\Model\OrganizationRecipesStore200Response
 ```
 
 Share recipe with the team
@@ -858,10 +858,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\RecipesApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\RecipesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -869,7 +869,7 @@ $apiInstance = new Dimer47\Api\RecipesApi(
 );
 $organization = 'organization_example'; // string | The organization slug
 $team = 56; // int | The team ID
-$share_recipe_request = new \Dimer47\Model\ShareRecipeRequest(); // \Dimer47\Model\ShareRecipeRequest
+$share_recipe_request = new \Dimer47\LaravelForgeSdk\Model\ShareRecipeRequest(); // \Dimer47\LaravelForgeSdk\Model\ShareRecipeRequest
 
 try {
     $result = $apiInstance->organizationsTeamsRecipesStore($organization, $team, $share_recipe_request);
@@ -885,11 +885,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **organization** | **string**| The organization slug | |
 | **team** | **int**| The team ID | |
-| **share_recipe_request** | [**\Dimer47\Model\ShareRecipeRequest**](../Model/ShareRecipeRequest.md)|  | |
+| **share_recipe_request** | [**\Dimer47\LaravelForgeSdk\Model\ShareRecipeRequest**](../Model/ShareRecipeRequest.md)|  | |
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationRecipesStore200Response**](../Model/OrganizationRecipesStore200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationRecipesStore200Response**](../Model/OrganizationRecipesStore200Response.md)
 
 ### Authorization
 

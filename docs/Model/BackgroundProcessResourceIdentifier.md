@@ -1,4 +1,4 @@
-# # BackgroundProcessResourceIdentifier
+# BackgroundProcessResourceIdentifier
 
 ## Properties
 

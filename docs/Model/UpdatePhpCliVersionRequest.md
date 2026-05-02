@@ -1,4 +1,4 @@
-# # UpdatePhpCliVersionRequest
+# UpdatePhpCliVersionRequest
 
 ## Properties
 

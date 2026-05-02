@@ -1,4 +1,4 @@
-# # DomainRecordType
+# DomainRecordType
 
 ## Properties
 

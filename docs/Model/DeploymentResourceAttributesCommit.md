@@ -1,4 +1,4 @@
-# # DeploymentResourceAttributesCommit
+# DeploymentResourceAttributesCommit
 
 ## Properties
 

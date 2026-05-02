@@ -1,4 +1,4 @@
-# # TeamInvitationResourceAttributes
+# TeamInvitationResourceAttributes
 
 ## Properties
 

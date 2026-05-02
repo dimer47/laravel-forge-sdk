@@ -1,4 +1,4 @@
-# # DomainRecordConfigurationResourceAttributes
+# DomainRecordConfigurationResourceAttributes
 
 ## Properties
 

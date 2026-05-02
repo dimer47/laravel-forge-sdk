@@ -1,4 +1,4 @@
-# # OrganizationsStorageProvidersDestroy409Response
+# OrganizationsStorageProvidersDestroy409Response
 
 ## Properties
 

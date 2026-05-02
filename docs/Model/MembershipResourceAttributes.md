@@ -1,4 +1,4 @@
-# # MembershipResourceAttributes
+# MembershipResourceAttributes
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# Dimer47\BackupsApi
+# Dimer47\LaravelForgeSdk\BackupsApi
 
 
 
@@ -36,10 +36,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\BackupsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\BackupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -84,7 +84,7 @@ void (empty response body)
 ## `organizationsServersDatabaseBackupsIndex()`
 
 ```php
-organizationsServersDatabaseBackupsIndex($organization, $server, $sort, $page_size, $page_cursor, $filter_name, $filter_status): \Dimer47\Model\OrganizationsServersDatabaseBackupsIndex200Response
+organizationsServersDatabaseBackupsIndex($organization, $server, $sort, $page_size, $page_cursor, $filter_name, $filter_status): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersDatabaseBackupsIndex200Response
 ```
 
 List backup configurations
@@ -99,10 +99,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\BackupsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\BackupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -138,7 +138,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersDatabaseBackupsIndex200Response**](../Model/OrganizationsServersDatabaseBackupsIndex200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersDatabaseBackupsIndex200Response**](../Model/OrganizationsServersDatabaseBackupsIndex200Response.md)
 
 ### Authorization
 
@@ -171,10 +171,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\BackupsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\BackupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -221,7 +221,7 @@ void (empty response body)
 ## `organizationsServersDatabaseBackupsInstancesIndex()`
 
 ```php
-organizationsServersDatabaseBackupsInstancesIndex($organization, $server, $backup_configuration, $sort, $page_size, $page_cursor, $filter_status): \Dimer47\Model\OrganizationsServersDatabaseBackupsInstancesIndex200Response
+organizationsServersDatabaseBackupsInstancesIndex($organization, $server, $backup_configuration, $sort, $page_size, $page_cursor, $filter_status): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersDatabaseBackupsInstancesIndex200Response
 ```
 
 List backups
@@ -236,10 +236,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\BackupsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\BackupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -275,7 +275,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersDatabaseBackupsInstancesIndex200Response**](../Model/OrganizationsServersDatabaseBackupsInstancesIndex200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersDatabaseBackupsInstancesIndex200Response**](../Model/OrganizationsServersDatabaseBackupsInstancesIndex200Response.md)
 
 ### Authorization
 
@@ -308,10 +308,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\BackupsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\BackupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -321,7 +321,7 @@ $organization = 'organization_example'; // string | The organization slug
 $server = 56; // int | The server ID
 $backup_configuration = 56; // int | The backup configuration ID
 $backup = 56; // int | The backup ID
-$restore_backup_request = new \Dimer47\Model\RestoreBackupRequest(); // \Dimer47\Model\RestoreBackupRequest
+$restore_backup_request = new \Dimer47\LaravelForgeSdk\Model\RestoreBackupRequest(); // \Dimer47\LaravelForgeSdk\Model\RestoreBackupRequest
 
 try {
     $apiInstance->organizationsServersDatabaseBackupsInstancesRestoresStore($organization, $server, $backup_configuration, $backup, $restore_backup_request);
@@ -338,7 +338,7 @@ try {
 | **server** | **int**| The server ID | |
 | **backup_configuration** | **int**| The backup configuration ID | |
 | **backup** | **int**| The backup ID | |
-| **restore_backup_request** | [**\Dimer47\Model\RestoreBackupRequest**](../Model/RestoreBackupRequest.md)|  | |
+| **restore_backup_request** | [**\Dimer47\LaravelForgeSdk\Model\RestoreBackupRequest**](../Model/RestoreBackupRequest.md)|  | |
 
 ### Return type
 
@@ -360,7 +360,7 @@ void (empty response body)
 ## `organizationsServersDatabaseBackupsInstancesShow()`
 
 ```php
-organizationsServersDatabaseBackupsInstancesShow($organization, $server, $backup_configuration, $backup): \Dimer47\Model\OrganizationsServersDatabaseBackupsInstancesShow200Response
+organizationsServersDatabaseBackupsInstancesShow($organization, $server, $backup_configuration, $backup): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersDatabaseBackupsInstancesShow200Response
 ```
 
 Get backup
@@ -375,10 +375,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\BackupsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\BackupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -408,7 +408,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersDatabaseBackupsInstancesShow200Response**](../Model/OrganizationsServersDatabaseBackupsInstancesShow200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersDatabaseBackupsInstancesShow200Response**](../Model/OrganizationsServersDatabaseBackupsInstancesShow200Response.md)
 
 ### Authorization
 
@@ -441,10 +441,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\BackupsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\BackupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -489,7 +489,7 @@ void (empty response body)
 ## `organizationsServersDatabaseBackupsShow()`
 
 ```php
-organizationsServersDatabaseBackupsShow($organization, $server, $backup_configuration): \Dimer47\Model\OrganizationsServersDatabaseBackupsShow200Response
+organizationsServersDatabaseBackupsShow($organization, $server, $backup_configuration): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersDatabaseBackupsShow200Response
 ```
 
 Get backup configuration
@@ -504,10 +504,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\BackupsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\BackupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -535,7 +535,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersDatabaseBackupsShow200Response**](../Model/OrganizationsServersDatabaseBackupsShow200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersDatabaseBackupsShow200Response**](../Model/OrganizationsServersDatabaseBackupsShow200Response.md)
 
 ### Authorization
 
@@ -568,10 +568,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\BackupsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\BackupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -579,7 +579,7 @@ $apiInstance = new Dimer47\Api\BackupsApi(
 );
 $organization = 'organization_example'; // string | The organization slug
 $server = 56; // int | The server ID
-$create_backup_configuration_request = new \Dimer47\Model\CreateBackupConfigurationRequest(); // \Dimer47\Model\CreateBackupConfigurationRequest
+$create_backup_configuration_request = new \Dimer47\LaravelForgeSdk\Model\CreateBackupConfigurationRequest(); // \Dimer47\LaravelForgeSdk\Model\CreateBackupConfigurationRequest
 
 try {
     $apiInstance->organizationsServersDatabaseBackupsStore($organization, $server, $create_backup_configuration_request);
@@ -594,7 +594,7 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **organization** | **string**| The organization slug | |
 | **server** | **int**| The server ID | |
-| **create_backup_configuration_request** | [**\Dimer47\Model\CreateBackupConfigurationRequest**](../Model/CreateBackupConfigurationRequest.md)|  | |
+| **create_backup_configuration_request** | [**\Dimer47\LaravelForgeSdk\Model\CreateBackupConfigurationRequest**](../Model/CreateBackupConfigurationRequest.md)|  | |
 
 ### Return type
 
@@ -631,10 +631,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\BackupsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\BackupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -643,7 +643,7 @@ $apiInstance = new Dimer47\Api\BackupsApi(
 $organization = 'organization_example'; // string | The organization slug
 $server = 56; // int | The server ID
 $backup_configuration = 56; // int | The backup configuration ID
-$update_backup_configuration_request = new \Dimer47\Model\UpdateBackupConfigurationRequest(); // \Dimer47\Model\UpdateBackupConfigurationRequest
+$update_backup_configuration_request = new \Dimer47\LaravelForgeSdk\Model\UpdateBackupConfigurationRequest(); // \Dimer47\LaravelForgeSdk\Model\UpdateBackupConfigurationRequest
 
 try {
     $apiInstance->organizationsServersDatabaseBackupsUpdate($organization, $server, $backup_configuration, $update_backup_configuration_request);
@@ -659,7 +659,7 @@ try {
 | **organization** | **string**| The organization slug | |
 | **server** | **int**| The server ID | |
 | **backup_configuration** | **int**| The backup configuration ID | |
-| **update_backup_configuration_request** | [**\Dimer47\Model\UpdateBackupConfigurationRequest**](../Model/UpdateBackupConfigurationRequest.md)|  | |
+| **update_backup_configuration_request** | [**\Dimer47\LaravelForgeSdk\Model\UpdateBackupConfigurationRequest**](../Model/UpdateBackupConfigurationRequest.md)|  | |
 
 ### Return type
 

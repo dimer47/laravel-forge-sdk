@@ -1,4 +1,4 @@
-# # MonitorMetricType
+# MonitorMetricType
 
 ## Properties
 

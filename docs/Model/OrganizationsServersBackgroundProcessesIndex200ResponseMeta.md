@@ -1,4 +1,4 @@
-# # OrganizationsServersBackgroundProcessesIndex200ResponseMeta
+# OrganizationsServersBackgroundProcessesIndex200ResponseMeta
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # JobResourceAttributes
+# JobResourceAttributes
 
 ## Properties
 

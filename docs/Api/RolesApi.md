@@ -1,4 +1,4 @@
-# Dimer47\RolesApi
+# Dimer47\LaravelForgeSdk\RolesApi
 
 
 
@@ -36,10 +36,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\RolesApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\RolesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -82,7 +82,7 @@ void (empty response body)
 ## `organizationsRolesIndex()`
 
 ```php
-organizationsRolesIndex($organization, $include, $page_size, $page_cursor, $filter_name, $filter_permissions_name): \Dimer47\Model\OrganizationsRolesIndex200Response
+organizationsRolesIndex($organization, $include, $page_size, $page_cursor, $filter_name, $filter_permissions_name): \Dimer47\LaravelForgeSdk\Model\OrganizationsRolesIndex200Response
 ```
 
 List roles
@@ -97,10 +97,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\RolesApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\RolesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -134,7 +134,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsRolesIndex200Response**](../Model/OrganizationsRolesIndex200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsRolesIndex200Response**](../Model/OrganizationsRolesIndex200Response.md)
 
 ### Authorization
 
@@ -152,7 +152,7 @@ try {
 ## `organizationsRolesPermissionsIndex()`
 
 ```php
-organizationsRolesPermissionsIndex($organization, $role, $page_size, $page_cursor, $filter_name): \Dimer47\Model\PermissionsIndex200Response
+organizationsRolesPermissionsIndex($organization, $role, $page_size, $page_cursor, $filter_name): \Dimer47\LaravelForgeSdk\Model\PermissionsIndex200Response
 ```
 
 List role permissions
@@ -167,10 +167,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\RolesApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\RolesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -202,7 +202,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\PermissionsIndex200Response**](../Model/PermissionsIndex200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\PermissionsIndex200Response**](../Model/PermissionsIndex200Response.md)
 
 ### Authorization
 
@@ -220,7 +220,7 @@ try {
 ## `organizationsRolesShow()`
 
 ```php
-organizationsRolesShow($organization, $role): \Dimer47\Model\OrganizationsRolesStore200Response
+organizationsRolesShow($organization, $role): \Dimer47\LaravelForgeSdk\Model\OrganizationsRolesStore200Response
 ```
 
 Get role
@@ -235,10 +235,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\RolesApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\RolesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -264,7 +264,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsRolesStore200Response**](../Model/OrganizationsRolesStore200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsRolesStore200Response**](../Model/OrganizationsRolesStore200Response.md)
 
 ### Authorization
 
@@ -282,7 +282,7 @@ try {
 ## `organizationsRolesStore()`
 
 ```php
-organizationsRolesStore($organization, $create_role_request): \Dimer47\Model\OrganizationsRolesStore200Response
+organizationsRolesStore($organization, $create_role_request): \Dimer47\LaravelForgeSdk\Model\OrganizationsRolesStore200Response
 ```
 
 Create role
@@ -297,17 +297,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\RolesApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\RolesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = 'organization_example'; // string | The organization slug
-$create_role_request = new \Dimer47\Model\CreateRoleRequest(); // \Dimer47\Model\CreateRoleRequest
+$create_role_request = new \Dimer47\LaravelForgeSdk\Model\CreateRoleRequest(); // \Dimer47\LaravelForgeSdk\Model\CreateRoleRequest
 
 try {
     $result = $apiInstance->organizationsRolesStore($organization, $create_role_request);
@@ -322,11 +322,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **organization** | **string**| The organization slug | |
-| **create_role_request** | [**\Dimer47\Model\CreateRoleRequest**](../Model/CreateRoleRequest.md)|  | |
+| **create_role_request** | [**\Dimer47\LaravelForgeSdk\Model\CreateRoleRequest**](../Model/CreateRoleRequest.md)|  | |
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsRolesStore200Response**](../Model/OrganizationsRolesStore200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsRolesStore200Response**](../Model/OrganizationsRolesStore200Response.md)
 
 ### Authorization
 
@@ -344,7 +344,7 @@ try {
 ## `organizationsRolesUpdate()`
 
 ```php
-organizationsRolesUpdate($organization, $role, $organizations_roles_update_request): \Dimer47\Model\OrganizationsRolesStore200Response
+organizationsRolesUpdate($organization, $role, $organizations_roles_update_request): \Dimer47\LaravelForgeSdk\Model\OrganizationsRolesStore200Response
 ```
 
 Update role
@@ -359,10 +359,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\RolesApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\RolesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -370,7 +370,7 @@ $apiInstance = new Dimer47\Api\RolesApi(
 );
 $organization = 'organization_example'; // string | The organization slug
 $role = 56; // int | The role ID
-$organizations_roles_update_request = new \Dimer47\Model\OrganizationsRolesUpdateRequest(); // \Dimer47\Model\OrganizationsRolesUpdateRequest
+$organizations_roles_update_request = new \Dimer47\LaravelForgeSdk\Model\OrganizationsRolesUpdateRequest(); // \Dimer47\LaravelForgeSdk\Model\OrganizationsRolesUpdateRequest
 
 try {
     $result = $apiInstance->organizationsRolesUpdate($organization, $role, $organizations_roles_update_request);
@@ -386,11 +386,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **organization** | **string**| The organization slug | |
 | **role** | **int**| The role ID | |
-| **organizations_roles_update_request** | [**\Dimer47\Model\OrganizationsRolesUpdateRequest**](../Model/OrganizationsRolesUpdateRequest.md)|  | [optional] |
+| **organizations_roles_update_request** | [**\Dimer47\LaravelForgeSdk\Model\OrganizationsRolesUpdateRequest**](../Model/OrganizationsRolesUpdateRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsRolesStore200Response**](../Model/OrganizationsRolesStore200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsRolesStore200Response**](../Model/OrganizationsRolesStore200Response.md)
 
 ### Authorization
 
@@ -408,7 +408,7 @@ try {
 ## `permissionsIndex()`
 
 ```php
-permissionsIndex($page_size, $page_cursor, $filter_name): \Dimer47\Model\PermissionsIndex200Response
+permissionsIndex($page_size, $page_cursor, $filter_name): \Dimer47\LaravelForgeSdk\Model\PermissionsIndex200Response
 ```
 
 List permissions
@@ -423,10 +423,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\RolesApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\RolesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -454,7 +454,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\PermissionsIndex200Response**](../Model/PermissionsIndex200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\PermissionsIndex200Response**](../Model/PermissionsIndex200Response.md)
 
 ### Authorization
 
@@ -472,7 +472,7 @@ try {
 ## `permissionsShow()`
 
 ```php
-permissionsShow($permission): \Dimer47\Model\PermissionsShow200Response
+permissionsShow($permission): \Dimer47\LaravelForgeSdk\Model\PermissionsShow200Response
 ```
 
 Get permission
@@ -487,10 +487,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\RolesApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\RolesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -514,7 +514,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\PermissionsShow200Response**](../Model/PermissionsShow200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\PermissionsShow200Response**](../Model/PermissionsShow200Response.md)
 
 ### Authorization
 
@@ -532,7 +532,7 @@ try {
 ## `predefinedRolesIndex()`
 
 ```php
-predefinedRolesIndex($include, $page_size, $page_cursor, $filter_name, $filter_permissions_name): \Dimer47\Model\PredefinedRolesIndex200Response
+predefinedRolesIndex($include, $page_size, $page_cursor, $filter_name, $filter_permissions_name): \Dimer47\LaravelForgeSdk\Model\PredefinedRolesIndex200Response
 ```
 
 List predefined roles
@@ -547,10 +547,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\RolesApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\RolesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -582,7 +582,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\PredefinedRolesIndex200Response**](../Model/PredefinedRolesIndex200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\PredefinedRolesIndex200Response**](../Model/PredefinedRolesIndex200Response.md)
 
 ### Authorization
 
@@ -600,7 +600,7 @@ try {
 ## `predefinedRolesShow()`
 
 ```php
-predefinedRolesShow($role): \Dimer47\Model\PredefinedRolesShow200Response
+predefinedRolesShow($role): \Dimer47\LaravelForgeSdk\Model\PredefinedRolesShow200Response
 ```
 
 Get predefined role
@@ -615,10 +615,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\RolesApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\RolesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -642,7 +642,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\PredefinedRolesShow200Response**](../Model/PredefinedRolesShow200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\PredefinedRolesShow200Response**](../Model/PredefinedRolesShow200Response.md)
 
 ### Authorization
 

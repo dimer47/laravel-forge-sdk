@@ -1,4 +1,4 @@
-# # UpdateDatabasePasswordRequest
+# UpdateDatabasePasswordRequest
 
 ## Properties
 

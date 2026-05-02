@@ -1,12 +1,12 @@
-# # PredefinedRolesIndex200Response
+# PredefinedRolesIndex200Response
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**data** | [**\Dimer47\Model\PredefinedRoleResource[]**](PredefinedRoleResource.md) |  |
-**links** | [**\Dimer47\Model\OrganizationsServersBackgroundProcessesIndex200ResponseLinks**](OrganizationsServersBackgroundProcessesIndex200ResponseLinks.md) |  |
-**meta** | [**\Dimer47\Model\OrganizationsServersBackgroundProcessesIndex200ResponseMeta**](OrganizationsServersBackgroundProcessesIndex200ResponseMeta.md) |  |
-**included** | [**\Dimer47\Model\PermissionResource[]**](PermissionResource.md) |  | [optional]
+**data** | [**\Dimer47\LaravelForgeSdk\Model\PredefinedRoleResource[]**](PredefinedRoleResource.md) |  |
+**links** | [**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersBackgroundProcessesIndex200ResponseLinks**](OrganizationsServersBackgroundProcessesIndex200ResponseLinks.md) |  |
+**meta** | [**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersBackgroundProcessesIndex200ResponseMeta**](OrganizationsServersBackgroundProcessesIndex200ResponseMeta.md) |  |
+**included** | [**\Dimer47\LaravelForgeSdk\Model\PermissionResource[]**](PermissionResource.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

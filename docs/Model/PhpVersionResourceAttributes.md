@@ -1,4 +1,4 @@
-# # PhpVersionResourceAttributes
+# PhpVersionResourceAttributes
 
 ## Properties
 

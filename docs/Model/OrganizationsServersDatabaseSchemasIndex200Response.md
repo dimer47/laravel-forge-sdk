@@ -1,11 +1,11 @@
-# # OrganizationsServersDatabaseSchemasIndex200Response
+# OrganizationsServersDatabaseSchemasIndex200Response
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**data** | [**\Dimer47\Model\DatabaseResource[]**](DatabaseResource.md) |  |
-**links** | [**\Dimer47\Model\OrganizationsServersBackgroundProcessesIndex200ResponseLinks**](OrganizationsServersBackgroundProcessesIndex200ResponseLinks.md) |  |
-**meta** | [**\Dimer47\Model\OrganizationsServersBackgroundProcessesIndex200ResponseMeta**](OrganizationsServersBackgroundProcessesIndex200ResponseMeta.md) |  |
+**data** | [**\Dimer47\LaravelForgeSdk\Model\DatabaseResource[]**](DatabaseResource.md) |  |
+**links** | [**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersBackgroundProcessesIndex200ResponseLinks**](OrganizationsServersBackgroundProcessesIndex200ResponseLinks.md) |  |
+**meta** | [**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersBackgroundProcessesIndex200ResponseMeta**](OrganizationsServersBackgroundProcessesIndex200ResponseMeta.md) |  |
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

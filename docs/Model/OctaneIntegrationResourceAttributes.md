@@ -1,4 +1,4 @@
-# # OctaneIntegrationResourceAttributes
+# OctaneIntegrationResourceAttributes
 
 ## Properties
 

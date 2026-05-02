@@ -1,4 +1,4 @@
-# Dimer47\BackgroundProcessesApi
+# Dimer47\LaravelForgeSdk\BackgroundProcessesApi
 
 
 
@@ -32,10 +32,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\BackgroundProcessesApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\BackgroundProcessesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -80,7 +80,7 @@ void (empty response body)
 ## `organizationsServersBackgroundProcessesIndex()`
 
 ```php
-organizationsServersBackgroundProcessesIndex($organization, $server, $sort, $page_size, $page_cursor, $filter_user, $filter_site_id, $filter_directory): \Dimer47\Model\OrganizationsServersBackgroundProcessesIndex200Response
+organizationsServersBackgroundProcessesIndex($organization, $server, $sort, $page_size, $page_cursor, $filter_user, $filter_site_id, $filter_directory): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersBackgroundProcessesIndex200Response
 ```
 
 List background processes
@@ -95,10 +95,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\BackgroundProcessesApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\BackgroundProcessesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -136,7 +136,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersBackgroundProcessesIndex200Response**](../Model/OrganizationsServersBackgroundProcessesIndex200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersBackgroundProcessesIndex200Response**](../Model/OrganizationsServersBackgroundProcessesIndex200Response.md)
 
 ### Authorization
 
@@ -154,7 +154,7 @@ try {
 ## `organizationsServersBackgroundProcessesLogShow()`
 
 ```php
-organizationsServersBackgroundProcessesLogShow($organization, $server, $background_process): \Dimer47\Model\OrganizationsServersBackgroundProcessesLogShow200Response
+organizationsServersBackgroundProcessesLogShow($organization, $server, $background_process): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersBackgroundProcessesLogShow200Response
 ```
 
 Get background process log
@@ -169,10 +169,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\BackgroundProcessesApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\BackgroundProcessesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -200,7 +200,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersBackgroundProcessesLogShow200Response**](../Model/OrganizationsServersBackgroundProcessesLogShow200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersBackgroundProcessesLogShow200Response**](../Model/OrganizationsServersBackgroundProcessesLogShow200Response.md)
 
 ### Authorization
 
@@ -218,7 +218,7 @@ try {
 ## `organizationsServersBackgroundProcessesShow()`
 
 ```php
-organizationsServersBackgroundProcessesShow($organization, $server, $background_process): \Dimer47\Model\OrganizationsServersBackgroundProcessesStore202Response
+organizationsServersBackgroundProcessesShow($organization, $server, $background_process): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersBackgroundProcessesStore202Response
 ```
 
 Get background process
@@ -233,10 +233,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\BackgroundProcessesApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\BackgroundProcessesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -264,7 +264,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersBackgroundProcessesStore202Response**](../Model/OrganizationsServersBackgroundProcessesStore202Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersBackgroundProcessesStore202Response**](../Model/OrganizationsServersBackgroundProcessesStore202Response.md)
 
 ### Authorization
 
@@ -282,7 +282,7 @@ try {
 ## `organizationsServersBackgroundProcessesStore()`
 
 ```php
-organizationsServersBackgroundProcessesStore($organization, $server, $create_background_process_request): \Dimer47\Model\OrganizationsServersBackgroundProcessesStore202Response
+organizationsServersBackgroundProcessesStore($organization, $server, $create_background_process_request): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersBackgroundProcessesStore202Response
 ```
 
 Create background process
@@ -297,10 +297,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\BackgroundProcessesApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\BackgroundProcessesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -308,7 +308,7 @@ $apiInstance = new Dimer47\Api\BackgroundProcessesApi(
 );
 $organization = 'organization_example'; // string | The organization slug
 $server = 56; // int | The server ID
-$create_background_process_request = new \Dimer47\Model\CreateBackgroundProcessRequest(); // \Dimer47\Model\CreateBackgroundProcessRequest
+$create_background_process_request = new \Dimer47\LaravelForgeSdk\Model\CreateBackgroundProcessRequest(); // \Dimer47\LaravelForgeSdk\Model\CreateBackgroundProcessRequest
 
 try {
     $result = $apiInstance->organizationsServersBackgroundProcessesStore($organization, $server, $create_background_process_request);
@@ -324,11 +324,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **organization** | **string**| The organization slug | |
 | **server** | **int**| The server ID | |
-| **create_background_process_request** | [**\Dimer47\Model\CreateBackgroundProcessRequest**](../Model/CreateBackgroundProcessRequest.md)|  | |
+| **create_background_process_request** | [**\Dimer47\LaravelForgeSdk\Model\CreateBackgroundProcessRequest**](../Model/CreateBackgroundProcessRequest.md)|  | |
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersBackgroundProcessesStore202Response**](../Model/OrganizationsServersBackgroundProcessesStore202Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersBackgroundProcessesStore202Response**](../Model/OrganizationsServersBackgroundProcessesStore202Response.md)
 
 ### Authorization
 
@@ -361,10 +361,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\BackgroundProcessesApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\BackgroundProcessesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -373,7 +373,7 @@ $apiInstance = new Dimer47\Api\BackgroundProcessesApi(
 $organization = 'organization_example'; // string | The organization slug
 $server = 56; // int | The server ID
 $background_process = 56; // int | The background process ID
-$update_background_process_request = new \Dimer47\Model\UpdateBackgroundProcessRequest(); // \Dimer47\Model\UpdateBackgroundProcessRequest
+$update_background_process_request = new \Dimer47\LaravelForgeSdk\Model\UpdateBackgroundProcessRequest(); // \Dimer47\LaravelForgeSdk\Model\UpdateBackgroundProcessRequest
 
 try {
     $apiInstance->organizationsServersBackgroundProcessesUpdate($organization, $server, $background_process, $update_background_process_request);
@@ -389,7 +389,7 @@ try {
 | **organization** | **string**| The organization slug | |
 | **server** | **int**| The server ID | |
 | **background_process** | **int**| The background process ID | |
-| **update_background_process_request** | [**\Dimer47\Model\UpdateBackgroundProcessRequest**](../Model/UpdateBackgroundProcessRequest.md)|  | |
+| **update_background_process_request** | [**\Dimer47\LaravelForgeSdk\Model\UpdateBackgroundProcessRequest**](../Model/UpdateBackgroundProcessRequest.md)|  | |
 
 ### Return type
 

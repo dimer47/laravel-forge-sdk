@@ -1,4 +1,4 @@
-# Dimer47\SSHKeysApi
+# Dimer47\LaravelForgeSdk\SSHKeysApi
 
 
 
@@ -17,7 +17,7 @@ All URIs are relative to https://forge.laravel.com/api, except if the operation 
 ## `organizationsServersKeyShow()`
 
 ```php
-organizationsServersKeyShow($organization, $server): \Dimer47\Model\OrganizationsServersKeyShow200Response
+organizationsServersKeyShow($organization, $server): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersKeyShow200Response
 ```
 
 Get server public SSH key
@@ -32,10 +32,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\SSHKeysApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\SSHKeysApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -61,7 +61,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersKeyShow200Response**](../Model/OrganizationsServersKeyShow200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersKeyShow200Response**](../Model/OrganizationsServersKeyShow200Response.md)
 
 ### Authorization
 
@@ -79,7 +79,7 @@ try {
 ## `organizationsServersKeyUpdate()`
 
 ```php
-organizationsServersKeyUpdate($organization, $server): \Dimer47\Model\OrganizationsServersKeyShow200Response
+organizationsServersKeyUpdate($organization, $server): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersKeyShow200Response
 ```
 
 Update server public SSH key
@@ -94,10 +94,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\SSHKeysApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\SSHKeysApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -123,7 +123,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersKeyShow200Response**](../Model/OrganizationsServersKeyShow200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersKeyShow200Response**](../Model/OrganizationsServersKeyShow200Response.md)
 
 ### Authorization
 
@@ -156,10 +156,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\SSHKeysApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\SSHKeysApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -204,7 +204,7 @@ void (empty response body)
 ## `organizationsServersSshKeysIndex()`
 
 ```php
-organizationsServersSshKeysIndex($organization, $server, $page_size, $page_cursor, $filter_name, $filter_user): \Dimer47\Model\OrganizationsServersSshKeysIndex200Response
+organizationsServersSshKeysIndex($organization, $server, $page_size, $page_cursor, $filter_name, $filter_user): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersSshKeysIndex200Response
 ```
 
 List server SSH keys
@@ -219,10 +219,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\SSHKeysApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\SSHKeysApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -256,7 +256,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersSshKeysIndex200Response**](../Model/OrganizationsServersSshKeysIndex200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersSshKeysIndex200Response**](../Model/OrganizationsServersSshKeysIndex200Response.md)
 
 ### Authorization
 
@@ -274,7 +274,7 @@ try {
 ## `organizationsServersSshKeysShow()`
 
 ```php
-organizationsServersSshKeysShow($organization, $server, $key): \Dimer47\Model\OrganizationsServersSshKeysShow200Response
+organizationsServersSshKeysShow($organization, $server, $key): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersSshKeysShow200Response
 ```
 
 Get server SSH key
@@ -289,10 +289,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\SSHKeysApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\SSHKeysApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -320,7 +320,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersSshKeysShow200Response**](../Model/OrganizationsServersSshKeysShow200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersSshKeysShow200Response**](../Model/OrganizationsServersSshKeysShow200Response.md)
 
 ### Authorization
 
@@ -353,10 +353,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\SSHKeysApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\SSHKeysApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -364,7 +364,7 @@ $apiInstance = new Dimer47\Api\SSHKeysApi(
 );
 $organization = 'organization_example'; // string | The organization slug
 $server = 56; // int | The server ID
-$create_ssh_key_request = new \Dimer47\Model\CreateSshKeyRequest(); // \Dimer47\Model\CreateSshKeyRequest
+$create_ssh_key_request = new \Dimer47\LaravelForgeSdk\Model\CreateSshKeyRequest(); // \Dimer47\LaravelForgeSdk\Model\CreateSshKeyRequest
 
 try {
     $apiInstance->organizationsServersSshKeysStore($organization, $server, $create_ssh_key_request);
@@ -379,7 +379,7 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **organization** | **string**| The organization slug | |
 | **server** | **int**| The server ID | |
-| **create_ssh_key_request** | [**\Dimer47\Model\CreateSshKeyRequest**](../Model/CreateSshKeyRequest.md)|  | |
+| **create_ssh_key_request** | [**\Dimer47\LaravelForgeSdk\Model\CreateSshKeyRequest**](../Model/CreateSshKeyRequest.md)|  | |
 
 ### Return type
 

@@ -1,4 +1,4 @@
-# # CertificateKeyType
+# CertificateKeyType
 
 ## Properties
 

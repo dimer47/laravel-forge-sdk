@@ -1,4 +1,4 @@
-# # CustomRoleResourceAttributes
+# CustomRoleResourceAttributes
 
 ## Properties
 

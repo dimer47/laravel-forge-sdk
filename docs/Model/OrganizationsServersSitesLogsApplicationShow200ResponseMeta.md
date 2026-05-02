@@ -1,4 +1,4 @@
-# # OrganizationsServersSitesLogsApplicationShow200ResponseMeta
+# OrganizationsServersSitesLogsApplicationShow200ResponseMeta
 
 ## Properties
 

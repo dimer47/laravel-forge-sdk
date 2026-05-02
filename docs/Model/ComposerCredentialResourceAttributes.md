@@ -1,4 +1,4 @@
-# # ComposerCredentialResourceAttributes
+# ComposerCredentialResourceAttributes
 
 ## Properties
 

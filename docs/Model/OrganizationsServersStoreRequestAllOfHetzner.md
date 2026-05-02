@@ -1,4 +1,4 @@
-# # OrganizationsServersStoreRequestAllOfHetzner
+# OrganizationsServersStoreRequestAllOfHetzner
 
 ## Properties
 

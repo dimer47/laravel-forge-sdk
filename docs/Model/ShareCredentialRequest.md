@@ -1,4 +1,4 @@
-# # ShareCredentialRequest
+# ShareCredentialRequest
 
 ## Properties
 

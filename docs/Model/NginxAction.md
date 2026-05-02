@@ -1,4 +1,4 @@
-# # NginxAction
+# NginxAction
 
 ## Properties
 

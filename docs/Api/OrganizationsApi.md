@@ -1,4 +1,4 @@
-# Dimer47\OrganizationsApi
+# Dimer47\LaravelForgeSdk\OrganizationsApi
 
 
 
@@ -18,7 +18,7 @@ All URIs are relative to https://forge.laravel.com/api, except if the operation 
 ## `organizationsIndex()`
 
 ```php
-organizationsIndex($page_size, $page_cursor): \Dimer47\Model\OrganizationsIndex200Response
+organizationsIndex($page_size, $page_cursor): \Dimer47\LaravelForgeSdk\Model\OrganizationsIndex200Response
 ```
 
 List organizations
@@ -33,10 +33,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\OrganizationsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\OrganizationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -62,7 +62,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsIndex200Response**](../Model/OrganizationsIndex200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsIndex200Response**](../Model/OrganizationsIndex200Response.md)
 
 ### Authorization
 
@@ -80,7 +80,7 @@ try {
 ## `organizationsServerCredentialsIndex()`
 
 ```php
-organizationsServerCredentialsIndex($organization, $page_size, $page_cursor): \Dimer47\Model\OrganizationsServerCredentialsIndex200Response
+organizationsServerCredentialsIndex($organization, $page_size, $page_cursor): \Dimer47\LaravelForgeSdk\Model\OrganizationsServerCredentialsIndex200Response
 ```
 
 List server credentials
@@ -95,10 +95,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\OrganizationsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\OrganizationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -126,7 +126,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServerCredentialsIndex200Response**](../Model/OrganizationsServerCredentialsIndex200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServerCredentialsIndex200Response**](../Model/OrganizationsServerCredentialsIndex200Response.md)
 
 ### Authorization
 
@@ -144,7 +144,7 @@ try {
 ## `organizationsServerCredentialsShow()`
 
 ```php
-organizationsServerCredentialsShow($organization, $credential): \Dimer47\Model\OrganizationsServerCredentialsShow200Response
+organizationsServerCredentialsShow($organization, $credential): \Dimer47\LaravelForgeSdk\Model\OrganizationsServerCredentialsShow200Response
 ```
 
 Get server credential
@@ -159,10 +159,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\OrganizationsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\OrganizationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -188,7 +188,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServerCredentialsShow200Response**](../Model/OrganizationsServerCredentialsShow200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServerCredentialsShow200Response**](../Model/OrganizationsServerCredentialsShow200Response.md)
 
 ### Authorization
 
@@ -206,7 +206,7 @@ try {
 ## `organizationsServerCredentialsVpcsIndex()`
 
 ```php
-organizationsServerCredentialsVpcsIndex($organization, $credential, $region): \Dimer47\Model\OrganizationsServerCredentialsVpcsIndex200Response
+organizationsServerCredentialsVpcsIndex($organization, $credential, $region): \Dimer47\LaravelForgeSdk\Model\OrganizationsServerCredentialsVpcsIndex200Response
 ```
 
 List VPCs
@@ -221,10 +221,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\OrganizationsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\OrganizationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -252,7 +252,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServerCredentialsVpcsIndex200Response**](../Model/OrganizationsServerCredentialsVpcsIndex200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServerCredentialsVpcsIndex200Response**](../Model/OrganizationsServerCredentialsVpcsIndex200Response.md)
 
 ### Authorization
 
@@ -270,7 +270,7 @@ try {
 ## `organizationsServerCredentialsVpcsShow()`
 
 ```php
-organizationsServerCredentialsVpcsShow($organization, $credential, $region, $vpc_id): \Dimer47\Model\OrganizationsServerCredentialsVpcsStore201Response
+organizationsServerCredentialsVpcsShow($organization, $credential, $region, $vpc_id): \Dimer47\LaravelForgeSdk\Model\OrganizationsServerCredentialsVpcsStore201Response
 ```
 
 Get VPC
@@ -285,10 +285,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\OrganizationsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\OrganizationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -318,7 +318,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServerCredentialsVpcsStore201Response**](../Model/OrganizationsServerCredentialsVpcsStore201Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServerCredentialsVpcsStore201Response**](../Model/OrganizationsServerCredentialsVpcsStore201Response.md)
 
 ### Authorization
 
@@ -351,10 +351,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\OrganizationsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\OrganizationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -363,7 +363,7 @@ $apiInstance = new Dimer47\Api\OrganizationsApi(
 $organization = 'organization_example'; // string | The organization slug
 $credential = 56; // int | The credential ID
 $region = 'region_example'; // string
-$create_server_provider_network_request = new \Dimer47\Model\CreateServerProviderNetworkRequest(); // \Dimer47\Model\CreateServerProviderNetworkRequest
+$create_server_provider_network_request = new \Dimer47\LaravelForgeSdk\Model\CreateServerProviderNetworkRequest(); // \Dimer47\LaravelForgeSdk\Model\CreateServerProviderNetworkRequest
 
 try {
     $result = $apiInstance->organizationsServerCredentialsVpcsStore($organization, $credential, $region, $create_server_provider_network_request);
@@ -380,7 +380,7 @@ try {
 | **organization** | **string**| The organization slug | |
 | **credential** | **int**| The credential ID | |
 | **region** | **string**|  | |
-| **create_server_provider_network_request** | [**\Dimer47\Model\CreateServerProviderNetworkRequest**](../Model/CreateServerProviderNetworkRequest.md)|  | |
+| **create_server_provider_network_request** | [**\Dimer47\LaravelForgeSdk\Model\CreateServerProviderNetworkRequest**](../Model/CreateServerProviderNetworkRequest.md)|  | |
 
 ### Return type
 
@@ -393,7 +393,7 @@ try {
 ### HTTP request headers
 
 - **Content-Type**: `application/json`
-- **Accept**: `application/json`, `application/vnd.api+json`
+- **Accept**: `application/vnd.api+json`, `application/json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)
@@ -402,7 +402,7 @@ try {
 ## `organizationsShow()`
 
 ```php
-organizationsShow($organization): \Dimer47\Model\OrganizationsShow200Response
+organizationsShow($organization): \Dimer47\LaravelForgeSdk\Model\OrganizationsShow200Response
 ```
 
 Get organization
@@ -417,10 +417,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\OrganizationsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\OrganizationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -444,7 +444,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsShow200Response**](../Model/OrganizationsShow200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsShow200Response**](../Model/OrganizationsShow200Response.md)
 
 ### Authorization
 

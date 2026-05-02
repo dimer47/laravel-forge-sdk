@@ -1,4 +1,4 @@
-# # RedisAction
+# RedisAction
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # TagResourceIdentifier
+# TagResourceIdentifier
 
 ## Properties
 

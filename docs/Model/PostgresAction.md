@@ -1,4 +1,4 @@
-# # PostgresAction
+# PostgresAction
 
 ## Properties
 

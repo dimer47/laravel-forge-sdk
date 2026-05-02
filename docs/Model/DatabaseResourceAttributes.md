@@ -1,4 +1,4 @@
-# # DatabaseResourceAttributes
+# DatabaseResourceAttributes
 
 ## Properties
 

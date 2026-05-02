@@ -1,4 +1,4 @@
-# # PhpMaxExecutionTimeResourceAttributes
+# PhpMaxExecutionTimeResourceAttributes
 
 ## Properties
 

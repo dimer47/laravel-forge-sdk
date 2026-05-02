@@ -1,4 +1,4 @@
-# # ServerResourceAttributes
+# ServerResourceAttributes
 
 ## Properties
 
@@ -7,7 +7,8 @@ Name | Type | Description | Notes
 **id** | **int** |  |
 **credential_id** | **int** |  |
 **name** | **string** |  |
-**type** | **string** |  |
+**slug** | **string** |  |
+**type** | [**\Dimer47\LaravelForgeSdk\Model\ServerType**](ServerType.md) | The type of server. |
 **ubuntu_version** | **string** |  |
 **ssh_port** | **int** |  |
 **provider** | **string** |  |
@@ -16,7 +17,7 @@ Name | Type | Description | Notes
 **region** | **string** |  |
 **php_version** | **string** |  |
 **php_cli_version** | **string** |  |
-**opcache_status** | [**\Dimer47\Model\ServerType**](ServerType.md) | The type of server. |
+**opcache_status** | **string** |  |
 **database_type** | **string** |  |
 **db_status** | **string** |  |
 **redis_status** | **string** |  |

@@ -1,4 +1,4 @@
-# Dimer47\SecurityRulesApi
+# Dimer47\LaravelForgeSdk\SecurityRulesApi
 
 
 
@@ -31,10 +31,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\SecurityRulesApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\SecurityRulesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -81,7 +81,7 @@ void (empty response body)
 ## `organizationsServersSitesSecurityRulesIndex()`
 
 ```php
-organizationsServersSitesSecurityRulesIndex($organization, $server, $site, $sort, $page_size, $page_cursor, $filter_path, $filter_status): \Dimer47\Model\OrganizationsServersSitesSecurityRulesIndex200Response
+organizationsServersSitesSecurityRulesIndex($organization, $server, $site, $sort, $page_size, $page_cursor, $filter_path, $filter_status): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesSecurityRulesIndex200Response
 ```
 
 List site security rules
@@ -96,10 +96,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\SecurityRulesApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\SecurityRulesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -137,7 +137,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersSitesSecurityRulesIndex200Response**](../Model/OrganizationsServersSitesSecurityRulesIndex200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesSecurityRulesIndex200Response**](../Model/OrganizationsServersSitesSecurityRulesIndex200Response.md)
 
 ### Authorization
 
@@ -155,7 +155,7 @@ try {
 ## `organizationsServersSitesSecurityRulesShow()`
 
 ```php
-organizationsServersSitesSecurityRulesShow($organization, $server, $site, $security_rule): \Dimer47\Model\OrganizationsServersSitesSecurityRulesStore202Response
+organizationsServersSitesSecurityRulesShow($organization, $server, $site, $security_rule): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesSecurityRulesStore202Response
 ```
 
 Get site security rule
@@ -170,10 +170,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\SecurityRulesApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\SecurityRulesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -203,7 +203,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersSitesSecurityRulesStore202Response**](../Model/OrganizationsServersSitesSecurityRulesStore202Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesSecurityRulesStore202Response**](../Model/OrganizationsServersSitesSecurityRulesStore202Response.md)
 
 ### Authorization
 
@@ -221,7 +221,7 @@ try {
 ## `organizationsServersSitesSecurityRulesStore()`
 
 ```php
-organizationsServersSitesSecurityRulesStore($organization, $server, $site, $create_security_rule_request): \Dimer47\Model\OrganizationsServersSitesSecurityRulesStore202Response
+organizationsServersSitesSecurityRulesStore($organization, $server, $site, $create_security_rule_request): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesSecurityRulesStore202Response
 ```
 
 Create site security rule
@@ -236,10 +236,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\SecurityRulesApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\SecurityRulesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -248,7 +248,7 @@ $apiInstance = new Dimer47\Api\SecurityRulesApi(
 $organization = 'organization_example'; // string | The organization slug
 $server = 56; // int | The server ID
 $site = 56; // int | The site ID
-$create_security_rule_request = new \Dimer47\Model\CreateSecurityRuleRequest(); // \Dimer47\Model\CreateSecurityRuleRequest
+$create_security_rule_request = new \Dimer47\LaravelForgeSdk\Model\CreateSecurityRuleRequest(); // \Dimer47\LaravelForgeSdk\Model\CreateSecurityRuleRequest
 
 try {
     $result = $apiInstance->organizationsServersSitesSecurityRulesStore($organization, $server, $site, $create_security_rule_request);
@@ -265,11 +265,11 @@ try {
 | **organization** | **string**| The organization slug | |
 | **server** | **int**| The server ID | |
 | **site** | **int**| The site ID | |
-| **create_security_rule_request** | [**\Dimer47\Model\CreateSecurityRuleRequest**](../Model/CreateSecurityRuleRequest.md)|  | |
+| **create_security_rule_request** | [**\Dimer47\LaravelForgeSdk\Model\CreateSecurityRuleRequest**](../Model/CreateSecurityRuleRequest.md)|  | |
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersSitesSecurityRulesStore202Response**](../Model/OrganizationsServersSitesSecurityRulesStore202Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesSecurityRulesStore202Response**](../Model/OrganizationsServersSitesSecurityRulesStore202Response.md)
 
 ### Authorization
 
@@ -302,10 +302,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\SecurityRulesApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\SecurityRulesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -315,7 +315,7 @@ $organization = 'organization_example'; // string | The organization slug
 $server = 56; // int | The server ID
 $site = 56; // int | The site ID
 $security_rule = 56; // int | The security rule ID
-$update_security_rule_request = new \Dimer47\Model\UpdateSecurityRuleRequest(); // \Dimer47\Model\UpdateSecurityRuleRequest
+$update_security_rule_request = new \Dimer47\LaravelForgeSdk\Model\UpdateSecurityRuleRequest(); // \Dimer47\LaravelForgeSdk\Model\UpdateSecurityRuleRequest
 
 try {
     $apiInstance->organizationsServersSitesSecurityRulesUpdate($organization, $server, $site, $security_rule, $update_security_rule_request);
@@ -332,7 +332,7 @@ try {
 | **server** | **int**| The server ID | |
 | **site** | **int**| The site ID | |
 | **security_rule** | **int**| The security rule ID | |
-| **update_security_rule_request** | [**\Dimer47\Model\UpdateSecurityRuleRequest**](../Model/UpdateSecurityRuleRequest.md)|  | |
+| **update_security_rule_request** | [**\Dimer47\LaravelForgeSdk\Model\UpdateSecurityRuleRequest**](../Model/UpdateSecurityRuleRequest.md)|  | |
 
 ### Return type
 

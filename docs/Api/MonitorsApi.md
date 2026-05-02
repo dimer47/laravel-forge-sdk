@@ -1,4 +1,4 @@
-# Dimer47\MonitorsApi
+# Dimer47\LaravelForgeSdk\MonitorsApi
 
 
 
@@ -30,10 +30,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\MonitorsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\MonitorsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -78,7 +78,7 @@ void (empty response body)
 ## `organizationsServersMonitorsIndex()`
 
 ```php
-organizationsServersMonitorsIndex($organization, $server, $sort, $page_size, $page_cursor, $filter_status, $filter_state, $filter_type, $filter_notify): \Dimer47\Model\OrganizationsServersMonitorsIndex200Response
+organizationsServersMonitorsIndex($organization, $server, $sort, $page_size, $page_cursor, $filter_status, $filter_state, $filter_type, $filter_notify): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersMonitorsIndex200Response
 ```
 
 List server monitors
@@ -93,10 +93,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\MonitorsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\MonitorsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -136,7 +136,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersMonitorsIndex200Response**](../Model/OrganizationsServersMonitorsIndex200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersMonitorsIndex200Response**](../Model/OrganizationsServersMonitorsIndex200Response.md)
 
 ### Authorization
 
@@ -154,7 +154,7 @@ try {
 ## `organizationsServersMonitorsShow()`
 
 ```php
-organizationsServersMonitorsShow($organization, $server, $monitor): \Dimer47\Model\OrganizationsServersMonitorsStore202Response
+organizationsServersMonitorsShow($organization, $server, $monitor): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersMonitorsStore202Response
 ```
 
 Get server monitor
@@ -169,10 +169,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\MonitorsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\MonitorsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -200,7 +200,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersMonitorsStore202Response**](../Model/OrganizationsServersMonitorsStore202Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersMonitorsStore202Response**](../Model/OrganizationsServersMonitorsStore202Response.md)
 
 ### Authorization
 
@@ -218,7 +218,7 @@ try {
 ## `organizationsServersMonitorsStore()`
 
 ```php
-organizationsServersMonitorsStore($organization, $server, $create_monitor_request): \Dimer47\Model\OrganizationsServersMonitorsStore202Response
+organizationsServersMonitorsStore($organization, $server, $create_monitor_request): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersMonitorsStore202Response
 ```
 
 Create server monitor
@@ -233,10 +233,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\MonitorsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\MonitorsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -244,7 +244,7 @@ $apiInstance = new Dimer47\Api\MonitorsApi(
 );
 $organization = 'organization_example'; // string | The organization slug
 $server = 56; // int | The server ID
-$create_monitor_request = new \Dimer47\Model\CreateMonitorRequest(); // \Dimer47\Model\CreateMonitorRequest
+$create_monitor_request = new \Dimer47\LaravelForgeSdk\Model\CreateMonitorRequest(); // \Dimer47\LaravelForgeSdk\Model\CreateMonitorRequest
 
 try {
     $result = $apiInstance->organizationsServersMonitorsStore($organization, $server, $create_monitor_request);
@@ -260,11 +260,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **organization** | **string**| The organization slug | |
 | **server** | **int**| The server ID | |
-| **create_monitor_request** | [**\Dimer47\Model\CreateMonitorRequest**](../Model/CreateMonitorRequest.md)|  | |
+| **create_monitor_request** | [**\Dimer47\LaravelForgeSdk\Model\CreateMonitorRequest**](../Model/CreateMonitorRequest.md)|  | |
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersMonitorsStore202Response**](../Model/OrganizationsServersMonitorsStore202Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersMonitorsStore202Response**](../Model/OrganizationsServersMonitorsStore202Response.md)
 
 ### Authorization
 

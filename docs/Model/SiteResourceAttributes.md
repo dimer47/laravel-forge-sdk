@@ -1,11 +1,11 @@
-# # SiteResourceAttributes
+# SiteResourceAttributes
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **string** |  |
-**status** | [**\Dimer47\Model\SiteStatus**](SiteStatus.md) |  |
+**status** | [**\Dimer47\LaravelForgeSdk\Model\SiteStatus**](SiteStatus.md) |  |
 **url** | **string** |  |
 **user** | **string** |  |
 **https** | **bool** |  |
@@ -17,9 +17,9 @@ Name | Type | Description | Notes
 **quick_deploy** | **bool** |  |
 **isolated** | **bool** |  |
 **shared_paths** | **array<string,string>** | * The linked directories for the site. |
-**repository** | [**\Dimer47\Model\SiteResourceAttributesRepository**](SiteResourceAttributesRepository.md) |  |
+**repository** | [**\Dimer47\LaravelForgeSdk\Model\SiteResourceAttributesRepository**](SiteResourceAttributesRepository.md) |  |
 **database** | **string** |  |
-**maintenance_mode** | [**\Dimer47\Model\SiteResourceAttributesMaintenanceMode**](SiteResourceAttributesMaintenanceMode.md) |  |
+**maintenance_mode** | [**\Dimer47\LaravelForgeSdk\Model\SiteResourceAttributesMaintenanceMode**](SiteResourceAttributesMaintenanceMode.md) |  |
 **zero_downtime_deployments** | **bool** |  |
 **deployment_script** | **string** |  |
 **wildcards** | **bool** |  |

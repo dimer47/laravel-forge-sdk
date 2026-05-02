@@ -1,4 +1,4 @@
-# # MonitorState
+# MonitorState
 
 ## Properties
 

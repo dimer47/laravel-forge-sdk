@@ -1,4 +1,4 @@
-# # DeploymentWebhookResourceAttributes
+# DeploymentWebhookResourceAttributes
 
 ## Properties
 

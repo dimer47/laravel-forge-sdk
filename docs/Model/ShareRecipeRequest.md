@@ -1,4 +1,4 @@
-# # ShareRecipeRequest
+# ShareRecipeRequest
 
 ## Properties
 

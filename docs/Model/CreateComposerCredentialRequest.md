@@ -1,4 +1,4 @@
-# # CreateComposerCredentialRequest
+# CreateComposerCredentialRequest
 
 ## Properties
 

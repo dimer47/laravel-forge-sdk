@@ -1,4 +1,4 @@
-# # PermissionResourceIdentifier
+# PermissionResourceIdentifier
 
 ## Properties
 

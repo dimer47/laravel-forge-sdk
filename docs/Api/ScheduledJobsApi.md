@@ -1,4 +1,4 @@
-# Dimer47\ScheduledJobsApi
+# Dimer47\LaravelForgeSdk\ScheduledJobsApi
 
 
 
@@ -36,10 +36,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\ScheduledJobsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\ScheduledJobsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -84,7 +84,7 @@ void (empty response body)
 ## `organizationsServersScheduledJobsIndex()`
 
 ```php
-organizationsServersScheduledJobsIndex($organization, $server, $sort, $page_size, $page_cursor, $filter_status, $filter_user): \Dimer47\Model\OrganizationsServersScheduledJobsIndex200Response
+organizationsServersScheduledJobsIndex($organization, $server, $sort, $page_size, $page_cursor, $filter_status, $filter_user): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersScheduledJobsIndex200Response
 ```
 
 List server scheduled jobs
@@ -99,10 +99,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\ScheduledJobsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\ScheduledJobsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -138,7 +138,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersScheduledJobsIndex200Response**](../Model/OrganizationsServersScheduledJobsIndex200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersScheduledJobsIndex200Response**](../Model/OrganizationsServersScheduledJobsIndex200Response.md)
 
 ### Authorization
 
@@ -156,7 +156,7 @@ try {
 ## `organizationsServersScheduledJobsOutputsShow()`
 
 ```php
-organizationsServersScheduledJobsOutputsShow($organization, $server, $job): \Dimer47\Model\OrganizationsServersScheduledJobsOutputsShow200Response
+organizationsServersScheduledJobsOutputsShow($organization, $server, $job): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersScheduledJobsOutputsShow200Response
 ```
 
 Get scheduled job output
@@ -171,10 +171,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\ScheduledJobsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\ScheduledJobsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -202,7 +202,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersScheduledJobsOutputsShow200Response**](../Model/OrganizationsServersScheduledJobsOutputsShow200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersScheduledJobsOutputsShow200Response**](../Model/OrganizationsServersScheduledJobsOutputsShow200Response.md)
 
 ### Authorization
 
@@ -220,7 +220,7 @@ try {
 ## `organizationsServersScheduledJobsShow()`
 
 ```php
-organizationsServersScheduledJobsShow($organization, $server, $job): \Dimer47\Model\OrganizationsServersScheduledJobsStore202Response
+organizationsServersScheduledJobsShow($organization, $server, $job): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersScheduledJobsStore202Response
 ```
 
 Get scheduled job
@@ -235,10 +235,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\ScheduledJobsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\ScheduledJobsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -266,7 +266,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersScheduledJobsStore202Response**](../Model/OrganizationsServersScheduledJobsStore202Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersScheduledJobsStore202Response**](../Model/OrganizationsServersScheduledJobsStore202Response.md)
 
 ### Authorization
 
@@ -284,7 +284,7 @@ try {
 ## `organizationsServersScheduledJobsStore()`
 
 ```php
-organizationsServersScheduledJobsStore($organization, $server, $create_scheduled_job_request): \Dimer47\Model\OrganizationsServersScheduledJobsStore202Response
+organizationsServersScheduledJobsStore($organization, $server, $create_scheduled_job_request): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersScheduledJobsStore202Response
 ```
 
 Create scheduled job
@@ -299,10 +299,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\ScheduledJobsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\ScheduledJobsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -310,7 +310,7 @@ $apiInstance = new Dimer47\Api\ScheduledJobsApi(
 );
 $organization = 'organization_example'; // string | The organization slug
 $server = 56; // int | The server ID
-$create_scheduled_job_request = new \Dimer47\Model\CreateScheduledJobRequest(); // \Dimer47\Model\CreateScheduledJobRequest
+$create_scheduled_job_request = new \Dimer47\LaravelForgeSdk\Model\CreateScheduledJobRequest(); // \Dimer47\LaravelForgeSdk\Model\CreateScheduledJobRequest
 
 try {
     $result = $apiInstance->organizationsServersScheduledJobsStore($organization, $server, $create_scheduled_job_request);
@@ -326,11 +326,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **organization** | **string**| The organization slug | |
 | **server** | **int**| The server ID | |
-| **create_scheduled_job_request** | [**\Dimer47\Model\CreateScheduledJobRequest**](../Model/CreateScheduledJobRequest.md)|  | |
+| **create_scheduled_job_request** | [**\Dimer47\LaravelForgeSdk\Model\CreateScheduledJobRequest**](../Model/CreateScheduledJobRequest.md)|  | |
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersScheduledJobsStore202Response**](../Model/OrganizationsServersScheduledJobsStore202Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersScheduledJobsStore202Response**](../Model/OrganizationsServersScheduledJobsStore202Response.md)
 
 ### Authorization
 
@@ -363,10 +363,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\ScheduledJobsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\ScheduledJobsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -413,7 +413,7 @@ void (empty response body)
 ## `organizationsServersSitesScheduledJobsIndex()`
 
 ```php
-organizationsServersSitesScheduledJobsIndex($organization, $server, $site, $sort, $page_size, $page_cursor, $filter_status, $filter_user): \Dimer47\Model\OrganizationsServersScheduledJobsIndex200Response
+organizationsServersSitesScheduledJobsIndex($organization, $server, $site, $sort, $page_size, $page_cursor, $filter_status, $filter_user): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersScheduledJobsIndex200Response
 ```
 
 List site scheduled jobs
@@ -428,10 +428,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\ScheduledJobsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\ScheduledJobsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -469,7 +469,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersScheduledJobsIndex200Response**](../Model/OrganizationsServersScheduledJobsIndex200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersScheduledJobsIndex200Response**](../Model/OrganizationsServersScheduledJobsIndex200Response.md)
 
 ### Authorization
 
@@ -487,7 +487,7 @@ try {
 ## `organizationsServersSitesScheduledJobsOutputsShow()`
 
 ```php
-organizationsServersSitesScheduledJobsOutputsShow($organization, $server, $site, $job): \Dimer47\Model\OrganizationsServersScheduledJobsOutputsShow200Response
+organizationsServersSitesScheduledJobsOutputsShow($organization, $server, $site, $job): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersScheduledJobsOutputsShow200Response
 ```
 
 Get site scheduled job output
@@ -502,10 +502,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\ScheduledJobsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\ScheduledJobsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -535,7 +535,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersScheduledJobsOutputsShow200Response**](../Model/OrganizationsServersScheduledJobsOutputsShow200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersScheduledJobsOutputsShow200Response**](../Model/OrganizationsServersScheduledJobsOutputsShow200Response.md)
 
 ### Authorization
 
@@ -553,7 +553,7 @@ try {
 ## `organizationsServersSitesScheduledJobsShow()`
 
 ```php
-organizationsServersSitesScheduledJobsShow($organization, $server, $site, $job): \Dimer47\Model\OrganizationsServersScheduledJobsStore202Response
+organizationsServersSitesScheduledJobsShow($organization, $server, $site, $job): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersScheduledJobsStore202Response
 ```
 
 Get site scheduled job
@@ -568,10 +568,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\ScheduledJobsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\ScheduledJobsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -601,7 +601,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersScheduledJobsStore202Response**](../Model/OrganizationsServersScheduledJobsStore202Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersScheduledJobsStore202Response**](../Model/OrganizationsServersScheduledJobsStore202Response.md)
 
 ### Authorization
 
@@ -619,7 +619,7 @@ try {
 ## `organizationsServersSitesScheduledJobsStore()`
 
 ```php
-organizationsServersSitesScheduledJobsStore($organization, $server, $site, $create_scheduled_job_request): \Dimer47\Model\OrganizationsServersScheduledJobsStore202Response
+organizationsServersSitesScheduledJobsStore($organization, $server, $site, $create_scheduled_job_request): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersScheduledJobsStore202Response
 ```
 
 Create site scheduled job
@@ -634,10 +634,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\ScheduledJobsApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\ScheduledJobsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -646,7 +646,7 @@ $apiInstance = new Dimer47\Api\ScheduledJobsApi(
 $organization = 'organization_example'; // string | The organization slug
 $server = 56; // int | The server ID
 $site = 56; // int | The site ID
-$create_scheduled_job_request = new \Dimer47\Model\CreateScheduledJobRequest(); // \Dimer47\Model\CreateScheduledJobRequest
+$create_scheduled_job_request = new \Dimer47\LaravelForgeSdk\Model\CreateScheduledJobRequest(); // \Dimer47\LaravelForgeSdk\Model\CreateScheduledJobRequest
 
 try {
     $result = $apiInstance->organizationsServersSitesScheduledJobsStore($organization, $server, $site, $create_scheduled_job_request);
@@ -663,11 +663,11 @@ try {
 | **organization** | **string**| The organization slug | |
 | **server** | **int**| The server ID | |
 | **site** | **int**| The site ID | |
-| **create_scheduled_job_request** | [**\Dimer47\Model\CreateScheduledJobRequest**](../Model/CreateScheduledJobRequest.md)|  | |
+| **create_scheduled_job_request** | [**\Dimer47\LaravelForgeSdk\Model\CreateScheduledJobRequest**](../Model/CreateScheduledJobRequest.md)|  | |
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersScheduledJobsStore202Response**](../Model/OrganizationsServersScheduledJobsStore202Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersScheduledJobsStore202Response**](../Model/OrganizationsServersScheduledJobsStore202Response.md)
 
 ### Authorization
 

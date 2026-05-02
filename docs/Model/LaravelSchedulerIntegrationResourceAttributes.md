@@ -1,4 +1,4 @@
-# # LaravelSchedulerIntegrationResourceAttributes
+# LaravelSchedulerIntegrationResourceAttributes
 
 ## Properties
 

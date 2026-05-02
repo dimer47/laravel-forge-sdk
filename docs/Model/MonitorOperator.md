@@ -1,4 +1,4 @@
-# # MonitorOperator
+# MonitorOperator
 
 ## Properties
 

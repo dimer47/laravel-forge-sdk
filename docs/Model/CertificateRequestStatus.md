@@ -1,4 +1,4 @@
-# # CertificateRequestStatus
+# CertificateRequestStatus
 
 ## Properties
 

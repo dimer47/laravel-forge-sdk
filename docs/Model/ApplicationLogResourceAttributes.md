@@ -1,4 +1,4 @@
-# # ApplicationLogResourceAttributes
+# ApplicationLogResourceAttributes
 
 ## Properties
 

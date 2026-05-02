@@ -1,4 +1,4 @@
-# # BackupConfigurationResourceAttributes
+# BackupConfigurationResourceAttributes
 
 ## Properties
 
@@ -16,6 +16,7 @@ Name | Type | Description | Notes
 **day_of_week** | **int** |  |
 **time** | **string** |  |
 **cron_schedule** | **string** |  |
+**database_ids** | **mixed[]** |  |
 **retention** | **int** |  |
 **notify_email** | **string** |  |
 

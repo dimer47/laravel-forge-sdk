@@ -1,4 +1,4 @@
-# Dimer47\FirewallRulesApi
+# Dimer47\LaravelForgeSdk\FirewallRulesApi
 
 
 
@@ -30,10 +30,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\FirewallRulesApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\FirewallRulesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -78,7 +78,7 @@ void (empty response body)
 ## `organizationsServersFirewallRulesIndex()`
 
 ```php
-organizationsServersFirewallRulesIndex($organization, $server, $sort, $page_size, $page_cursor, $filter_name, $filter_status, $filter_ip_address, $filter_type, $filter_port): \Dimer47\Model\OrganizationsServersFirewallRulesIndex200Response
+organizationsServersFirewallRulesIndex($organization, $server, $sort, $page_size, $page_cursor, $filter_name, $filter_status, $filter_ip_address, $filter_type, $filter_port): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersFirewallRulesIndex200Response
 ```
 
 List server firewall rules
@@ -93,10 +93,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\FirewallRulesApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\FirewallRulesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -138,7 +138,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersFirewallRulesIndex200Response**](../Model/OrganizationsServersFirewallRulesIndex200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersFirewallRulesIndex200Response**](../Model/OrganizationsServersFirewallRulesIndex200Response.md)
 
 ### Authorization
 
@@ -156,7 +156,7 @@ try {
 ## `organizationsServersFirewallRulesShow()`
 
 ```php
-organizationsServersFirewallRulesShow($organization, $server, $rule): \Dimer47\Model\OrganizationsServersFirewallRulesShow200Response
+organizationsServersFirewallRulesShow($organization, $server, $rule): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersFirewallRulesShow200Response
 ```
 
 Get server firewall rule
@@ -171,10 +171,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\FirewallRulesApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\FirewallRulesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -202,7 +202,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersFirewallRulesShow200Response**](../Model/OrganizationsServersFirewallRulesShow200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersFirewallRulesShow200Response**](../Model/OrganizationsServersFirewallRulesShow200Response.md)
 
 ### Authorization
 
@@ -235,10 +235,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\FirewallRulesApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\FirewallRulesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -246,7 +246,7 @@ $apiInstance = new Dimer47\Api\FirewallRulesApi(
 );
 $organization = 'organization_example'; // string | The organization slug
 $server = 56; // int | The server ID
-$create_firewall_rule_request = new \Dimer47\Model\CreateFirewallRuleRequest(); // \Dimer47\Model\CreateFirewallRuleRequest
+$create_firewall_rule_request = new \Dimer47\LaravelForgeSdk\Model\CreateFirewallRuleRequest(); // \Dimer47\LaravelForgeSdk\Model\CreateFirewallRuleRequest
 
 try {
     $apiInstance->organizationsServersFirewallRulesStore($organization, $server, $create_firewall_rule_request);
@@ -261,7 +261,7 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **organization** | **string**| The organization slug | |
 | **server** | **int**| The server ID | |
-| **create_firewall_rule_request** | [**\Dimer47\Model\CreateFirewallRuleRequest**](../Model/CreateFirewallRuleRequest.md)|  | |
+| **create_firewall_rule_request** | [**\Dimer47\LaravelForgeSdk\Model\CreateFirewallRuleRequest**](../Model/CreateFirewallRuleRequest.md)|  | |
 
 ### Return type
 

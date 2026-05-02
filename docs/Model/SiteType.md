@@ -1,4 +1,4 @@
-# # SiteType
+# SiteType
 
 ## Properties
 

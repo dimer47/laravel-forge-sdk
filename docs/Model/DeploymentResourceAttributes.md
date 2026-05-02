@@ -1,12 +1,12 @@
-# # DeploymentResourceAttributes
+# DeploymentResourceAttributes
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**commit** | [**\Dimer47\Model\DeploymentResourceAttributesCommit**](DeploymentResourceAttributesCommit.md) |  |
+**commit** | [**\Dimer47\LaravelForgeSdk\Model\DeploymentResourceAttributesCommit**](DeploymentResourceAttributesCommit.md) |  |
 **type** | **string** |  |
-**status** | [**\Dimer47\Model\DeploymentStatus**](DeploymentStatus.md) |  |
+**status** | [**\Dimer47\LaravelForgeSdk\Model\DeploymentStatus**](DeploymentStatus.md) |  |
 **started_at** | **\DateTime** | The date and time the deployment started. |
 **ended_at** | **\DateTime** | The date and time the deployment ended. |
 **created_at** | **\DateTime** | The date and time the deployment was created. |

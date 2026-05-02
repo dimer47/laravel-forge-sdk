@@ -1,4 +1,4 @@
-# Dimer47\DatabasesApi
+# Dimer47\LaravelForgeSdk\DatabasesApi
 
 
 
@@ -37,10 +37,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\DatabasesApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\DatabasesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -48,7 +48,7 @@ $apiInstance = new Dimer47\Api\DatabasesApi(
 );
 $organization = 'organization_example'; // string | The organization slug
 $server = 56; // int | The server ID
-$update_database_password_request = new \Dimer47\Model\UpdateDatabasePasswordRequest(); // \Dimer47\Model\UpdateDatabasePasswordRequest
+$update_database_password_request = new \Dimer47\LaravelForgeSdk\Model\UpdateDatabasePasswordRequest(); // \Dimer47\LaravelForgeSdk\Model\UpdateDatabasePasswordRequest
 
 try {
     $apiInstance->organizationsServersDatabasePasswordUpdate($organization, $server, $update_database_password_request);
@@ -63,7 +63,7 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **organization** | **string**| The organization slug | |
 | **server** | **int**| The server ID | |
-| **update_database_password_request** | [**\Dimer47\Model\UpdateDatabasePasswordRequest**](../Model/UpdateDatabasePasswordRequest.md)|  | |
+| **update_database_password_request** | [**\Dimer47\LaravelForgeSdk\Model\UpdateDatabasePasswordRequest**](../Model/UpdateDatabasePasswordRequest.md)|  | |
 
 ### Return type
 
@@ -100,10 +100,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\DatabasesApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\DatabasesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -148,7 +148,7 @@ void (empty response body)
 ## `organizationsServersDatabaseSchemasIndex()`
 
 ```php
-organizationsServersDatabaseSchemasIndex($organization, $server, $sort, $page_size, $page_cursor, $filter_name, $filter_status): \Dimer47\Model\OrganizationsServersDatabaseSchemasIndex200Response
+organizationsServersDatabaseSchemasIndex($organization, $server, $sort, $page_size, $page_cursor, $filter_name, $filter_status): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersDatabaseSchemasIndex200Response
 ```
 
 List database schemas
@@ -163,10 +163,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\DatabasesApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\DatabasesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -202,7 +202,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersDatabaseSchemasIndex200Response**](../Model/OrganizationsServersDatabaseSchemasIndex200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersDatabaseSchemasIndex200Response**](../Model/OrganizationsServersDatabaseSchemasIndex200Response.md)
 
 ### Authorization
 
@@ -220,7 +220,7 @@ try {
 ## `organizationsServersDatabaseSchemasShow()`
 
 ```php
-organizationsServersDatabaseSchemasShow($organization, $server, $database): \Dimer47\Model\OrganizationsServersDatabaseSchemasStore202Response
+organizationsServersDatabaseSchemasShow($organization, $server, $database): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersDatabaseSchemasStore202Response
 ```
 
 Get database schema
@@ -235,10 +235,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\DatabasesApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\DatabasesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -266,7 +266,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersDatabaseSchemasStore202Response**](../Model/OrganizationsServersDatabaseSchemasStore202Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersDatabaseSchemasStore202Response**](../Model/OrganizationsServersDatabaseSchemasStore202Response.md)
 
 ### Authorization
 
@@ -284,7 +284,7 @@ try {
 ## `organizationsServersDatabaseSchemasStore()`
 
 ```php
-organizationsServersDatabaseSchemasStore($organization, $server, $create_database_request): \Dimer47\Model\OrganizationsServersDatabaseSchemasStore202Response
+organizationsServersDatabaseSchemasStore($organization, $server, $create_database_request): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersDatabaseSchemasStore202Response
 ```
 
 Create database schema
@@ -299,10 +299,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\DatabasesApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\DatabasesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -310,7 +310,7 @@ $apiInstance = new Dimer47\Api\DatabasesApi(
 );
 $organization = 'organization_example'; // string | The organization slug
 $server = 56; // int | The server ID
-$create_database_request = new \Dimer47\Model\CreateDatabaseRequest(); // \Dimer47\Model\CreateDatabaseRequest
+$create_database_request = new \Dimer47\LaravelForgeSdk\Model\CreateDatabaseRequest(); // \Dimer47\LaravelForgeSdk\Model\CreateDatabaseRequest
 
 try {
     $result = $apiInstance->organizationsServersDatabaseSchemasStore($organization, $server, $create_database_request);
@@ -326,11 +326,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **organization** | **string**| The organization slug | |
 | **server** | **int**| The server ID | |
-| **create_database_request** | [**\Dimer47\Model\CreateDatabaseRequest**](../Model/CreateDatabaseRequest.md)|  | |
+| **create_database_request** | [**\Dimer47\LaravelForgeSdk\Model\CreateDatabaseRequest**](../Model/CreateDatabaseRequest.md)|  | |
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersDatabaseSchemasStore202Response**](../Model/OrganizationsServersDatabaseSchemasStore202Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersDatabaseSchemasStore202Response**](../Model/OrganizationsServersDatabaseSchemasStore202Response.md)
 
 ### Authorization
 
@@ -363,10 +363,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\DatabasesApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\DatabasesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -424,10 +424,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\DatabasesApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\DatabasesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -472,7 +472,7 @@ void (empty response body)
 ## `organizationsServersDatabaseUsersIndex()`
 
 ```php
-organizationsServersDatabaseUsersIndex($organization, $server, $sort, $page_size, $page_cursor, $filter_name, $filter_status): \Dimer47\Model\OrganizationsServersDatabaseUsersIndex200Response
+organizationsServersDatabaseUsersIndex($organization, $server, $sort, $page_size, $page_cursor, $filter_name, $filter_status): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersDatabaseUsersIndex200Response
 ```
 
 List database users
@@ -487,10 +487,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\DatabasesApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\DatabasesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -526,7 +526,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersDatabaseUsersIndex200Response**](../Model/OrganizationsServersDatabaseUsersIndex200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersDatabaseUsersIndex200Response**](../Model/OrganizationsServersDatabaseUsersIndex200Response.md)
 
 ### Authorization
 
@@ -544,7 +544,7 @@ try {
 ## `organizationsServersDatabaseUsersShow()`
 
 ```php
-organizationsServersDatabaseUsersShow($organization, $server, $database_user): \Dimer47\Model\OrganizationsServersDatabaseUsersStore202Response
+organizationsServersDatabaseUsersShow($organization, $server, $database_user): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersDatabaseUsersStore202Response
 ```
 
 Get database user
@@ -559,10 +559,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\DatabasesApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\DatabasesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -590,7 +590,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersDatabaseUsersStore202Response**](../Model/OrganizationsServersDatabaseUsersStore202Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersDatabaseUsersStore202Response**](../Model/OrganizationsServersDatabaseUsersStore202Response.md)
 
 ### Authorization
 
@@ -608,7 +608,7 @@ try {
 ## `organizationsServersDatabaseUsersStore()`
 
 ```php
-organizationsServersDatabaseUsersStore($organization, $server, $create_database_user_request): \Dimer47\Model\OrganizationsServersDatabaseUsersStore202Response
+organizationsServersDatabaseUsersStore($organization, $server, $create_database_user_request): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersDatabaseUsersStore202Response
 ```
 
 Create database user
@@ -623,10 +623,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\DatabasesApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\DatabasesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -634,7 +634,7 @@ $apiInstance = new Dimer47\Api\DatabasesApi(
 );
 $organization = 'organization_example'; // string | The organization slug
 $server = 56; // int | The server ID
-$create_database_user_request = new \Dimer47\Model\CreateDatabaseUserRequest(); // \Dimer47\Model\CreateDatabaseUserRequest
+$create_database_user_request = new \Dimer47\LaravelForgeSdk\Model\CreateDatabaseUserRequest(); // \Dimer47\LaravelForgeSdk\Model\CreateDatabaseUserRequest
 
 try {
     $result = $apiInstance->organizationsServersDatabaseUsersStore($organization, $server, $create_database_user_request);
@@ -650,11 +650,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **organization** | **string**| The organization slug | |
 | **server** | **int**| The server ID | |
-| **create_database_user_request** | [**\Dimer47\Model\CreateDatabaseUserRequest**](../Model/CreateDatabaseUserRequest.md)|  | |
+| **create_database_user_request** | [**\Dimer47\LaravelForgeSdk\Model\CreateDatabaseUserRequest**](../Model/CreateDatabaseUserRequest.md)|  | |
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersDatabaseUsersStore202Response**](../Model/OrganizationsServersDatabaseUsersStore202Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersDatabaseUsersStore202Response**](../Model/OrganizationsServersDatabaseUsersStore202Response.md)
 
 ### Authorization
 
@@ -687,10 +687,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\DatabasesApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\DatabasesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -699,7 +699,7 @@ $apiInstance = new Dimer47\Api\DatabasesApi(
 $organization = 'organization_example'; // string | The organization slug
 $server = 56; // int | The server ID
 $database_user = 56; // int | The database user ID
-$update_database_user_request = new \Dimer47\Model\UpdateDatabaseUserRequest(); // \Dimer47\Model\UpdateDatabaseUserRequest
+$update_database_user_request = new \Dimer47\LaravelForgeSdk\Model\UpdateDatabaseUserRequest(); // \Dimer47\LaravelForgeSdk\Model\UpdateDatabaseUserRequest
 
 try {
     $apiInstance->organizationsServersDatabaseUsersUpdate($organization, $server, $database_user, $update_database_user_request);
@@ -715,7 +715,7 @@ try {
 | **organization** | **string**| The organization slug | |
 | **server** | **int**| The server ID | |
 | **database_user** | **int**| The database user ID | |
-| **update_database_user_request** | [**\Dimer47\Model\UpdateDatabaseUserRequest**](../Model/UpdateDatabaseUserRequest.md)|  | [optional] |
+| **update_database_user_request** | [**\Dimer47\LaravelForgeSdk\Model\UpdateDatabaseUserRequest**](../Model/UpdateDatabaseUserRequest.md)|  | [optional] |
 
 ### Return type
 

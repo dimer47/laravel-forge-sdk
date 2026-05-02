@@ -1,4 +1,4 @@
-# # SiteStatus
+# SiteStatus
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # PulseIntegrationResourceAttributes
+# PulseIntegrationResourceAttributes
 
 ## Properties
 

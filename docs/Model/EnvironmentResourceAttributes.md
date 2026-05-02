@@ -1,4 +1,4 @@
-# # EnvironmentResourceAttributes
+# EnvironmentResourceAttributes
 
 ## Properties
 

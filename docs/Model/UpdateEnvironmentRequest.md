@@ -1,4 +1,4 @@
-# # UpdateEnvironmentRequest
+# UpdateEnvironmentRequest
 
 ## Properties
 

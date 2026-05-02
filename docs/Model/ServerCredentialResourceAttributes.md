@@ -1,4 +1,4 @@
-# # ServerCredentialResourceAttributes
+# ServerCredentialResourceAttributes
 
 ## Properties
 

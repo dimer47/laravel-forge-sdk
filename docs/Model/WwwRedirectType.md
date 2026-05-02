@@ -1,4 +1,4 @@
-# # WwwRedirectType
+# WwwRedirectType
 
 ## Properties
 

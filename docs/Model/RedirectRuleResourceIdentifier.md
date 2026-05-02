@@ -1,4 +1,4 @@
-# # RedirectRuleResourceIdentifier
+# RedirectRuleResourceIdentifier
 
 ## Properties
 

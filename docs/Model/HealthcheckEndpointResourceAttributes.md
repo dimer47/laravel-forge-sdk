@@ -1,4 +1,4 @@
-# # HealthcheckEndpointResourceAttributes
+# HealthcheckEndpointResourceAttributes
 
 ## Properties
 

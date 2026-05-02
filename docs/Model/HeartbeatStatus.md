@@ -1,4 +1,4 @@
-# # HeartbeatStatus
+# HeartbeatStatus
 
 ## Properties
 

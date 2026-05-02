@@ -1,4 +1,4 @@
-# # DeploymentOutputResourceAttributes
+# DeploymentOutputResourceAttributes
 
 ## Properties
 

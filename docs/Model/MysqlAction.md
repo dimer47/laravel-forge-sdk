@@ -1,4 +1,4 @@
-# # MysqlAction
+# MysqlAction
 
 ## Properties
 

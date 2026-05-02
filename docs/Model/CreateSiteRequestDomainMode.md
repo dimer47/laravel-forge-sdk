@@ -1,4 +1,4 @@
-# # CreateSiteRequestDomainMode
+# CreateSiteRequestDomainMode
 
 ## Properties
 

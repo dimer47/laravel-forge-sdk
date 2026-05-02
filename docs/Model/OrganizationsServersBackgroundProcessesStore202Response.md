@@ -1,9 +1,9 @@
-# # OrganizationsServersBackgroundProcessesStore202Response
+# OrganizationsServersBackgroundProcessesStore202Response
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**data** | [**\Dimer47\Model\BackgroundProcessResource**](BackgroundProcessResource.md) |  |
+**data** | [**\Dimer47\LaravelForgeSdk\Model\BackgroundProcessResource**](BackgroundProcessResource.md) |  |
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

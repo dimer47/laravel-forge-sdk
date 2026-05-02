@@ -1,9 +1,9 @@
-# # OrganizationsServersSitesLogsNginxErrorShow200Response
+# OrganizationsServersSitesLogsNginxErrorShow200Response
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**data** | [**\Dimer47\Model\NginxErrorLogResource**](NginxErrorLogResource.md) |  |
+**data** | [**\Dimer47\LaravelForgeSdk\Model\NginxErrorLogResource**](NginxErrorLogResource.md) |  |
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

@@ -1,4 +1,4 @@
-# # HorizonIntegrationResourceAttributes
+# HorizonIntegrationResourceAttributes
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # NginxTemplateResourceAttributes
+# NginxTemplateResourceAttributes
 
 ## Properties
 

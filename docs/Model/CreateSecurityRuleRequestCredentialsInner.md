@@ -1,4 +1,4 @@
-# # CreateSecurityRuleRequestCredentialsInner
+# CreateSecurityRuleRequestCredentialsInner
 
 ## Properties
 

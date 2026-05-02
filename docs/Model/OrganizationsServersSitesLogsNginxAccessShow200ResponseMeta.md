@@ -1,4 +1,4 @@
-# # OrganizationsServersSitesLogsNginxAccessShow200ResponseMeta
+# OrganizationsServersSitesLogsNginxAccessShow200ResponseMeta
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # JobResourceIdentifier
+# JobResourceIdentifier
 
 ## Properties
 

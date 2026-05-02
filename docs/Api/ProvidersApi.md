@@ -1,4 +1,4 @@
-# Dimer47\ProvidersApi
+# Dimer47\LaravelForgeSdk\ProvidersApi
 
 
 
@@ -19,7 +19,7 @@ All URIs are relative to https://forge.laravel.com/api, except if the operation 
 ## `providersIndex()`
 
 ```php
-providersIndex($page_size, $page_cursor): \Dimer47\Model\ProvidersIndex200Response
+providersIndex($page_size, $page_cursor): \Dimer47\LaravelForgeSdk\Model\ProvidersIndex200Response
 ```
 
 List providers
@@ -34,10 +34,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\ProvidersApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\ProvidersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -63,7 +63,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\ProvidersIndex200Response**](../Model/ProvidersIndex200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\ProvidersIndex200Response**](../Model/ProvidersIndex200Response.md)
 
 ### Authorization
 
@@ -81,7 +81,7 @@ try {
 ## `providersRegionsIndex()`
 
 ```php
-providersRegionsIndex($provider, $page_size, $page_cursor): \Dimer47\Model\ProvidersRegionsIndex200Response
+providersRegionsIndex($provider, $page_size, $page_cursor): \Dimer47\LaravelForgeSdk\Model\ProvidersRegionsIndex200Response
 ```
 
 List provider regions
@@ -96,10 +96,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\ProvidersApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\ProvidersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -127,7 +127,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\ProvidersRegionsIndex200Response**](../Model/ProvidersRegionsIndex200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\ProvidersRegionsIndex200Response**](../Model/ProvidersRegionsIndex200Response.md)
 
 ### Authorization
 
@@ -145,7 +145,7 @@ try {
 ## `providersRegionsShow()`
 
 ```php
-providersRegionsShow($provider, $provider_region): \Dimer47\Model\ProvidersRegionsShow200Response
+providersRegionsShow($provider, $provider_region): \Dimer47\LaravelForgeSdk\Model\ProvidersRegionsShow200Response
 ```
 
 Get provider region
@@ -160,10 +160,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\ProvidersApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\ProvidersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -189,7 +189,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\ProvidersRegionsShow200Response**](../Model/ProvidersRegionsShow200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\ProvidersRegionsShow200Response**](../Model/ProvidersRegionsShow200Response.md)
 
 ### Authorization
 
@@ -207,7 +207,7 @@ try {
 ## `providersRegionsSizesIndex()`
 
 ```php
-providersRegionsSizesIndex($provider, $provider_region, $page_size, $page_cursor): \Dimer47\Model\ProvidersRegionsSizesIndex200Response
+providersRegionsSizesIndex($provider, $provider_region, $page_size, $page_cursor): \Dimer47\LaravelForgeSdk\Model\ProvidersRegionsSizesIndex200Response
 ```
 
 List provider region sizes
@@ -222,10 +222,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\ProvidersApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\ProvidersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -255,7 +255,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\ProvidersRegionsSizesIndex200Response**](../Model/ProvidersRegionsSizesIndex200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\ProvidersRegionsSizesIndex200Response**](../Model/ProvidersRegionsSizesIndex200Response.md)
 
 ### Authorization
 
@@ -273,7 +273,7 @@ try {
 ## `providersRegionsSizesShow()`
 
 ```php
-providersRegionsSizesShow($provider, $provider_region, $provider_size): \Dimer47\Model\ProvidersRegionsSizesShow200Response
+providersRegionsSizesShow($provider, $provider_region, $provider_size): \Dimer47\LaravelForgeSdk\Model\ProvidersRegionsSizesShow200Response
 ```
 
 Get provider region size
@@ -288,10 +288,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\ProvidersApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\ProvidersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -299,7 +299,7 @@ $apiInstance = new Dimer47\Api\ProvidersApi(
 );
 $provider = 56; // int | The provider ID
 $provider_region = 56; // int | The provider region ID
-$provider_size = 56; // int | The provider size ID
+$provider_size = 'provider_size_example'; // string | The provider size forge id
 
 try {
     $result = $apiInstance->providersRegionsSizesShow($provider, $provider_region, $provider_size);
@@ -315,11 +315,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **provider** | **int**| The provider ID | |
 | **provider_region** | **int**| The provider region ID | |
-| **provider_size** | **int**| The provider size ID | |
+| **provider_size** | **string**| The provider size forge id | |
 
 ### Return type
 
-[**\Dimer47\Model\ProvidersRegionsSizesShow200Response**](../Model/ProvidersRegionsSizesShow200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\ProvidersRegionsSizesShow200Response**](../Model/ProvidersRegionsSizesShow200Response.md)
 
 ### Authorization
 
@@ -337,7 +337,7 @@ try {
 ## `providersShow()`
 
 ```php
-providersShow($provider): \Dimer47\Model\ProvidersShow200Response
+providersShow($provider): \Dimer47\LaravelForgeSdk\Model\ProvidersShow200Response
 ```
 
 Get provider
@@ -352,10 +352,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\ProvidersApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\ProvidersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -379,7 +379,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\ProvidersShow200Response**](../Model/ProvidersShow200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\ProvidersShow200Response**](../Model/ProvidersShow200Response.md)
 
 ### Authorization
 
@@ -397,7 +397,7 @@ try {
 ## `providersSizesIndex()`
 
 ```php
-providersSizesIndex($provider, $page_size, $page_cursor): \Dimer47\Model\ProvidersSizesIndex200Response
+providersSizesIndex($provider, $page_size, $page_cursor): \Dimer47\LaravelForgeSdk\Model\ProvidersSizesIndex200Response
 ```
 
 List provider sizes
@@ -412,10 +412,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\ProvidersApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\ProvidersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -443,7 +443,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\ProvidersSizesIndex200Response**](../Model/ProvidersSizesIndex200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\ProvidersSizesIndex200Response**](../Model/ProvidersSizesIndex200Response.md)
 
 ### Authorization
 
@@ -461,7 +461,7 @@ try {
 ## `providersSizesShow()`
 
 ```php
-providersSizesShow($provider, $provider_size): \Dimer47\Model\ProvidersSizesShow200Response
+providersSizesShow($provider, $provider_size): \Dimer47\LaravelForgeSdk\Model\ProvidersSizesShow200Response
 ```
 
 Get provider size
@@ -476,17 +476,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\ProvidersApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\ProvidersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $provider = 56; // int | The provider ID
-$provider_size = 56; // int | The provider size ID
+$provider_size = 'provider_size_example'; // string | The provider size forge id
 
 try {
     $result = $apiInstance->providersSizesShow($provider, $provider_size);
@@ -501,11 +501,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **provider** | **int**| The provider ID | |
-| **provider_size** | **int**| The provider size ID | |
+| **provider_size** | **string**| The provider size forge id | |
 
 ### Return type
 
-[**\Dimer47\Model\ProvidersSizesShow200Response**](../Model/ProvidersSizesShow200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\ProvidersSizesShow200Response**](../Model/ProvidersSizesShow200Response.md)
 
 ### Authorization
 

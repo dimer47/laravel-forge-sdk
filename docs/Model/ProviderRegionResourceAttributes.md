@@ -1,4 +1,4 @@
-# # ProviderRegionResourceAttributes
+# ProviderRegionResourceAttributes
 
 ## Properties
 

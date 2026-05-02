@@ -1,4 +1,4 @@
-# # PermissionResourceAttributes
+# PermissionResourceAttributes
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # UpdateDeploymentScriptRequest
+# UpdateDeploymentScriptRequest
 
 ## Properties
 

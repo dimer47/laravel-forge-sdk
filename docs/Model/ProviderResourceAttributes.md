@@ -1,4 +1,4 @@
-# # ProviderResourceAttributes
+# ProviderResourceAttributes
 
 ## Properties
 

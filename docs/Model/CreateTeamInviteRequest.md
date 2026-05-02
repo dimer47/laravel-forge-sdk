@@ -1,4 +1,4 @@
-# # CreateTeamInviteRequest
+# CreateTeamInviteRequest
 
 ## Properties
 

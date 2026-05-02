@@ -1,4 +1,4 @@
-# # UpdatePhpPoolRequest
+# UpdatePhpPoolRequest
 
 ## Properties
 

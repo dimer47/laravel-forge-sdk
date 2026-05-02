@@ -1,4 +1,4 @@
-# # OrganizationResourceAttributes
+# OrganizationResourceAttributes
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # CronFrequency
+# CronFrequency
 
 ## Properties
 

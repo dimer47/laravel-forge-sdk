@@ -1,4 +1,4 @@
-# # TagResourceAttributes
+# TagResourceAttributes
 
 ## Properties
 

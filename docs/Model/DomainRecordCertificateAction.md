@@ -1,4 +1,4 @@
-# # DomainRecordCertificateAction
+# DomainRecordCertificateAction
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# # SupervisorAction
+# SupervisorAction
 
 ## Properties
 

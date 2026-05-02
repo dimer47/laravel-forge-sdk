@@ -1,4 +1,4 @@
-# # CreateServerRequestAkamai
+# CreateServerRequestAkamai
 
 ## Properties
 

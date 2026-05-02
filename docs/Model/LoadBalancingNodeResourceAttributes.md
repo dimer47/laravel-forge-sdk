@@ -1,10 +1,10 @@
-# # LoadBalancingNodeResourceAttributes
+# LoadBalancingNodeResourceAttributes
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**server_id** | **string** |  |
+**server_id** | **mixed** |  |
 **port** | **int** |  |
 **weight** | **int** |  |
 **backup** | **bool** |  |

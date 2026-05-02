@@ -1,9 +1,9 @@
-# # OrganizationsServersPhpVersionsConfigsFpmShow200Response
+# OrganizationsServersPhpVersionsConfigsFpmShow200Response
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**data** | [**\Dimer47\Model\PhpFpmConfigurationResource**](PhpFpmConfigurationResource.md) |  |
+**data** | [**\Dimer47\LaravelForgeSdk\Model\PhpFpmConfigurationResource**](PhpFpmConfigurationResource.md) |  |
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

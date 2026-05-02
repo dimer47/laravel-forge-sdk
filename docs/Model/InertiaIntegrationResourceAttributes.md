@@ -1,4 +1,4 @@
-# # InertiaIntegrationResourceAttributes
+# InertiaIntegrationResourceAttributes
 
 ## Properties
 

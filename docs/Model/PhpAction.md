@@ -1,4 +1,4 @@
-# # PhpAction
+# PhpAction
 
 ## Properties
 

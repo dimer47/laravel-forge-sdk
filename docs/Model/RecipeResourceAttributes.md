@@ -1,4 +1,4 @@
-# # RecipeResourceAttributes
+# RecipeResourceAttributes
 
 ## Properties
 

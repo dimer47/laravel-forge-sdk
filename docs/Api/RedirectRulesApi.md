@@ -1,4 +1,4 @@
-# Dimer47\RedirectRulesApi
+# Dimer47\LaravelForgeSdk\RedirectRulesApi
 
 
 
@@ -30,10 +30,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\RedirectRulesApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\RedirectRulesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -80,7 +80,7 @@ void (empty response body)
 ## `organizationsServersSitesRedirectRulesIndex()`
 
 ```php
-organizationsServersSitesRedirectRulesIndex($organization, $server, $site, $sort, $page_size, $page_cursor, $filter_from, $filter_to, $filter_type, $filter_status): \Dimer47\Model\OrganizationsServersSitesRedirectRulesIndex200Response
+organizationsServersSitesRedirectRulesIndex($organization, $server, $site, $sort, $page_size, $page_cursor, $filter_from, $filter_to, $filter_type, $filter_status): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesRedirectRulesIndex200Response
 ```
 
 List site redirect rules
@@ -95,10 +95,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\RedirectRulesApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\RedirectRulesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -140,7 +140,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersSitesRedirectRulesIndex200Response**](../Model/OrganizationsServersSitesRedirectRulesIndex200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesRedirectRulesIndex200Response**](../Model/OrganizationsServersSitesRedirectRulesIndex200Response.md)
 
 ### Authorization
 
@@ -158,7 +158,7 @@ try {
 ## `organizationsServersSitesRedirectRulesShow()`
 
 ```php
-organizationsServersSitesRedirectRulesShow($organization, $server, $site, $redirect_rule): \Dimer47\Model\OrganizationsServersSitesRedirectRulesShow200Response
+organizationsServersSitesRedirectRulesShow($organization, $server, $site, $redirect_rule): \Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesRedirectRulesShow200Response
 ```
 
 Get site redirect rule
@@ -173,10 +173,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\RedirectRulesApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\RedirectRulesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -206,7 +206,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsServersSitesRedirectRulesShow200Response**](../Model/OrganizationsServersSitesRedirectRulesShow200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesRedirectRulesShow200Response**](../Model/OrganizationsServersSitesRedirectRulesShow200Response.md)
 
 ### Authorization
 
@@ -239,10 +239,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\RedirectRulesApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\RedirectRulesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -251,7 +251,7 @@ $apiInstance = new Dimer47\Api\RedirectRulesApi(
 $organization = 'organization_example'; // string | The organization slug
 $server = 56; // int | The server ID
 $site = 56; // int | The site ID
-$create_redirect_request = new \Dimer47\Model\CreateRedirectRequest(); // \Dimer47\Model\CreateRedirectRequest
+$create_redirect_request = new \Dimer47\LaravelForgeSdk\Model\CreateRedirectRequest(); // \Dimer47\LaravelForgeSdk\Model\CreateRedirectRequest
 
 try {
     $apiInstance->organizationsServersSitesRedirectRulesStore($organization, $server, $site, $create_redirect_request);
@@ -267,7 +267,7 @@ try {
 | **organization** | **string**| The organization slug | |
 | **server** | **int**| The server ID | |
 | **site** | **int**| The site ID | |
-| **create_redirect_request** | [**\Dimer47\Model\CreateRedirectRequest**](../Model/CreateRedirectRequest.md)|  | |
+| **create_redirect_request** | [**\Dimer47\LaravelForgeSdk\Model\CreateRedirectRequest**](../Model/CreateRedirectRequest.md)|  | |
 
 ### Return type
 

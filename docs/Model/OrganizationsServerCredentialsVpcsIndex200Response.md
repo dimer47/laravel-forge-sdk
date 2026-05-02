@@ -1,11 +1,11 @@
-# # OrganizationsServerCredentialsVpcsIndex200Response
+# OrganizationsServerCredentialsVpcsIndex200Response
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**data** | [**\Dimer47\Model\VpcResource[]**](VpcResource.md) |  |
-**links** | [**\Dimer47\Model\OrganizationsServersBackgroundProcessesIndex200ResponseLinks**](OrganizationsServersBackgroundProcessesIndex200ResponseLinks.md) |  |
-**meta** | [**\Dimer47\Model\OrganizationsServerCredentialsVpcsIndex200ResponseMeta**](OrganizationsServerCredentialsVpcsIndex200ResponseMeta.md) |  |
+**data** | [**\Dimer47\LaravelForgeSdk\Model\VpcResource[]**](VpcResource.md) |  |
+**links** | [**\Dimer47\LaravelForgeSdk\Model\OrganizationsServersBackgroundProcessesIndex200ResponseLinks**](OrganizationsServersBackgroundProcessesIndex200ResponseLinks.md) |  |
+**meta** | [**\Dimer47\LaravelForgeSdk\Model\OrganizationsServerCredentialsVpcsIndex200ResponseMeta**](OrganizationsServerCredentialsVpcsIndex200ResponseMeta.md) |  |
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

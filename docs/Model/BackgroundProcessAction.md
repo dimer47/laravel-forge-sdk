@@ -1,4 +1,4 @@
-# # BackgroundProcessAction
+# BackgroundProcessAction
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# Dimer47\StorageProvidersApi
+# Dimer47\LaravelForgeSdk\StorageProvidersApi
 
 
 
@@ -31,10 +31,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\StorageProvidersApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\StorageProvidersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -77,7 +77,7 @@ void (empty response body)
 ## `organizationsStorageProvidersIndex()`
 
 ```php
-organizationsStorageProvidersIndex($organization, $sort, $page_size, $page_cursor, $filter_provider): \Dimer47\Model\OrganizationsStorageProvidersIndex200Response
+organizationsStorageProvidersIndex($organization, $sort, $page_size, $page_cursor, $filter_provider): \Dimer47\LaravelForgeSdk\Model\OrganizationsStorageProvidersIndex200Response
 ```
 
 List storage providers
@@ -92,10 +92,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\StorageProvidersApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\StorageProvidersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -127,7 +127,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsStorageProvidersIndex200Response**](../Model/OrganizationsStorageProvidersIndex200Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsStorageProvidersIndex200Response**](../Model/OrganizationsStorageProvidersIndex200Response.md)
 
 ### Authorization
 
@@ -145,7 +145,7 @@ try {
 ## `organizationsStorageProvidersShow()`
 
 ```php
-organizationsStorageProvidersShow($organization, $storage_configuration): \Dimer47\Model\OrganizationsStorageProvidersStore201Response
+organizationsStorageProvidersShow($organization, $storage_configuration): \Dimer47\LaravelForgeSdk\Model\OrganizationsStorageProvidersStore201Response
 ```
 
 Get storage provider
@@ -160,10 +160,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\StorageProvidersApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\StorageProvidersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -189,7 +189,7 @@ try {
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsStorageProvidersStore201Response**](../Model/OrganizationsStorageProvidersStore201Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsStorageProvidersStore201Response**](../Model/OrganizationsStorageProvidersStore201Response.md)
 
 ### Authorization
 
@@ -207,7 +207,7 @@ try {
 ## `organizationsStorageProvidersStore()`
 
 ```php
-organizationsStorageProvidersStore($organization, $create_storage_configuration_request): \Dimer47\Model\OrganizationsStorageProvidersStore201Response
+organizationsStorageProvidersStore($organization, $create_storage_configuration_request): \Dimer47\LaravelForgeSdk\Model\OrganizationsStorageProvidersStore201Response
 ```
 
 Create storage provider
@@ -222,17 +222,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\StorageProvidersApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\StorageProvidersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $organization = 'organization_example'; // string | The organization slug
-$create_storage_configuration_request = new \Dimer47\Model\CreateStorageConfigurationRequest(); // \Dimer47\Model\CreateStorageConfigurationRequest
+$create_storage_configuration_request = new \Dimer47\LaravelForgeSdk\Model\CreateStorageConfigurationRequest(); // \Dimer47\LaravelForgeSdk\Model\CreateStorageConfigurationRequest
 
 try {
     $result = $apiInstance->organizationsStorageProvidersStore($organization, $create_storage_configuration_request);
@@ -247,11 +247,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **organization** | **string**| The organization slug | |
-| **create_storage_configuration_request** | [**\Dimer47\Model\CreateStorageConfigurationRequest**](../Model/CreateStorageConfigurationRequest.md)|  | |
+| **create_storage_configuration_request** | [**\Dimer47\LaravelForgeSdk\Model\CreateStorageConfigurationRequest**](../Model/CreateStorageConfigurationRequest.md)|  | |
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsStorageProvidersStore201Response**](../Model/OrganizationsStorageProvidersStore201Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsStorageProvidersStore201Response**](../Model/OrganizationsStorageProvidersStore201Response.md)
 
 ### Authorization
 
@@ -269,7 +269,7 @@ try {
 ## `organizationsStorageProvidersUpdate()`
 
 ```php
-organizationsStorageProvidersUpdate($organization, $storage_configuration, $organizations_storage_providers_update_request): \Dimer47\Model\OrganizationsStorageProvidersStore201Response
+organizationsStorageProvidersUpdate($organization, $storage_configuration, $organizations_storage_providers_update_request): \Dimer47\LaravelForgeSdk\Model\OrganizationsStorageProvidersStore201Response
 ```
 
 Update storage provider
@@ -284,10 +284,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Dimer47\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Dimer47\LaravelForgeSdk\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Dimer47\Api\StorageProvidersApi(
+$apiInstance = new Dimer47\LaravelForgeSdk\Api\StorageProvidersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -295,7 +295,7 @@ $apiInstance = new Dimer47\Api\StorageProvidersApi(
 );
 $organization = 'organization_example'; // string | The organization slug
 $storage_configuration = 56; // int | The storage configuration ID
-$organizations_storage_providers_update_request = new \Dimer47\Model\OrganizationsStorageProvidersUpdateRequest(); // \Dimer47\Model\OrganizationsStorageProvidersUpdateRequest
+$organizations_storage_providers_update_request = new \Dimer47\LaravelForgeSdk\Model\OrganizationsStorageProvidersUpdateRequest(); // \Dimer47\LaravelForgeSdk\Model\OrganizationsStorageProvidersUpdateRequest
 
 try {
     $result = $apiInstance->organizationsStorageProvidersUpdate($organization, $storage_configuration, $organizations_storage_providers_update_request);
@@ -311,11 +311,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **organization** | **string**| The organization slug | |
 | **storage_configuration** | **int**| The storage configuration ID | |
-| **organizations_storage_providers_update_request** | [**\Dimer47\Model\OrganizationsStorageProvidersUpdateRequest**](../Model/OrganizationsStorageProvidersUpdateRequest.md)|  | [optional] |
+| **organizations_storage_providers_update_request** | [**\Dimer47\LaravelForgeSdk\Model\OrganizationsStorageProvidersUpdateRequest**](../Model/OrganizationsStorageProvidersUpdateRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\Dimer47\Model\OrganizationsStorageProvidersStore201Response**](../Model/OrganizationsStorageProvidersStore201Response.md)
+[**\Dimer47\LaravelForgeSdk\Model\OrganizationsStorageProvidersStore201Response**](../Model/OrganizationsStorageProvidersStore201Response.md)
 
 ### Authorization
 

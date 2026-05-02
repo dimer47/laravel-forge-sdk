@@ -1,4 +1,4 @@
-# # UpdatePhpSettingsRequest
+# UpdatePhpSettingsRequest
 
 ## Properties
 

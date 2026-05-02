@@ -1,9 +1,9 @@
-# # LaravelSchedulerIntegrationResourceRelationshipsJob
+# LaravelSchedulerIntegrationResourceRelationshipsJob
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**data** | [**\Dimer47\Model\JobResourceIdentifier**](JobResourceIdentifier.md) |  |
+**data** | [**\Dimer47\LaravelForgeSdk\Model\JobResourceIdentifier**](JobResourceIdentifier.md) |  |
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

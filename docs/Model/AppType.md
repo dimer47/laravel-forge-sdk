@@ -1,4 +1,4 @@
-# # AppType
+# AppType
 
 ## Properties
 
