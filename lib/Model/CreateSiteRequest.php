@@ -1,4 +1,5 @@
 <?php
+
 /**
  * CreateSiteRequest
  *
@@ -683,8 +684,8 @@ class CreateSiteRequest implements ModelInterface, ArrayAccess, \JsonSerializabl
             array_push($this->openAPINullablesSetToNull, 'root_directory');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('root_directory', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('root_directory', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -722,8 +723,8 @@ class CreateSiteRequest implements ModelInterface, ArrayAccess, \JsonSerializabl
             array_push($this->openAPINullablesSetToNull, 'web_directory');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('web_directory', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('web_directory', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -930,8 +931,8 @@ class CreateSiteRequest implements ModelInterface, ArrayAccess, \JsonSerializabl
             array_push($this->openAPINullablesSetToNull, 'repository');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('repository', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('repository', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -964,8 +965,8 @@ class CreateSiteRequest implements ModelInterface, ArrayAccess, \JsonSerializabl
             array_push($this->openAPINullablesSetToNull, 'branch');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('branch', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('branch', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -1133,8 +1134,8 @@ class CreateSiteRequest implements ModelInterface, ArrayAccess, \JsonSerializabl
             array_push($this->openAPINullablesSetToNull, 'statamic_super_user_password');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('statamic_super_user_password', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('statamic_super_user_password', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -1410,8 +1411,8 @@ class CreateSiteRequest implements ModelInterface, ArrayAccess, \JsonSerializabl
             array_push($this->openAPINullablesSetToNull, 'tags');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('tags', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('tags', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -1511,7 +1512,7 @@ class CreateSiteRequest implements ModelInterface, ArrayAccess, \JsonSerializabl
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * CreateDatabaseUserRequest
  *
@@ -495,7 +496,7 @@ class CreateDatabaseUserRequest implements ModelInterface, ArrayAccess, \JsonSer
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

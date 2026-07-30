@@ -1,4 +1,5 @@
 <?php
+
 /**
  * OrganizationsServersSitesNpmCredentialsIndex200Response
  *
@@ -456,7 +457,7 @@ class OrganizationsServersSitesNpmCredentialsIndex200Response implements ModelIn
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

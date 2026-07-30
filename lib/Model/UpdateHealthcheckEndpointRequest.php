@@ -1,4 +1,5 @@
 <?php
+
 /**
  * UpdateHealthcheckEndpointRequest
  *
@@ -312,8 +313,8 @@ class UpdateHealthcheckEndpointRequest implements ModelInterface, ArrayAccess, \
             array_push($this->openAPINullablesSetToNull, 'healthcheck_endpoint');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('healthcheck_endpoint', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('healthcheck_endpoint', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -386,7 +387,7 @@ class UpdateHealthcheckEndpointRequest implements ModelInterface, ArrayAccess, \
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

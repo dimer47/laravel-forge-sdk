@@ -1,4 +1,5 @@
 <?php
+
 /**
  * DatabasesApi
  * PHP version 8.1
@@ -243,7 +244,7 @@ class DatabasesApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -520,7 +521,7 @@ class DatabasesApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -787,7 +788,7 @@ class DatabasesApi
             $statusCode = $response->getStatusCode();
 
 
-            switch($statusCode) {
+            switch ($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
                         '\Dimer47\LaravelForgeSdk\Model\OrganizationsServersDatabaseSchemasIndex200Response',
@@ -808,7 +809,7 @@ class DatabasesApi
                     );
             }
 
-            
+
 
             if ($statusCode < 200 || $statusCode > 299) {
                 throw new ApiException(
@@ -855,7 +856,7 @@ class DatabasesApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -1174,7 +1175,7 @@ class DatabasesApi
             $statusCode = $response->getStatusCode();
 
 
-            switch($statusCode) {
+            switch ($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
                         '\Dimer47\LaravelForgeSdk\Model\OrganizationsServersDatabaseSchemasStore202Response',
@@ -1195,7 +1196,7 @@ class DatabasesApi
                     );
             }
 
-            
+
 
             if ($statusCode < 200 || $statusCode > 299) {
                 throw new ApiException(
@@ -1242,7 +1243,7 @@ class DatabasesApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -1514,7 +1515,7 @@ class DatabasesApi
             $statusCode = $response->getStatusCode();
 
 
-            switch($statusCode) {
+            switch ($statusCode) {
                 case 202:
                     return $this->handleResponseWithDataType(
                         '\Dimer47\LaravelForgeSdk\Model\OrganizationsServersDatabaseSchemasStore202Response',
@@ -1541,7 +1542,7 @@ class DatabasesApi
                     );
             }
 
-            
+
 
             if ($statusCode < 200 || $statusCode > 299) {
                 throw new ApiException(
@@ -1596,7 +1597,7 @@ class DatabasesApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -1884,7 +1885,7 @@ class DatabasesApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -2144,7 +2145,7 @@ class DatabasesApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -2411,7 +2412,7 @@ class DatabasesApi
             $statusCode = $response->getStatusCode();
 
 
-            switch($statusCode) {
+            switch ($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
                         '\Dimer47\LaravelForgeSdk\Model\OrganizationsServersDatabaseUsersIndex200Response',
@@ -2432,7 +2433,7 @@ class DatabasesApi
                     );
             }
 
-            
+
 
             if ($statusCode < 200 || $statusCode > 299) {
                 throw new ApiException(
@@ -2479,7 +2480,7 @@ class DatabasesApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -2798,7 +2799,7 @@ class DatabasesApi
             $statusCode = $response->getStatusCode();
 
 
-            switch($statusCode) {
+            switch ($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
                         '\Dimer47\LaravelForgeSdk\Model\OrganizationsServersDatabaseUsersStore202Response',
@@ -2819,7 +2820,7 @@ class DatabasesApi
                     );
             }
 
-            
+
 
             if ($statusCode < 200 || $statusCode > 299) {
                 throw new ApiException(
@@ -2866,7 +2867,7 @@ class DatabasesApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -3138,7 +3139,7 @@ class DatabasesApi
             $statusCode = $response->getStatusCode();
 
 
-            switch($statusCode) {
+            switch ($statusCode) {
                 case 202:
                     return $this->handleResponseWithDataType(
                         '\Dimer47\LaravelForgeSdk\Model\OrganizationsServersDatabaseUsersStore202Response',
@@ -3165,7 +3166,7 @@ class DatabasesApi
                     );
             }
 
-            
+
 
             if ($statusCode < 200 || $statusCode > 299) {
                 throw new ApiException(
@@ -3220,7 +3221,7 @@ class DatabasesApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -3520,7 +3521,7 @@ class DatabasesApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }

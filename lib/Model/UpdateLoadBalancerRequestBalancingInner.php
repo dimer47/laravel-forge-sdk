@@ -1,4 +1,5 @@
 <?php
+
 /**
  * UpdateLoadBalancerRequestBalancingInner
  *
@@ -385,8 +386,8 @@ class UpdateLoadBalancerRequestBalancingInner implements ModelInterface, ArrayAc
             array_push($this->openAPINullablesSetToNull, 'port');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('port', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('port', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -553,7 +554,7 @@ class UpdateLoadBalancerRequestBalancingInner implements ModelInterface, ArrayAc
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * OrganizationsServersSitesIntegrationsLaravelMaintenanceShow200Response
  *
@@ -382,7 +383,7 @@ class OrganizationsServersSitesIntegrationsLaravelMaintenanceShow200Response imp
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

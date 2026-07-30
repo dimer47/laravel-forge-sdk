@@ -1,4 +1,5 @@
 <?php
+
 /**
  * OrganizationsTeamsMembersIndex200ResponseIncludedInner
  *
@@ -558,7 +559,7 @@ class OrganizationsTeamsMembersIndex200ResponseIncludedInner implements ModelInt
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

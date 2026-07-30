@@ -1,4 +1,5 @@
 <?php
+
 /**
  * StorageProviderResourceAttributes
  *
@@ -538,8 +539,8 @@ class StorageProviderResourceAttributes implements ModelInterface, ArrayAccess, 
             array_push($this->openAPINullablesSetToNull, 'region');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('region', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('region', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -572,8 +573,8 @@ class StorageProviderResourceAttributes implements ModelInterface, ArrayAccess, 
             array_push($this->openAPINullablesSetToNull, 'bucket');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('bucket', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('bucket', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -606,8 +607,8 @@ class StorageProviderResourceAttributes implements ModelInterface, ArrayAccess, 
             array_push($this->openAPINullablesSetToNull, 'directory');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('directory', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('directory', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -640,8 +641,8 @@ class StorageProviderResourceAttributes implements ModelInterface, ArrayAccess, 
             array_push($this->openAPINullablesSetToNull, 'endpoint');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('endpoint', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('endpoint', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -674,8 +675,8 @@ class StorageProviderResourceAttributes implements ModelInterface, ArrayAccess, 
             array_push($this->openAPINullablesSetToNull, 'assume_role');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('assume_role', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('assume_role', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -735,8 +736,8 @@ class StorageProviderResourceAttributes implements ModelInterface, ArrayAccess, 
             array_push($this->openAPINullablesSetToNull, 'created_at');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('created_at', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('created_at', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -769,8 +770,8 @@ class StorageProviderResourceAttributes implements ModelInterface, ArrayAccess, 
             array_push($this->openAPINullablesSetToNull, 'updated_at');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('updated_at', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('updated_at', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -843,7 +844,7 @@ class StorageProviderResourceAttributes implements ModelInterface, ArrayAccess, 
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

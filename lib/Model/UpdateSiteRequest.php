@@ -1,4 +1,5 @@
 <?php
+
 /**
  * UpdateSiteRequest
  *
@@ -347,8 +348,8 @@ class UpdateSiteRequest implements ModelInterface, ArrayAccess, \JsonSerializabl
             array_push($this->openAPINullablesSetToNull, 'root_path');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('root_path', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('root_path', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -381,8 +382,8 @@ class UpdateSiteRequest implements ModelInterface, ArrayAccess, \JsonSerializabl
             array_push($this->openAPINullablesSetToNull, 'directory');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('directory', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('directory', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -496,8 +497,8 @@ class UpdateSiteRequest implements ModelInterface, ArrayAccess, \JsonSerializabl
             array_push($this->openAPINullablesSetToNull, 'repository_branch');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('repository_branch', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('repository_branch', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -570,7 +571,7 @@ class UpdateSiteRequest implements ModelInterface, ArrayAccess, \JsonSerializabl
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

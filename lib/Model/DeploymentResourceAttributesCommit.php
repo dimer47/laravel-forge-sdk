@@ -1,4 +1,5 @@
 <?php
+
 /**
  * DeploymentResourceAttributesCommit
  *
@@ -346,8 +347,8 @@ class DeploymentResourceAttributesCommit implements ModelInterface, ArrayAccess,
             array_push($this->openAPINullablesSetToNull, 'hash');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('hash', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('hash', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -380,8 +381,8 @@ class DeploymentResourceAttributesCommit implements ModelInterface, ArrayAccess,
             array_push($this->openAPINullablesSetToNull, 'author');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('author', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('author', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -414,8 +415,8 @@ class DeploymentResourceAttributesCommit implements ModelInterface, ArrayAccess,
             array_push($this->openAPINullablesSetToNull, 'message');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('message', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('message', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -448,8 +449,8 @@ class DeploymentResourceAttributesCommit implements ModelInterface, ArrayAccess,
             array_push($this->openAPINullablesSetToNull, 'branch');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('branch', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('branch', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -522,7 +523,7 @@ class DeploymentResourceAttributesCommit implements ModelInterface, ArrayAccess,
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

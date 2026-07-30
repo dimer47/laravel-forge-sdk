@@ -1,4 +1,5 @@
 <?php
+
 /**
  * UpdateStorageConfigurationRequest
  *
@@ -463,8 +464,8 @@ class UpdateStorageConfigurationRequest implements ModelInterface, ArrayAccess, 
             array_push($this->openAPINullablesSetToNull, 'bucket');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('bucket', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('bucket', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -524,8 +525,8 @@ class UpdateStorageConfigurationRequest implements ModelInterface, ArrayAccess, 
             array_push($this->openAPINullablesSetToNull, 'access_key');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('access_key', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('access_key', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -558,8 +559,8 @@ class UpdateStorageConfigurationRequest implements ModelInterface, ArrayAccess, 
             array_push($this->openAPINullablesSetToNull, 'secret_key');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('secret_key', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('secret_key', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -619,8 +620,8 @@ class UpdateStorageConfigurationRequest implements ModelInterface, ArrayAccess, 
             array_push($this->openAPINullablesSetToNull, 'directory');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('directory', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('directory', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -693,7 +694,7 @@ class UpdateStorageConfigurationRequest implements ModelInterface, ArrayAccess, 
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

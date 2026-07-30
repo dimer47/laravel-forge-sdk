@@ -1,4 +1,5 @@
 <?php
+
 /**
  * HealthcheckEndpointResourceAttributes
  *
@@ -315,8 +316,8 @@ class HealthcheckEndpointResourceAttributes implements ModelInterface, ArrayAcce
             array_push($this->openAPINullablesSetToNull, 'healthcheck_endpoint');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('healthcheck_endpoint', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('healthcheck_endpoint', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -389,7 +390,7 @@ class HealthcheckEndpointResourceAttributes implements ModelInterface, ArrayAcce
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

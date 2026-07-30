@@ -1,4 +1,5 @@
 <?php
+
 /**
  * LaravelSchedulerIntegrationResourceRelationshipsJob
  *
@@ -315,8 +316,8 @@ class LaravelSchedulerIntegrationResourceRelationshipsJob implements ModelInterf
             array_push($this->openAPINullablesSetToNull, 'data');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('data', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('data', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -389,7 +390,7 @@ class LaravelSchedulerIntegrationResourceRelationshipsJob implements ModelInterf
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * SiteResourceAttributesRepository
  *
@@ -372,8 +373,8 @@ class SiteResourceAttributesRepository implements ModelInterface, ArrayAccess, \
             array_push($this->openAPINullablesSetToNull, 'url');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('url', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('url', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -406,8 +407,8 @@ class SiteResourceAttributesRepository implements ModelInterface, ArrayAccess, \
             array_push($this->openAPINullablesSetToNull, 'branch');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('branch', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('branch', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -440,8 +441,8 @@ class SiteResourceAttributesRepository implements ModelInterface, ArrayAccess, \
             array_push($this->openAPINullablesSetToNull, 'status');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('status', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('status', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -514,7 +515,7 @@ class SiteResourceAttributesRepository implements ModelInterface, ArrayAccess, \
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

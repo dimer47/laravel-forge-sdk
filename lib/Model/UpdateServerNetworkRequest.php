@@ -1,4 +1,5 @@
 <?php
+
 /**
  * UpdateServerNetworkRequest
  *
@@ -382,7 +383,7 @@ class UpdateServerNetworkRequest implements ModelInterface, ArrayAccess, \JsonSe
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

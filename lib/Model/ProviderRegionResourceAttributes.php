@@ -1,4 +1,5 @@
 <?php
+
 /**
  * ProviderRegionResourceAttributes
  *
@@ -389,8 +390,8 @@ class ProviderRegionResourceAttributes implements ModelInterface, ArrayAccess, \
             array_push($this->openAPINullablesSetToNull, 'alternate_code');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('alternate_code', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('alternate_code', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -463,7 +464,7 @@ class ProviderRegionResourceAttributes implements ModelInterface, ArrayAccess, \
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

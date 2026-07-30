@@ -1,4 +1,5 @@
 <?php
+
 /**
  * KeyResourceAttributes
  *
@@ -446,8 +447,8 @@ class KeyResourceAttributes implements ModelInterface, ArrayAccess, \JsonSeriali
             array_push($this->openAPINullablesSetToNull, 'created_by');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('created_by', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('created_by', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -574,7 +575,7 @@ class KeyResourceAttributes implements ModelInterface, ArrayAccess, \JsonSeriali
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

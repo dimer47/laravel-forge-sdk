@@ -1,4 +1,5 @@
 <?php
+
 /**
  * PhpMaxExecutionTimeResourceAttributes
  *
@@ -315,8 +316,8 @@ class PhpMaxExecutionTimeResourceAttributes implements ModelInterface, ArrayAcce
             array_push($this->openAPINullablesSetToNull, 'max_execution_time');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('max_execution_time', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('max_execution_time', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -389,7 +390,7 @@ class PhpMaxExecutionTimeResourceAttributes implements ModelInterface, ArrayAcce
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * DeploymentsApi
  * PHP version 8.1
@@ -259,7 +260,7 @@ class DeploymentsApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -518,7 +519,7 @@ class DeploymentsApi
             $statusCode = $response->getStatusCode();
 
 
-            switch($statusCode) {
+            switch ($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
                         '\Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesDeployKeyShow200Response',
@@ -539,7 +540,7 @@ class DeploymentsApi
                     );
             }
 
-            
+
 
             if ($statusCode < 200 || $statusCode > 299) {
                 throw new ApiException(
@@ -586,7 +587,7 @@ class DeploymentsApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -858,7 +859,7 @@ class DeploymentsApi
             $statusCode = $response->getStatusCode();
 
 
-            switch($statusCode) {
+            switch ($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
                         '\Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesDeployKeyShow200Response',
@@ -879,7 +880,7 @@ class DeploymentsApi
                     );
             }
 
-            
+
 
             if ($statusCode < 200 || $statusCode > 299) {
                 throw new ApiException(
@@ -926,7 +927,7 @@ class DeploymentsApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -1198,7 +1199,7 @@ class DeploymentsApi
             $statusCode = $response->getStatusCode();
 
 
-            switch($statusCode) {
+            switch ($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
                         '\Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesDeploymentsDeployHookShow200Response',
@@ -1219,7 +1220,7 @@ class DeploymentsApi
                     );
             }
 
-            
+
 
             if ($statusCode < 200 || $statusCode > 299) {
                 throw new ApiException(
@@ -1266,7 +1267,7 @@ class DeploymentsApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -1538,7 +1539,7 @@ class DeploymentsApi
             $statusCode = $response->getStatusCode();
 
 
-            switch($statusCode) {
+            switch ($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
                         '\Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesDeploymentsDeployHookShow200Response',
@@ -1559,7 +1560,7 @@ class DeploymentsApi
                     );
             }
 
-            
+
 
             if ($statusCode < 200 || $statusCode > 299) {
                 throw new ApiException(
@@ -1606,7 +1607,7 @@ class DeploymentsApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -1890,7 +1891,7 @@ class DeploymentsApi
             $statusCode = $response->getStatusCode();
 
 
-            switch($statusCode) {
+            switch ($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
                         '\Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesDeploymentsIndex200Response',
@@ -1911,7 +1912,7 @@ class DeploymentsApi
                     );
             }
 
-            
+
 
             if ($statusCode < 200 || $statusCode > 299) {
                 throw new ApiException(
@@ -1958,7 +1959,7 @@ class DeploymentsApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -2310,7 +2311,7 @@ class DeploymentsApi
             $statusCode = $response->getStatusCode();
 
 
-            switch($statusCode) {
+            switch ($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
                         '\Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesDeploymentsLogShow200Response',
@@ -2331,7 +2332,7 @@ class DeploymentsApi
                     );
             }
 
-            
+
 
             if ($statusCode < 200 || $statusCode > 299) {
                 throw new ApiException(
@@ -2378,7 +2379,7 @@ class DeploymentsApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -2687,7 +2688,7 @@ class DeploymentsApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -2965,7 +2966,7 @@ class DeploymentsApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -3224,7 +3225,7 @@ class DeploymentsApi
             $statusCode = $response->getStatusCode();
 
 
-            switch($statusCode) {
+            switch ($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
                         '\Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesDeploymentsScriptShow200Response',
@@ -3245,7 +3246,7 @@ class DeploymentsApi
                     );
             }
 
-            
+
 
             if ($statusCode < 200 || $statusCode > 299) {
                 throw new ApiException(
@@ -3292,7 +3293,7 @@ class DeploymentsApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -3566,7 +3567,7 @@ class DeploymentsApi
             $statusCode = $response->getStatusCode();
 
 
-            switch($statusCode) {
+            switch ($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
                         '\Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesDeploymentsScriptShow200Response',
@@ -3593,7 +3594,7 @@ class DeploymentsApi
                     );
             }
 
-            
+
 
             if ($statusCode < 200 || $statusCode > 299) {
                 throw new ApiException(
@@ -3648,7 +3649,7 @@ class DeploymentsApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -3939,7 +3940,7 @@ class DeploymentsApi
             $statusCode = $response->getStatusCode();
 
 
-            switch($statusCode) {
+            switch ($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
                         '\Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesDeploymentsStore202Response',
@@ -3960,7 +3961,7 @@ class DeploymentsApi
                     );
             }
 
-            
+
 
             if ($statusCode < 200 || $statusCode > 299) {
                 throw new ApiException(
@@ -4007,7 +4008,7 @@ class DeploymentsApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -4316,7 +4317,7 @@ class DeploymentsApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -4575,7 +4576,7 @@ class DeploymentsApi
             $statusCode = $response->getStatusCode();
 
 
-            switch($statusCode) {
+            switch ($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
                         '\Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesDeploymentsStatusShow200Response',
@@ -4596,7 +4597,7 @@ class DeploymentsApi
                     );
             }
 
-            
+
 
             if ($statusCode < 200 || $statusCode > 299) {
                 throw new ApiException(
@@ -4643,7 +4644,7 @@ class DeploymentsApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -4915,7 +4916,7 @@ class DeploymentsApi
             $statusCode = $response->getStatusCode();
 
 
-            switch($statusCode) {
+            switch ($statusCode) {
                 case 202:
                     return $this->handleResponseWithDataType(
                         '\Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesDeploymentsStore202Response',
@@ -4936,7 +4937,7 @@ class DeploymentsApi
                     );
             }
 
-            
+
 
             if ($statusCode < 200 || $statusCode > 299) {
                 throw new ApiException(
@@ -4983,7 +4984,7 @@ class DeploymentsApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -5276,7 +5277,7 @@ class DeploymentsApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -5559,7 +5560,7 @@ class DeploymentsApi
             $statusCode = $response->getStatusCode();
 
 
-            switch($statusCode) {
+            switch ($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
                         '\Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesWebhooksIndex200Response',
@@ -5580,7 +5581,7 @@ class DeploymentsApi
                     );
             }
 
-            
+
 
             if ($statusCode < 200 || $statusCode > 299) {
                 throw new ApiException(
@@ -5627,7 +5628,7 @@ class DeploymentsApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -5940,7 +5941,7 @@ class DeploymentsApi
             $statusCode = $response->getStatusCode();
 
 
-            switch($statusCode) {
+            switch ($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
                         '\Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesWebhooksShow200Response',
@@ -5961,7 +5962,7 @@ class DeploymentsApi
                     );
             }
 
-            
+
 
             if ($statusCode < 200 || $statusCode > 299) {
                 throw new ApiException(
@@ -6008,7 +6009,7 @@ class DeploymentsApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -6327,7 +6328,7 @@ class DeploymentsApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }

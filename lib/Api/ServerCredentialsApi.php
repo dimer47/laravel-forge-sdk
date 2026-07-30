@@ -1,4 +1,5 @@
 <?php
+
 /**
  * ServerCredentialsApi
  * PHP version 8.1
@@ -211,7 +212,7 @@ class ServerCredentialsApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -472,7 +473,7 @@ class ServerCredentialsApi
             $statusCode = $response->getStatusCode();
 
 
-            switch($statusCode) {
+            switch ($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
                         '\Dimer47\LaravelForgeSdk\Model\OrganizationsServerCredentialsIndex200Response',
@@ -493,7 +494,7 @@ class ServerCredentialsApi
                     );
             }
 
-            
+
 
             if ($statusCode < 200 || $statusCode > 299) {
                 throw new ApiException(
@@ -540,7 +541,7 @@ class ServerCredentialsApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -820,7 +821,7 @@ class ServerCredentialsApi
             $statusCode = $response->getStatusCode();
 
 
-            switch($statusCode) {
+            switch ($statusCode) {
                 case 201:
                     return $this->handleResponseWithDataType(
                         '\Dimer47\LaravelForgeSdk\Model\OrganizationsServerCredentialsShow200Response',
@@ -847,7 +848,7 @@ class ServerCredentialsApi
                     );
             }
 
-            
+
 
             if ($statusCode < 200 || $statusCode > 299) {
                 throw new ApiException(
@@ -902,7 +903,7 @@ class ServerCredentialsApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }

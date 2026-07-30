@@ -1,4 +1,5 @@
 <?php
+
 /**
  * StorageProvidersApi
  * PHP version 8.1
@@ -223,7 +224,7 @@ class StorageProvidersApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -468,7 +469,7 @@ class StorageProvidersApi
             $statusCode = $response->getStatusCode();
 
 
-            switch($statusCode) {
+            switch ($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
                         '\Dimer47\LaravelForgeSdk\Model\OrganizationsStorageProvidersIndex200Response',
@@ -489,7 +490,7 @@ class StorageProvidersApi
                     );
             }
 
-            
+
 
             if ($statusCode < 200 || $statusCode > 299) {
                 throw new ApiException(
@@ -536,7 +537,7 @@ class StorageProvidersApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -822,7 +823,7 @@ class StorageProvidersApi
             $statusCode = $response->getStatusCode();
 
 
-            switch($statusCode) {
+            switch ($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
                         '\Dimer47\LaravelForgeSdk\Model\OrganizationsStorageProvidersStore201Response',
@@ -843,7 +844,7 @@ class StorageProvidersApi
                     );
             }
 
-            
+
 
             if ($statusCode < 200 || $statusCode > 299) {
                 throw new ApiException(
@@ -890,7 +891,7 @@ class StorageProvidersApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -1142,7 +1143,7 @@ class StorageProvidersApi
             $statusCode = $response->getStatusCode();
 
 
-            switch($statusCode) {
+            switch ($statusCode) {
                 case 201:
                     return $this->handleResponseWithDataType(
                         '\Dimer47\LaravelForgeSdk\Model\OrganizationsStorageProvidersStore201Response',
@@ -1169,7 +1170,7 @@ class StorageProvidersApi
                     );
             }
 
-            
+
 
             if ($statusCode < 200 || $statusCode > 299) {
                 throw new ApiException(
@@ -1224,7 +1225,7 @@ class StorageProvidersApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -1477,7 +1478,7 @@ class StorageProvidersApi
             $statusCode = $response->getStatusCode();
 
 
-            switch($statusCode) {
+            switch ($statusCode) {
                 case 202:
                     return $this->handleResponseWithDataType(
                         '\Dimer47\LaravelForgeSdk\Model\OrganizationsStorageProvidersStore201Response',
@@ -1504,7 +1505,7 @@ class StorageProvidersApi
                     );
             }
 
-            
+
 
             if ($statusCode < 200 || $statusCode > 299) {
                 throw new ApiException(
@@ -1559,7 +1560,7 @@ class StorageProvidersApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }

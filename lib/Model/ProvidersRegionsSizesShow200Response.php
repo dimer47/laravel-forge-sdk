@@ -1,4 +1,5 @@
 <?php
+
 /**
  * ProvidersRegionsSizesShow200Response
  *
@@ -382,7 +383,7 @@ class ProvidersRegionsSizesShow200Response implements ModelInterface, ArrayAcces
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

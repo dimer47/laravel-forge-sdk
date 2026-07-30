@@ -1,4 +1,5 @@
 <?php
+
 /**
  * MonitorResourceAttributes
  *
@@ -486,8 +487,8 @@ class MonitorResourceAttributes implements ModelInterface, ArrayAccess, \JsonSer
             array_push($this->openAPINullablesSetToNull, 'minutes');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('minutes', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('minutes', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -601,8 +602,8 @@ class MonitorResourceAttributes implements ModelInterface, ArrayAccess, \JsonSer
             array_push($this->openAPINullablesSetToNull, 'state_changed_at');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('state_changed_at', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('state_changed_at', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -729,7 +730,7 @@ class MonitorResourceAttributes implements ModelInterface, ArrayAccess, \JsonSer
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

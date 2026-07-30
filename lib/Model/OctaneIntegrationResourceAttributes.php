@@ -1,4 +1,5 @@
 <?php
+
 /**
  * OctaneIntegrationResourceAttributes
  *
@@ -389,8 +390,8 @@ class OctaneIntegrationResourceAttributes implements ModelInterface, ArrayAccess
             array_push($this->openAPINullablesSetToNull, 'port');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('port', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('port', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -463,7 +464,7 @@ class OctaneIntegrationResourceAttributes implements ModelInterface, ArrayAccess
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

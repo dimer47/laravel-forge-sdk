@@ -1,4 +1,5 @@
 <?php
+
 /**
  * BackupsApi
  * PHP version 8.1
@@ -232,7 +233,7 @@ class BackupsApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -499,7 +500,7 @@ class BackupsApi
             $statusCode = $response->getStatusCode();
 
 
-            switch($statusCode) {
+            switch ($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
                         '\Dimer47\LaravelForgeSdk\Model\OrganizationsServersDatabaseBackupsIndex200Response',
@@ -520,7 +521,7 @@ class BackupsApi
                     );
             }
 
-            
+
 
             if ($statusCode < 200 || $statusCode > 299) {
                 throw new ApiException(
@@ -567,7 +568,7 @@ class BackupsApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -907,7 +908,7 @@ class BackupsApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -1192,7 +1193,7 @@ class BackupsApi
             $statusCode = $response->getStatusCode();
 
 
-            switch($statusCode) {
+            switch ($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
                         '\Dimer47\LaravelForgeSdk\Model\OrganizationsServersDatabaseBackupsInstancesIndex200Response',
@@ -1213,7 +1214,7 @@ class BackupsApi
                     );
             }
 
-            
+
 
             if ($statusCode < 200 || $statusCode > 299) {
                 throw new ApiException(
@@ -1260,7 +1261,7 @@ class BackupsApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -1615,7 +1616,7 @@ class BackupsApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -1911,7 +1912,7 @@ class BackupsApi
             $statusCode = $response->getStatusCode();
 
 
-            switch($statusCode) {
+            switch ($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
                         '\Dimer47\LaravelForgeSdk\Model\OrganizationsServersDatabaseBackupsInstancesShow200Response',
@@ -1932,7 +1933,7 @@ class BackupsApi
                     );
             }
 
-            
+
 
             if ($statusCode < 200 || $statusCode > 299) {
                 throw new ApiException(
@@ -1979,7 +1980,7 @@ class BackupsApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -2288,7 +2289,7 @@ class BackupsApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -2547,7 +2548,7 @@ class BackupsApi
             $statusCode = $response->getStatusCode();
 
 
-            switch($statusCode) {
+            switch ($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
                         '\Dimer47\LaravelForgeSdk\Model\OrganizationsServersDatabaseBackupsShow200Response',
@@ -2568,7 +2569,7 @@ class BackupsApi
                     );
             }
 
-            
+
 
             if ($statusCode < 200 || $statusCode > 299) {
                 throw new ApiException(
@@ -2615,7 +2616,7 @@ class BackupsApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -2914,7 +2915,7 @@ class BackupsApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -3201,7 +3202,7 @@ class BackupsApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }

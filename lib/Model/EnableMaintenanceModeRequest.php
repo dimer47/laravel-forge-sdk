@@ -1,4 +1,5 @@
 <?php
+
 /**
  * EnableMaintenanceModeRequest
  *
@@ -329,8 +330,8 @@ class EnableMaintenanceModeRequest implements ModelInterface, ArrayAccess, \Json
             array_push($this->openAPINullablesSetToNull, 'secret');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('secret', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('secret', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -390,8 +391,8 @@ class EnableMaintenanceModeRequest implements ModelInterface, ArrayAccess, \Json
             array_push($this->openAPINullablesSetToNull, 'redirect');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('redirect', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('redirect', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -464,7 +465,7 @@ class EnableMaintenanceModeRequest implements ModelInterface, ArrayAccess, \Json
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

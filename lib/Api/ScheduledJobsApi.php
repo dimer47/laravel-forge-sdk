@@ -1,4 +1,5 @@
 <?php
+
 /**
  * ScheduledJobsApi
  * PHP version 8.1
@@ -232,7 +233,7 @@ class ScheduledJobsApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -499,7 +500,7 @@ class ScheduledJobsApi
             $statusCode = $response->getStatusCode();
 
 
-            switch($statusCode) {
+            switch ($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
                         '\Dimer47\LaravelForgeSdk\Model\OrganizationsServersScheduledJobsIndex200Response',
@@ -520,7 +521,7 @@ class ScheduledJobsApi
                     );
             }
 
-            
+
 
             if ($statusCode < 200 || $statusCode > 299) {
                 throw new ApiException(
@@ -567,7 +568,7 @@ class ScheduledJobsApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -886,7 +887,7 @@ class ScheduledJobsApi
             $statusCode = $response->getStatusCode();
 
 
-            switch($statusCode) {
+            switch ($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
                         '\Dimer47\LaravelForgeSdk\Model\OrganizationsServersScheduledJobsOutputsShow200Response',
@@ -907,7 +908,7 @@ class ScheduledJobsApi
                     );
             }
 
-            
+
 
             if ($statusCode < 200 || $statusCode > 299) {
                 throw new ApiException(
@@ -954,7 +955,7 @@ class ScheduledJobsApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -1226,7 +1227,7 @@ class ScheduledJobsApi
             $statusCode = $response->getStatusCode();
 
 
-            switch($statusCode) {
+            switch ($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
                         '\Dimer47\LaravelForgeSdk\Model\OrganizationsServersScheduledJobsStore202Response',
@@ -1247,7 +1248,7 @@ class ScheduledJobsApi
                     );
             }
 
-            
+
 
             if ($statusCode < 200 || $statusCode > 299) {
                 throw new ApiException(
@@ -1294,7 +1295,7 @@ class ScheduledJobsApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -1566,7 +1567,7 @@ class ScheduledJobsApi
             $statusCode = $response->getStatusCode();
 
 
-            switch($statusCode) {
+            switch ($statusCode) {
                 case 202:
                     return $this->handleResponseWithDataType(
                         '\Dimer47\LaravelForgeSdk\Model\OrganizationsServersScheduledJobsStore202Response',
@@ -1593,7 +1594,7 @@ class ScheduledJobsApi
                     );
             }
 
-            
+
 
             if ($statusCode < 200 || $statusCode > 299) {
                 throw new ApiException(
@@ -1648,7 +1649,7 @@ class ScheduledJobsApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -1940,7 +1941,7 @@ class ScheduledJobsApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -2227,7 +2228,7 @@ class ScheduledJobsApi
             $statusCode = $response->getStatusCode();
 
 
-            switch($statusCode) {
+            switch ($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
                         '\Dimer47\LaravelForgeSdk\Model\OrganizationsServersScheduledJobsIndex200Response',
@@ -2248,7 +2249,7 @@ class ScheduledJobsApi
                     );
             }
 
-            
+
 
             if ($statusCode < 200 || $statusCode > 299) {
                 throw new ApiException(
@@ -2295,7 +2296,7 @@ class ScheduledJobsApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -2634,7 +2635,7 @@ class ScheduledJobsApi
             $statusCode = $response->getStatusCode();
 
 
-            switch($statusCode) {
+            switch ($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
                         '\Dimer47\LaravelForgeSdk\Model\OrganizationsServersScheduledJobsOutputsShow200Response',
@@ -2655,7 +2656,7 @@ class ScheduledJobsApi
                     );
             }
 
-            
+
 
             if ($statusCode < 200 || $statusCode > 299) {
                 throw new ApiException(
@@ -2702,7 +2703,7 @@ class ScheduledJobsApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -2994,7 +2995,7 @@ class ScheduledJobsApi
             $statusCode = $response->getStatusCode();
 
 
-            switch($statusCode) {
+            switch ($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
                         '\Dimer47\LaravelForgeSdk\Model\OrganizationsServersScheduledJobsStore202Response',
@@ -3015,7 +3016,7 @@ class ScheduledJobsApi
                     );
             }
 
-            
+
 
             if ($statusCode < 200 || $statusCode > 299) {
                 throw new ApiException(
@@ -3062,7 +3063,7 @@ class ScheduledJobsApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -3354,7 +3355,7 @@ class ScheduledJobsApi
             $statusCode = $response->getStatusCode();
 
 
-            switch($statusCode) {
+            switch ($statusCode) {
                 case 202:
                     return $this->handleResponseWithDataType(
                         '\Dimer47\LaravelForgeSdk\Model\OrganizationsServersScheduledJobsStore202Response',
@@ -3381,7 +3382,7 @@ class ScheduledJobsApi
                     );
             }
 
-            
+
 
             if ($statusCode < 200 || $statusCode > 299) {
                 throw new ApiException(
@@ -3436,7 +3437,7 @@ class ScheduledJobsApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }

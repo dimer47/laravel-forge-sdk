@@ -1,4 +1,5 @@
 <?php
+
 /**
  * LaravelMaintenanceIntegrationResourceAttributes
  *
@@ -362,8 +363,8 @@ class LaravelMaintenanceIntegrationResourceAttributes implements ModelInterface,
             array_push($this->openAPINullablesSetToNull, 'status');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('status', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('status', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -463,7 +464,7 @@ class LaravelMaintenanceIntegrationResourceAttributes implements ModelInterface,
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

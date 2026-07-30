@@ -1,4 +1,5 @@
 <?php
+
 /**
  * OrganizationsServersDatabaseSchemasIndex200Response
  *
@@ -456,7 +457,7 @@ class OrganizationsServersDatabaseSchemasIndex200Response implements ModelInterf
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

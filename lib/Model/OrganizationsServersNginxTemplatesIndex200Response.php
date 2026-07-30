@@ -1,4 +1,5 @@
 <?php
+
 /**
  * OrganizationsServersNginxTemplatesIndex200Response
  *
@@ -456,7 +457,7 @@ class OrganizationsServersNginxTemplatesIndex200Response implements ModelInterfa
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

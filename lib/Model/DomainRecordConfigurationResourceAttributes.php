@@ -1,4 +1,5 @@
 <?php
+
 /**
  * DomainRecordConfigurationResourceAttributes
  *
@@ -462,8 +463,8 @@ class DomainRecordConfigurationResourceAttributes implements ModelInterface, Arr
             array_push($this->openAPINullablesSetToNull, 'ttl');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('ttl', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('ttl', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -536,7 +537,7 @@ class DomainRecordConfigurationResourceAttributes implements ModelInterface, Arr
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

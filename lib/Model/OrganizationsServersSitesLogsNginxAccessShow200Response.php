@@ -1,4 +1,5 @@
 <?php
+
 /**
  * OrganizationsServersSitesLogsNginxAccessShow200Response
  *
@@ -419,7 +420,7 @@ class OrganizationsServersSitesLogsNginxAccessShow200Response implements ModelIn
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

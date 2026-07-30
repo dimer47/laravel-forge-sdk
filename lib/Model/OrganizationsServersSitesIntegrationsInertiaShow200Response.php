@@ -1,4 +1,5 @@
 <?php
+
 /**
  * OrganizationsServersSitesIntegrationsInertiaShow200Response
  *
@@ -416,7 +417,7 @@ class OrganizationsServersSitesIntegrationsInertiaShow200Response implements Mod
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

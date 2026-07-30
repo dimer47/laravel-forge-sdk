@@ -1,4 +1,5 @@
 <?php
+
 /**
  * HeartbeatResourceAttributes
  *
@@ -392,8 +393,8 @@ class HeartbeatResourceAttributes implements ModelInterface, ArrayAccess, \JsonS
             array_push($this->openAPINullablesSetToNull, 'status');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('status', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('status', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -480,8 +481,8 @@ class HeartbeatResourceAttributes implements ModelInterface, ArrayAccess, \JsonS
             array_push($this->openAPINullablesSetToNull, 'custom_frequency');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('custom_frequency', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('custom_frequency', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -514,8 +515,8 @@ class HeartbeatResourceAttributes implements ModelInterface, ArrayAccess, \JsonS
             array_push($this->openAPINullablesSetToNull, 'ping_url');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('ping_url', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('ping_url', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -588,7 +589,7 @@ class HeartbeatResourceAttributes implements ModelInterface, ArrayAccess, \JsonS
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

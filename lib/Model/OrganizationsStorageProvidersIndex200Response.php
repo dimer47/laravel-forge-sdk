@@ -1,4 +1,5 @@
 <?php
+
 /**
  * OrganizationsStorageProvidersIndex200Response
  *
@@ -456,7 +457,7 @@ class OrganizationsStorageProvidersIndex200Response implements ModelInterface, A
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * OrganizationsServersSitesLogsNginxAccessShow200ResponseMeta
  *
@@ -414,7 +415,7 @@ class OrganizationsServersSitesLogsNginxAccessShow200ResponseMeta implements Mod
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

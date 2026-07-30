@@ -1,4 +1,5 @@
 <?php
+
 /**
  * OrganizationsRecipesRunsShow200Response
  *
@@ -382,7 +383,7 @@ class OrganizationsRecipesRunsShow200Response implements ModelInterface, ArrayAc
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

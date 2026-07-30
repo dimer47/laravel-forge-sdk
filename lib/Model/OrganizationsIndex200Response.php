@@ -1,4 +1,5 @@
 <?php
+
 /**
  * OrganizationsIndex200Response
  *
@@ -456,7 +457,7 @@ class OrganizationsIndex200Response implements ModelInterface, ArrayAccess, \Jso
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

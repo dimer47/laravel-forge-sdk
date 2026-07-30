@@ -1,4 +1,5 @@
 <?php
+
 /**
  * OrganizationsServersEventsIndex200Response
  *
@@ -490,7 +491,7 @@ class OrganizationsServersEventsIndex200Response implements ModelInterface, Arra
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * CreateSecurityRuleRequestCredentialsInner
  *
@@ -427,7 +428,7 @@ class CreateSecurityRuleRequestCredentialsInner implements ModelInterface, Array
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

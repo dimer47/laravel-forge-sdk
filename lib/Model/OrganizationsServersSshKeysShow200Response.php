@@ -1,4 +1,5 @@
 <?php
+
 /**
  * OrganizationsServersSshKeysShow200Response
  *
@@ -382,7 +383,7 @@ class OrganizationsServersSshKeysShow200Response implements ModelInterface, Arra
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

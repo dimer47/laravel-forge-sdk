@@ -1,4 +1,5 @@
 <?php
+
 /**
  * OrganizationsServersStore202Response
  *
@@ -416,7 +417,7 @@ class OrganizationsServersStore202Response implements ModelInterface, ArrayAcces
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * ForgeRecipeResourceAttributes
  *
@@ -473,8 +474,8 @@ class ForgeRecipeResourceAttributes implements ModelInterface, ArrayAccess, \Jso
             array_push($this->openAPINullablesSetToNull, 'created_at');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('created_at', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('created_at', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -507,8 +508,8 @@ class ForgeRecipeResourceAttributes implements ModelInterface, ArrayAccess, \Jso
             array_push($this->openAPINullablesSetToNull, 'updated_at');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('updated_at', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('updated_at', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -581,7 +582,7 @@ class ForgeRecipeResourceAttributes implements ModelInterface, ArrayAccess, \Jso
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

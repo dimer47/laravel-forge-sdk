@@ -1,4 +1,5 @@
 <?php
+
 /**
  * SitesIndex200ResponseIncludedInner
  *
@@ -564,7 +565,7 @@ class SitesIndex200ResponseIncludedInner implements ModelInterface, ArrayAccess,
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

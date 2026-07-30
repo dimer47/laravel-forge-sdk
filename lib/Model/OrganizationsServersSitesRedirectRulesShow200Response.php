@@ -1,4 +1,5 @@
 <?php
+
 /**
  * OrganizationsServersSitesRedirectRulesShow200Response
  *
@@ -382,7 +383,7 @@ class OrganizationsServersSitesRedirectRulesShow200Response implements ModelInte
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

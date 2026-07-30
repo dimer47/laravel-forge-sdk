@@ -1,4 +1,5 @@
 <?php
+
 /**
  * RuleResourceAttributes
  *
@@ -402,8 +403,8 @@ class RuleResourceAttributes implements ModelInterface, ArrayAccess, \JsonSerial
             array_push($this->openAPINullablesSetToNull, 'port');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('port', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('port', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -463,8 +464,8 @@ class RuleResourceAttributes implements ModelInterface, ArrayAccess, \JsonSerial
             array_push($this->openAPINullablesSetToNull, 'ip_address');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('ip_address', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('ip_address', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -497,8 +498,8 @@ class RuleResourceAttributes implements ModelInterface, ArrayAccess, \JsonSerial
             array_push($this->openAPINullablesSetToNull, 'status');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('status', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('status', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -625,7 +626,7 @@ class RuleResourceAttributes implements ModelInterface, ArrayAccess, \JsonSerial
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

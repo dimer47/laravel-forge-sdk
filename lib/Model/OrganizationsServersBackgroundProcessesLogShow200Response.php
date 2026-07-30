@@ -1,4 +1,5 @@
 <?php
+
 /**
  * OrganizationsServersBackgroundProcessesLogShow200Response
  *
@@ -382,7 +383,7 @@ class OrganizationsServersBackgroundProcessesLogShow200Response implements Model
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

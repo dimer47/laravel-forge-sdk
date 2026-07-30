@@ -1,4 +1,5 @@
 <?php
+
 /**
  * DeployKeyResourceAttributes
  *
@@ -315,8 +316,8 @@ class DeployKeyResourceAttributes implements ModelInterface, ArrayAccess, \JsonS
             array_push($this->openAPINullablesSetToNull, 'key');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('key', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('key', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -389,7 +390,7 @@ class DeployKeyResourceAttributes implements ModelInterface, ArrayAccess, \JsonS
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

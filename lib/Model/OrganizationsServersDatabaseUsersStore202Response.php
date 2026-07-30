@@ -1,4 +1,5 @@
 <?php
+
 /**
  * OrganizationsServersDatabaseUsersStore202Response
  *
@@ -382,7 +383,7 @@ class OrganizationsServersDatabaseUsersStore202Response implements ModelInterfac
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

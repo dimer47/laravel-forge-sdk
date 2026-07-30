@@ -1,4 +1,5 @@
 <?php
+
 /**
  * EventResourceAttributes
  *
@@ -372,8 +373,8 @@ class EventResourceAttributes implements ModelInterface, ArrayAccess, \JsonSeria
             array_push($this->openAPINullablesSetToNull, 'ran_as');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('ran_as', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('ran_as', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -500,7 +501,7 @@ class EventResourceAttributes implements ModelInterface, ArrayAccess, \JsonSeria
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

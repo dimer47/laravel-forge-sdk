@@ -1,4 +1,5 @@
 <?php
+
 /**
  * OrganizationsServersSitesIntegrationsPulseShow200Response
  *
@@ -416,7 +417,7 @@ class OrganizationsServersSitesIntegrationsPulseShow200Response implements Model
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

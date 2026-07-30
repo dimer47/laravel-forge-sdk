@@ -1,4 +1,5 @@
 <?php
+
 /**
  * BackupConfigurationResourceAttributes
  *
@@ -482,8 +483,8 @@ class BackupConfigurationResourceAttributes implements ModelInterface, ArrayAcce
             array_push($this->openAPINullablesSetToNull, 'storage_provider_id');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('storage_provider_id', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('storage_provider_id', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -543,8 +544,8 @@ class BackupConfigurationResourceAttributes implements ModelInterface, ArrayAcce
             array_push($this->openAPINullablesSetToNull, 'bucket');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('bucket', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('bucket', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -712,8 +713,8 @@ class BackupConfigurationResourceAttributes implements ModelInterface, ArrayAcce
             array_push($this->openAPINullablesSetToNull, 'day_of_week');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('day_of_week', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('day_of_week', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -746,8 +747,8 @@ class BackupConfigurationResourceAttributes implements ModelInterface, ArrayAcce
             array_push($this->openAPINullablesSetToNull, 'time');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('time', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('time', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -780,8 +781,8 @@ class BackupConfigurationResourceAttributes implements ModelInterface, ArrayAcce
             array_push($this->openAPINullablesSetToNull, 'cron_schedule');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('cron_schedule', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('cron_schedule', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -868,8 +869,8 @@ class BackupConfigurationResourceAttributes implements ModelInterface, ArrayAcce
             array_push($this->openAPINullablesSetToNull, 'notify_email');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('notify_email', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('notify_email', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -942,7 +943,7 @@ class BackupConfigurationResourceAttributes implements ModelInterface, ArrayAcce
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

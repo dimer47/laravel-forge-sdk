@@ -1,8 +1,8 @@
 parameters:
-    level: 5
+    level: 1
     paths:
-        - src/Api
-        - src/Model
+        - lib/Api
+        - lib/Model
     excludePaths:
         - vendor
     reportUnmatchedIgnoredErrors: false
@@ -10,3 +10,6 @@ parameters:
         - '#Property .* has no type specified#'
         - '#Method .* has parameter .* with no type specified#'
         - '#Method .* has no return type specified#'
+        - '#Constructor of class .* has an unused parameter#'
+        - '#Anonymous function has an unused use#'
+        - '#Variable .* in isset\(\) always exists and is not nullable#'

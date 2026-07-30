@@ -1,4 +1,5 @@
 <?php
+
 /**
  * UpdateDomainRequest
  *
@@ -349,8 +350,8 @@ class UpdateDomainRequest implements ModelInterface, ArrayAccess, \JsonSerializa
             array_push($this->openAPINullablesSetToNull, 'allow_wildcard_subdomains');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('allow_wildcard_subdomains', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('allow_wildcard_subdomains', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -423,7 +424,7 @@ class UpdateDomainRequest implements ModelInterface, ArrayAccess, \JsonSerializa
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

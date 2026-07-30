@@ -1,4 +1,5 @@
 <?php
+
 /**
  * ServerKeyResource
  *
@@ -522,7 +523,7 @@ class ServerKeyResource implements ModelInterface, ArrayAccess, \JsonSerializabl
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

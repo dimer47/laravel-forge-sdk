@@ -1,4 +1,5 @@
 <?php
+
 /**
  * OrganizationsStorageProvidersStore201Response
  *
@@ -382,7 +383,7 @@ class OrganizationsStorageProvidersStore201Response implements ModelInterface, A
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

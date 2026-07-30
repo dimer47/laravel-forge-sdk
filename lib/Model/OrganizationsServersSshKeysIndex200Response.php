@@ -1,4 +1,5 @@
 <?php
+
 /**
  * OrganizationsServersSshKeysIndex200Response
  *
@@ -456,7 +457,7 @@ class OrganizationsServersSshKeysIndex200Response implements ModelInterface, Arr
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

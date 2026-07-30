@@ -1,4 +1,5 @@
 <?php
+
 /**
  * OrganizationsServersSitesHeartbeatsIndex200Response
  *
@@ -456,7 +457,7 @@ class OrganizationsServersSitesHeartbeatsIndex200Response implements ModelInterf
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

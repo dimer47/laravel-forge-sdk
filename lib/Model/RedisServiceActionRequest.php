@@ -1,4 +1,5 @@
 <?php
+
 /**
  * RedisServiceActionRequest
  *
@@ -382,7 +383,7 @@ class RedisServiceActionRequest implements ModelInterface, ArrayAccess, \JsonSer
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

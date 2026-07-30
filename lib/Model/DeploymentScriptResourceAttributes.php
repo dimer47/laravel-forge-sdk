@@ -1,4 +1,5 @@
 <?php
+
 /**
  * DeploymentScriptResourceAttributes
  *
@@ -325,8 +326,8 @@ class DeploymentScriptResourceAttributes implements ModelInterface, ArrayAccess,
             array_push($this->openAPINullablesSetToNull, 'content');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('content', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('content', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -426,7 +427,7 @@ class DeploymentScriptResourceAttributes implements ModelInterface, ArrayAccess,
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

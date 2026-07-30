@@ -1,4 +1,5 @@
 <?php
+
 /**
  * CreateServerRequest
  *
@@ -549,8 +550,8 @@ class CreateServerRequest implements ModelInterface, ArrayAccess, \JsonSerializa
             array_push($this->openAPINullablesSetToNull, 'team_id');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('team_id', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('team_id', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -701,8 +702,8 @@ class CreateServerRequest implements ModelInterface, ArrayAccess, \JsonSerializa
             array_push($this->openAPINullablesSetToNull, 'recipe_id');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('recipe_id', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('recipe_id', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -735,8 +736,8 @@ class CreateServerRequest implements ModelInterface, ArrayAccess, \JsonSerializa
             array_push($this->openAPINullablesSetToNull, 'tags');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('tags', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('tags', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -998,7 +999,7 @@ class CreateServerRequest implements ModelInterface, ArrayAccess, \JsonSerializa
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

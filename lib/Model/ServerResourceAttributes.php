@@ -1,4 +1,5 @@
 <?php
+
 /**
  * ServerResourceAttributes
  *
@@ -592,8 +593,8 @@ class ServerResourceAttributes implements ModelInterface, ArrayAccess, \JsonSeri
             array_push($this->openAPINullablesSetToNull, 'credential_id');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('credential_id', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('credential_id', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -707,8 +708,8 @@ class ServerResourceAttributes implements ModelInterface, ArrayAccess, \JsonSeri
             array_push($this->openAPINullablesSetToNull, 'ubuntu_version');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('ubuntu_version', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('ubuntu_version', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -795,8 +796,8 @@ class ServerResourceAttributes implements ModelInterface, ArrayAccess, \JsonSeri
             array_push($this->openAPINullablesSetToNull, 'identifier');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('identifier', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('identifier', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -883,8 +884,8 @@ class ServerResourceAttributes implements ModelInterface, ArrayAccess, \JsonSeri
             array_push($this->openAPINullablesSetToNull, 'php_version');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('php_version', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('php_version', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -917,8 +918,8 @@ class ServerResourceAttributes implements ModelInterface, ArrayAccess, \JsonSeri
             array_push($this->openAPINullablesSetToNull, 'php_cli_version');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('php_cli_version', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('php_cli_version', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -951,8 +952,8 @@ class ServerResourceAttributes implements ModelInterface, ArrayAccess, \JsonSeri
             array_push($this->openAPINullablesSetToNull, 'opcache_status');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('opcache_status', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('opcache_status', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -985,8 +986,8 @@ class ServerResourceAttributes implements ModelInterface, ArrayAccess, \JsonSeri
             array_push($this->openAPINullablesSetToNull, 'database_type');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('database_type', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('database_type', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -1019,8 +1020,8 @@ class ServerResourceAttributes implements ModelInterface, ArrayAccess, \JsonSeri
             array_push($this->openAPINullablesSetToNull, 'db_status');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('db_status', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('db_status', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -1053,8 +1054,8 @@ class ServerResourceAttributes implements ModelInterface, ArrayAccess, \JsonSeri
             array_push($this->openAPINullablesSetToNull, 'redis_status');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('redis_status', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('redis_status', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -1087,8 +1088,8 @@ class ServerResourceAttributes implements ModelInterface, ArrayAccess, \JsonSeri
             array_push($this->openAPINullablesSetToNull, 'ip_address');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('ip_address', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('ip_address', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -1121,8 +1122,8 @@ class ServerResourceAttributes implements ModelInterface, ArrayAccess, \JsonSeri
             array_push($this->openAPINullablesSetToNull, 'private_ip_address');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('private_ip_address', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('private_ip_address', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -1290,8 +1291,8 @@ class ServerResourceAttributes implements ModelInterface, ArrayAccess, \JsonSeri
             array_push($this->openAPINullablesSetToNull, 'local_public_key');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('local_public_key', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('local_public_key', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -1391,7 +1392,7 @@ class ServerResourceAttributes implements ModelInterface, ArrayAccess, \JsonSeri
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

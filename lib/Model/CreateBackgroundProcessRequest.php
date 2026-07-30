@@ -1,4 +1,5 @@
 <?php
+
 /**
  * CreateBackgroundProcessRequest
  *
@@ -534,8 +535,8 @@ class CreateBackgroundProcessRequest implements ModelInterface, ArrayAccess, \Js
             array_push($this->openAPINullablesSetToNull, 'directory');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('directory', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('directory', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -664,8 +665,8 @@ class CreateBackgroundProcessRequest implements ModelInterface, ArrayAccess, \Js
             array_push($this->openAPINullablesSetToNull, 'stopsignal');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('stopsignal', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('stopsignal', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -738,7 +739,7 @@ class CreateBackgroundProcessRequest implements ModelInterface, ArrayAccess, \Js
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

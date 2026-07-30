@@ -1,4 +1,5 @@
 <?php
+
 /**
  * OrganizationsServersPhpOpcacheShow200Response
  *
@@ -382,7 +383,7 @@ class OrganizationsServersPhpOpcacheShow200Response implements ModelInterface, A
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

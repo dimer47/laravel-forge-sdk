@@ -1,4 +1,5 @@
 <?php
+
 /**
  * OrganizationsServersScheduledJobsStore202Response
  *
@@ -382,7 +383,7 @@ class OrganizationsServersScheduledJobsStore202Response implements ModelInterfac
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

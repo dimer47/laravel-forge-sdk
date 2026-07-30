@@ -1,4 +1,5 @@
 <?php
+
 /**
  * OrganizationsServerCredentialsIndex200Response
  *
@@ -456,7 +457,7 @@ class OrganizationsServerCredentialsIndex200Response implements ModelInterface, 
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

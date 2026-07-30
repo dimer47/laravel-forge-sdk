@@ -1,4 +1,5 @@
 <?php
+
 /**
  * UpdateDeploymentScriptRequest
  *
@@ -349,8 +350,8 @@ class UpdateDeploymentScriptRequest implements ModelInterface, ArrayAccess, \Jso
             array_push($this->openAPINullablesSetToNull, 'auto_source');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('auto_source', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('auto_source', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -423,7 +424,7 @@ class UpdateDeploymentScriptRequest implements ModelInterface, ArrayAccess, \Jso
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

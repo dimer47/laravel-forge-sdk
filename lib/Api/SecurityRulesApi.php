@@ -1,4 +1,5 @@
 <?php
+
 /**
  * SecurityRulesApi
  * PHP version 8.1
@@ -219,7 +220,7 @@ class SecurityRulesApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -506,7 +507,7 @@ class SecurityRulesApi
             $statusCode = $response->getStatusCode();
 
 
-            switch($statusCode) {
+            switch ($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
                         '\Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesSecurityRulesIndex200Response',
@@ -527,7 +528,7 @@ class SecurityRulesApi
                     );
             }
 
-            
+
 
             if ($statusCode < 200 || $statusCode > 299) {
                 throw new ApiException(
@@ -574,7 +575,7 @@ class SecurityRulesApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -913,7 +914,7 @@ class SecurityRulesApi
             $statusCode = $response->getStatusCode();
 
 
-            switch($statusCode) {
+            switch ($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
                         '\Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesSecurityRulesStore202Response',
@@ -934,7 +935,7 @@ class SecurityRulesApi
                     );
             }
 
-            
+
 
             if ($statusCode < 200 || $statusCode > 299) {
                 throw new ApiException(
@@ -981,7 +982,7 @@ class SecurityRulesApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -1273,7 +1274,7 @@ class SecurityRulesApi
             $statusCode = $response->getStatusCode();
 
 
-            switch($statusCode) {
+            switch ($statusCode) {
                 case 202:
                     return $this->handleResponseWithDataType(
                         '\Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesSecurityRulesStore202Response',
@@ -1300,7 +1301,7 @@ class SecurityRulesApi
                     );
             }
 
-            
+
 
             if ($statusCode < 200 || $statusCode > 299) {
                 throw new ApiException(
@@ -1355,7 +1356,7 @@ class SecurityRulesApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -1675,7 +1676,7 @@ class SecurityRulesApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }

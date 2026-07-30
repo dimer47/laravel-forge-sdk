@@ -1,4 +1,5 @@
 <?php
+
 /**
  * LinkHreflang
  *
@@ -57,7 +58,7 @@ class LinkHreflang implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $openAPITypes = [
-        
+
     ];
 
     /**
@@ -68,7 +69,7 @@ class LinkHreflang implements ModelInterface, ArrayAccess, \JsonSerializable
      * @psalm-var array<string, string|null>
      */
     protected static $openAPIFormats = [
-        
+
     ];
 
     /**
@@ -77,7 +78,7 @@ class LinkHreflang implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var boolean[]
      */
     protected static array $openAPINullables = [
-        
+
     ];
 
     /**
@@ -166,7 +167,7 @@ class LinkHreflang implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $attributeMap = [
-        
+
     ];
 
     /**
@@ -175,7 +176,7 @@ class LinkHreflang implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $setters = [
-        
+
     ];
 
     /**
@@ -184,7 +185,7 @@ class LinkHreflang implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $getters = [
-        
+
     ];
 
     /**
@@ -351,7 +352,7 @@ class LinkHreflang implements ModelInterface, ArrayAccess, \JsonSerializable
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

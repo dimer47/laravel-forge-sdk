@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Configuration
  * PHP version 8.1
@@ -415,11 +416,11 @@ class Configuration
      *
      * @return $this
      */
-     public function setCertFile($certFile)
-     {
+    public function setCertFile($certFile)
+    {
         $this->certFile = $certFile;
         return $this;
-     }
+    }
 
     /**
      * Gets the certificate file path, for mTLS
@@ -436,11 +437,11 @@ class Configuration
      *
      * @return $this
      */
-     public function setKeyFile($keyFile)
-     {
+    public function setKeyFile($keyFile)
+    {
         $this->keyFile = $keyFile;
         return $this;
-     }
+    }
 
     /**
      * Gets the certificate key path, for mTLS
@@ -451,7 +452,7 @@ class Configuration
     {
         return $this->keyFile;
     }
-    
+
 
     /**
      * Gets the default configuration instance

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * ForgeRecipesShow200Response
  *
@@ -382,7 +383,7 @@ class ForgeRecipesShow200Response implements ModelInterface, ArrayAccess, \JsonS
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

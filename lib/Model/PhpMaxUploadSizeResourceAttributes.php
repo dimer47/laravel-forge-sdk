@@ -1,4 +1,5 @@
 <?php
+
 /**
  * PhpMaxUploadSizeResourceAttributes
  *
@@ -315,8 +316,8 @@ class PhpMaxUploadSizeResourceAttributes implements ModelInterface, ArrayAccess,
             array_push($this->openAPINullablesSetToNull, 'max_upload_size');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('max_upload_size', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('max_upload_size', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -389,7 +390,7 @@ class PhpMaxUploadSizeResourceAttributes implements ModelInterface, ArrayAccess,
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

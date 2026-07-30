@@ -1,4 +1,5 @@
 <?php
+
 /**
  * OrganizationsStorageProvidersUpdateRequest
  *
@@ -699,7 +700,7 @@ class OrganizationsStorageProvidersUpdateRequest implements ModelInterface, Arra
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

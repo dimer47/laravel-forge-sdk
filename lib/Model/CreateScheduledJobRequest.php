@@ -1,4 +1,5 @@
 <?php
+
 /**
  * CreateScheduledJobRequest
  *
@@ -363,8 +364,8 @@ class CreateScheduledJobRequest implements ModelInterface, ArrayAccess, \JsonSer
             array_push($this->openAPINullablesSetToNull, 'name');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('name', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('name', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -478,8 +479,8 @@ class CreateScheduledJobRequest implements ModelInterface, ArrayAccess, \JsonSer
             array_push($this->openAPINullablesSetToNull, 'cron');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('cron', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('cron', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -512,8 +513,8 @@ class CreateScheduledJobRequest implements ModelInterface, ArrayAccess, \JsonSer
             array_push($this->openAPINullablesSetToNull, 'heartbeat');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('heartbeat', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('heartbeat', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -613,7 +614,7 @@ class CreateScheduledJobRequest implements ModelInterface, ArrayAccess, \JsonSer
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

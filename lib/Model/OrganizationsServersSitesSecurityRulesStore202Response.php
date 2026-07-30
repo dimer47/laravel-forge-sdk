@@ -1,4 +1,5 @@
 <?php
+
 /**
  * OrganizationsServersSitesSecurityRulesStore202Response
  *
@@ -382,7 +383,7 @@ class OrganizationsServersSitesSecurityRulesStore202Response implements ModelInt
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

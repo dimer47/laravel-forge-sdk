@@ -1,4 +1,5 @@
 <?php
+
 /**
  * NginxConfigResourceAttributes
  *
@@ -315,8 +316,8 @@ class NginxConfigResourceAttributes implements ModelInterface, ArrayAccess, \Jso
             array_push($this->openAPINullablesSetToNull, 'content');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('content', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('content', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -389,7 +390,7 @@ class NginxConfigResourceAttributes implements ModelInterface, ArrayAccess, \Jso
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

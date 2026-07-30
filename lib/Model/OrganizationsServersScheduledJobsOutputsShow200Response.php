@@ -1,4 +1,5 @@
 <?php
+
 /**
  * OrganizationsServersScheduledJobsOutputsShow200Response
  *
@@ -382,7 +383,7 @@ class OrganizationsServersScheduledJobsOutputsShow200Response implements ModelIn
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

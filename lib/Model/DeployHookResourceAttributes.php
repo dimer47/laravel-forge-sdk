@@ -1,4 +1,5 @@
 <?php
+
 /**
  * DeployHookResourceAttributes
  *
@@ -382,7 +383,7 @@ class DeployHookResourceAttributes implements ModelInterface, ArrayAccess, \Json
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

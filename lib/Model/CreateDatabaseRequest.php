@@ -1,4 +1,5 @@
 <?php
+
 /**
  * CreateDatabaseRequest
  *
@@ -368,8 +369,8 @@ class CreateDatabaseRequest implements ModelInterface, ArrayAccess, \JsonSeriali
             array_push($this->openAPINullablesSetToNull, 'user');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('user', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('user', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -402,8 +403,8 @@ class CreateDatabaseRequest implements ModelInterface, ArrayAccess, \JsonSeriali
             array_push($this->openAPINullablesSetToNull, 'password');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('password', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('password', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -480,7 +481,7 @@ class CreateDatabaseRequest implements ModelInterface, ArrayAccess, \JsonSeriali
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

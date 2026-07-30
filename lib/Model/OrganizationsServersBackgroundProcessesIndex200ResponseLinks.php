@@ -1,4 +1,5 @@
 <?php
+
 /**
  * OrganizationsServersBackgroundProcessesIndex200ResponseLinks
  *
@@ -481,7 +482,7 @@ class OrganizationsServersBackgroundProcessesIndex200ResponseLinks implements Mo
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

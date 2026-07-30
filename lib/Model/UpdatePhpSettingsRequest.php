@@ -1,4 +1,5 @@
 <?php
+
 /**
  * UpdatePhpSettingsRequest
  *
@@ -334,8 +335,8 @@ class UpdatePhpSettingsRequest implements ModelInterface, ArrayAccess, \JsonSeri
             array_push($this->openAPINullablesSetToNull, 'max_upload_size');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('max_upload_size', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('max_upload_size', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -373,8 +374,8 @@ class UpdatePhpSettingsRequest implements ModelInterface, ArrayAccess, \JsonSeri
             array_push($this->openAPINullablesSetToNull, 'max_execution_time');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('max_execution_time', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('max_execution_time', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -412,8 +413,8 @@ class UpdatePhpSettingsRequest implements ModelInterface, ArrayAccess, \JsonSeri
             array_push($this->openAPINullablesSetToNull, 'opcache');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('opcache', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('opcache', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -486,7 +487,7 @@ class UpdatePhpSettingsRequest implements ModelInterface, ArrayAccess, \JsonSeri
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

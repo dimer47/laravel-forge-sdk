@@ -1,4 +1,5 @@
 <?php
+
 /**
  * OrganizationsServerCredentialsVpcsIndex200ResponseMeta
  *
@@ -403,8 +404,8 @@ class OrganizationsServerCredentialsVpcsIndex200ResponseMeta implements ModelInt
             array_push($this->openAPINullablesSetToNull, 'from');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('from', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('from', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -442,8 +443,8 @@ class OrganizationsServerCredentialsVpcsIndex200ResponseMeta implements ModelInt
             array_push($this->openAPINullablesSetToNull, 'path');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('path', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('path', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -508,8 +509,8 @@ class OrganizationsServerCredentialsVpcsIndex200ResponseMeta implements ModelInt
             array_push($this->openAPINullablesSetToNull, 'to');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('to', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('to', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -587,7 +588,7 @@ class OrganizationsServerCredentialsVpcsIndex200ResponseMeta implements ModelInt
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

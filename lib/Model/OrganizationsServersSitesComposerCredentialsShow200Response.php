@@ -1,4 +1,5 @@
 <?php
+
 /**
  * OrganizationsServersSitesComposerCredentialsShow200Response
  *
@@ -382,7 +383,7 @@ class OrganizationsServersSitesComposerCredentialsShow200Response implements Mod
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * CreateSshKeyRequest
  *
@@ -386,8 +387,8 @@ class CreateSshKeyRequest implements ModelInterface, ArrayAccess, \JsonSerializa
             array_push($this->openAPINullablesSetToNull, 'user');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('user', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('user', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -460,7 +461,7 @@ class CreateSshKeyRequest implements ModelInterface, ArrayAccess, \JsonSerializa
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

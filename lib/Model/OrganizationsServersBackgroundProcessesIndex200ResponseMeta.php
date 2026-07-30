@@ -1,4 +1,5 @@
 <?php
+
 /**
  * OrganizationsServersBackgroundProcessesIndex200ResponseMeta
  *
@@ -349,8 +350,8 @@ class OrganizationsServersBackgroundProcessesIndex200ResponseMeta implements Mod
             array_push($this->openAPINullablesSetToNull, 'path');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('path', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('path', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -415,8 +416,8 @@ class OrganizationsServersBackgroundProcessesIndex200ResponseMeta implements Mod
             array_push($this->openAPINullablesSetToNull, 'next_cursor');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('next_cursor', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('next_cursor', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -449,8 +450,8 @@ class OrganizationsServersBackgroundProcessesIndex200ResponseMeta implements Mod
             array_push($this->openAPINullablesSetToNull, 'prev_cursor');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('prev_cursor', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('prev_cursor', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -523,7 +524,7 @@ class OrganizationsServersBackgroundProcessesIndex200ResponseMeta implements Mod
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

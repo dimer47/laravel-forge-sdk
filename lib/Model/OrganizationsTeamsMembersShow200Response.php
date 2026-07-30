@@ -1,4 +1,5 @@
 <?php
+
 /**
  * OrganizationsTeamsMembersShow200Response
  *
@@ -416,7 +417,7 @@ class OrganizationsTeamsMembersShow200Response implements ModelInterface, ArrayA
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

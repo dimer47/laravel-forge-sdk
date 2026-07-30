@@ -1,4 +1,5 @@
 <?php
+
 /**
  * PredefinedRolesShow200Response
  *
@@ -416,7 +417,7 @@ class PredefinedRolesShow200Response implements ModelInterface, ArrayAccess, \Js
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

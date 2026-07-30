@@ -1,4 +1,5 @@
 <?php
+
 /**
  * OrganizationsServersFirewallRulesIndex200Response
  *
@@ -456,7 +457,7 @@ class OrganizationsServersFirewallRulesIndex200Response implements ModelInterfac
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

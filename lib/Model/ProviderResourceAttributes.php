@@ -1,4 +1,5 @@
 <?php
+
 /**
  * ProviderResourceAttributes
  *
@@ -429,8 +430,8 @@ class ProviderResourceAttributes implements ModelInterface, ArrayAccess, \JsonSe
             array_push($this->openAPINullablesSetToNull, 'simple_name');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('simple_name', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('simple_name', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -517,8 +518,8 @@ class ProviderResourceAttributes implements ModelInterface, ArrayAccess, \JsonSe
             array_push($this->openAPINullablesSetToNull, 'default_size_code');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('default_size_code', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('default_size_code', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -551,8 +552,8 @@ class ProviderResourceAttributes implements ModelInterface, ArrayAccess, \JsonSe
             array_push($this->openAPINullablesSetToNull, 'default_region_code');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('default_region_code', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('default_region_code', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -625,7 +626,7 @@ class ProviderResourceAttributes implements ModelInterface, ArrayAccess, \JsonSe
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * FirewallRulesApi
  * PHP version 8.1
@@ -214,7 +215,7 @@ class FirewallRulesApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -487,7 +488,7 @@ class FirewallRulesApi
             $statusCode = $response->getStatusCode();
 
 
-            switch($statusCode) {
+            switch ($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
                         '\Dimer47\LaravelForgeSdk\Model\OrganizationsServersFirewallRulesIndex200Response',
@@ -508,7 +509,7 @@ class FirewallRulesApi
                     );
             }
 
-            
+
 
             if ($statusCode < 200 || $statusCode > 299) {
                 throw new ApiException(
@@ -555,7 +556,7 @@ class FirewallRulesApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -913,7 +914,7 @@ class FirewallRulesApi
             $statusCode = $response->getStatusCode();
 
 
-            switch($statusCode) {
+            switch ($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
                         '\Dimer47\LaravelForgeSdk\Model\OrganizationsServersFirewallRulesShow200Response',
@@ -934,7 +935,7 @@ class FirewallRulesApi
                     );
             }
 
-            
+
 
             if ($statusCode < 200 || $statusCode > 299) {
                 throw new ApiException(
@@ -981,7 +982,7 @@ class FirewallRulesApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -1280,7 +1281,7 @@ class FirewallRulesApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }

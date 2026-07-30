@@ -1,4 +1,5 @@
 <?php
+
 /**
  * ComposerCredentialResource
  *
@@ -490,7 +491,7 @@ class ComposerCredentialResource implements ModelInterface, ArrayAccess, \JsonSe
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

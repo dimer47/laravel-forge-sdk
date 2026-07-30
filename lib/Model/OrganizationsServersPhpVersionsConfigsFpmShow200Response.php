@@ -1,4 +1,5 @@
 <?php
+
 /**
  * OrganizationsServersPhpVersionsConfigsFpmShow200Response
  *
@@ -382,7 +383,7 @@ class OrganizationsServersPhpVersionsConfigsFpmShow200Response implements ModelI
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

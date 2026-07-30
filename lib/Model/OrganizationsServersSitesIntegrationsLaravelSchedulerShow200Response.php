@@ -1,4 +1,5 @@
 <?php
+
 /**
  * OrganizationsServersSitesIntegrationsLaravelSchedulerShow200Response
  *
@@ -416,7 +417,7 @@ class OrganizationsServersSitesIntegrationsLaravelSchedulerShow200Response imple
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * CreateServerRequestCustom
  *
@@ -367,8 +368,8 @@ class CreateServerRequestCustom implements ModelInterface, ArrayAccess, \JsonSer
             array_push($this->openAPINullablesSetToNull, 'private_ip_address');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('private_ip_address', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('private_ip_address', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -455,8 +456,8 @@ class CreateServerRequestCustom implements ModelInterface, ArrayAccess, \JsonSer
             array_push($this->openAPINullablesSetToNull, 'nat_ssh_port');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('nat_ssh_port', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('nat_ssh_port', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -529,7 +530,7 @@ class CreateServerRequestCustom implements ModelInterface, ArrayAccess, \JsonSer
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

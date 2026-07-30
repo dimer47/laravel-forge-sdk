@@ -1,4 +1,5 @@
 <?php
+
 /**
  * OrganizationsServersSitesEnvironmentShow200Response
  *
@@ -382,7 +383,7 @@ class OrganizationsServersSitesEnvironmentShow200Response implements ModelInterf
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

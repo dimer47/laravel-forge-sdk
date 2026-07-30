@@ -1,4 +1,5 @@
 <?php
+
 /**
  * DatabaseUserResource
  *
@@ -522,7 +523,7 @@ class DatabaseUserResource implements ModelInterface, ArrayAccess, \JsonSerializ
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

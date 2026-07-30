@@ -1,4 +1,5 @@
 <?php
+
 /**
  * InlineObject1
  *
@@ -419,7 +420,7 @@ class InlineObject1 implements ModelInterface, ArrayAccess, \JsonSerializable
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

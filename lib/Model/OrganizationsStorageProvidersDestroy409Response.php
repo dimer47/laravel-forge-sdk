@@ -1,4 +1,5 @@
 <?php
+
 /**
  * OrganizationsStorageProvidersDestroy409Response
  *
@@ -414,7 +415,7 @@ class OrganizationsStorageProvidersDestroy409Response implements ModelInterface,
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

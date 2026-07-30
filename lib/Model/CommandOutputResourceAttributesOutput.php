@@ -1,4 +1,5 @@
 <?php
+
 /**
  * CommandOutputResourceAttributesOutput
  *
@@ -58,7 +59,7 @@ class CommandOutputResourceAttributesOutput implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $openAPITypes = [
-        
+
     ];
 
     /**
@@ -69,7 +70,7 @@ class CommandOutputResourceAttributesOutput implements ModelInterface, ArrayAcce
      * @psalm-var array<string, string|null>
      */
     protected static $openAPIFormats = [
-        
+
     ];
 
     /**
@@ -78,7 +79,7 @@ class CommandOutputResourceAttributesOutput implements ModelInterface, ArrayAcce
      * @var boolean[]
      */
     protected static array $openAPINullables = [
-        
+
     ];
 
     /**
@@ -167,7 +168,7 @@ class CommandOutputResourceAttributesOutput implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $attributeMap = [
-        
+
     ];
 
     /**
@@ -176,7 +177,7 @@ class CommandOutputResourceAttributesOutput implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $setters = [
-        
+
     ];
 
     /**
@@ -185,7 +186,7 @@ class CommandOutputResourceAttributesOutput implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $getters = [
-        
+
     ];
 
     /**
@@ -352,7 +353,7 @@ class CommandOutputResourceAttributesOutput implements ModelInterface, ArrayAcce
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

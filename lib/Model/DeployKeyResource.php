@@ -1,4 +1,5 @@
 <?php
+
 /**
  * DeployKeyResource
  *
@@ -522,7 +523,7 @@ class DeployKeyResource implements ModelInterface, ArrayAccess, \JsonSerializabl
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

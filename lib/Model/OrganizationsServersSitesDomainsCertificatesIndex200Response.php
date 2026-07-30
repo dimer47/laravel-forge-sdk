@@ -1,4 +1,5 @@
 <?php
+
 /**
  * OrganizationsServersSitesDomainsCertificatesIndex200Response
  *
@@ -382,7 +383,7 @@ class OrganizationsServersSitesDomainsCertificatesIndex200Response implements Mo
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

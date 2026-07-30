@@ -1,4 +1,5 @@
 <?php
+
 /**
  * CertificateResourceAttributes
  *
@@ -444,8 +445,8 @@ class CertificateResourceAttributes implements ModelInterface, ArrayAccess, \Jso
             array_push($this->openAPINullablesSetToNull, 'verification_method');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('verification_method', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('verification_method', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -478,8 +479,8 @@ class CertificateResourceAttributes implements ModelInterface, ArrayAccess, \Jso
             array_push($this->openAPINullablesSetToNull, 'key_type');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('key_type', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('key_type', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -512,8 +513,8 @@ class CertificateResourceAttributes implements ModelInterface, ArrayAccess, \Jso
             array_push($this->openAPINullablesSetToNull, 'preferred_chain');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('preferred_chain', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('preferred_chain', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -731,7 +732,7 @@ class CertificateResourceAttributes implements ModelInterface, ArrayAccess, \Jso
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

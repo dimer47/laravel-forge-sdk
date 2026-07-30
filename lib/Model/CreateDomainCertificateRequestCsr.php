@@ -1,4 +1,5 @@
 <?php
+
 /**
  * CreateDomainCertificateRequestCsr
  *
@@ -382,8 +383,8 @@ class CreateDomainCertificateRequestCsr implements ModelInterface, ArrayAccess, 
             array_push($this->openAPINullablesSetToNull, 'sans');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('sans', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('sans', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -591,7 +592,7 @@ class CreateDomainCertificateRequestCsr implements ModelInterface, ArrayAccess, 
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

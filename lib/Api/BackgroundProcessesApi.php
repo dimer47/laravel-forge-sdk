@@ -1,4 +1,5 @@
 <?php
+
 /**
  * BackgroundProcessesApi
  * PHP version 8.1
@@ -220,7 +221,7 @@ class BackgroundProcessesApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -489,7 +490,7 @@ class BackgroundProcessesApi
             $statusCode = $response->getStatusCode();
 
 
-            switch($statusCode) {
+            switch ($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
                         '\Dimer47\LaravelForgeSdk\Model\OrganizationsServersBackgroundProcessesIndex200Response',
@@ -510,7 +511,7 @@ class BackgroundProcessesApi
                     );
             }
 
-            
+
 
             if ($statusCode < 200 || $statusCode > 299) {
                 throw new ApiException(
@@ -557,7 +558,7 @@ class BackgroundProcessesApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -889,7 +890,7 @@ class BackgroundProcessesApi
             $statusCode = $response->getStatusCode();
 
 
-            switch($statusCode) {
+            switch ($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
                         '\Dimer47\LaravelForgeSdk\Model\OrganizationsServersBackgroundProcessesLogShow200Response',
@@ -910,7 +911,7 @@ class BackgroundProcessesApi
                     );
             }
 
-            
+
 
             if ($statusCode < 200 || $statusCode > 299) {
                 throw new ApiException(
@@ -957,7 +958,7 @@ class BackgroundProcessesApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -1229,7 +1230,7 @@ class BackgroundProcessesApi
             $statusCode = $response->getStatusCode();
 
 
-            switch($statusCode) {
+            switch ($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
                         '\Dimer47\LaravelForgeSdk\Model\OrganizationsServersBackgroundProcessesStore202Response',
@@ -1250,7 +1251,7 @@ class BackgroundProcessesApi
                     );
             }
 
-            
+
 
             if ($statusCode < 200 || $statusCode > 299) {
                 throw new ApiException(
@@ -1297,7 +1298,7 @@ class BackgroundProcessesApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -1569,7 +1570,7 @@ class BackgroundProcessesApi
             $statusCode = $response->getStatusCode();
 
 
-            switch($statusCode) {
+            switch ($statusCode) {
                 case 202:
                     return $this->handleResponseWithDataType(
                         '\Dimer47\LaravelForgeSdk\Model\OrganizationsServersBackgroundProcessesStore202Response',
@@ -1596,7 +1597,7 @@ class BackgroundProcessesApi
                     );
             }
 
-            
+
 
             if ($statusCode < 200 || $statusCode > 299) {
                 throw new ApiException(
@@ -1651,7 +1652,7 @@ class BackgroundProcessesApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -1951,7 +1952,7 @@ class BackgroundProcessesApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }

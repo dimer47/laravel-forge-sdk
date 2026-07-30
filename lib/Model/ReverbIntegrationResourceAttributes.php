@@ -1,4 +1,5 @@
 <?php
+
 /**
  * ReverbIntegrationResourceAttributes
  *
@@ -409,8 +410,8 @@ class ReverbIntegrationResourceAttributes implements ModelInterface, ArrayAccess
             array_push($this->openAPINullablesSetToNull, 'host');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('host', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('host', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -443,8 +444,8 @@ class ReverbIntegrationResourceAttributes implements ModelInterface, ArrayAccess
             array_push($this->openAPINullablesSetToNull, 'port');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('port', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('port', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -477,8 +478,8 @@ class ReverbIntegrationResourceAttributes implements ModelInterface, ArrayAccess
             array_push($this->openAPINullablesSetToNull, 'connections');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('connections', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('connections', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -551,7 +552,7 @@ class ReverbIntegrationResourceAttributes implements ModelInterface, ArrayAccess
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

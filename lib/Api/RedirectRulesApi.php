@@ -1,4 +1,5 @@
 <?php
+
 /**
  * RedirectRulesApi
  * PHP version 8.1
@@ -216,7 +217,7 @@ class RedirectRulesApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -507,7 +508,7 @@ class RedirectRulesApi
             $statusCode = $response->getStatusCode();
 
 
-            switch($statusCode) {
+            switch ($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
                         '\Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesRedirectRulesIndex200Response',
@@ -528,7 +529,7 @@ class RedirectRulesApi
                     );
             }
 
-            
+
 
             if ($statusCode < 200 || $statusCode > 299) {
                 throw new ApiException(
@@ -575,7 +576,7 @@ class RedirectRulesApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -940,7 +941,7 @@ class RedirectRulesApi
             $statusCode = $response->getStatusCode();
 
 
-            switch($statusCode) {
+            switch ($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
                         '\Dimer47\LaravelForgeSdk\Model\OrganizationsServersSitesRedirectRulesShow200Response',
@@ -961,7 +962,7 @@ class RedirectRulesApi
                     );
             }
 
-            
+
 
             if ($statusCode < 200 || $statusCode > 299) {
                 throw new ApiException(
@@ -1008,7 +1009,7 @@ class RedirectRulesApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }
@@ -1327,7 +1328,7 @@ class RedirectRulesApi
                     $e->setResponseObject($data);
                     throw $e;
             }
-        
+
 
             throw $e;
         }

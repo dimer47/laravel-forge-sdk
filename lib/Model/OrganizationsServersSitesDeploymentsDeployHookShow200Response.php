@@ -1,4 +1,5 @@
 <?php
+
 /**
  * OrganizationsServersSitesDeploymentsDeployHookShow200Response
  *
@@ -382,7 +383,7 @@ class OrganizationsServersSitesDeploymentsDeployHookShow200Response implements M
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

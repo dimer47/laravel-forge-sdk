@@ -1,4 +1,5 @@
 <?php
+
 /**
  * OrganizationsServersSitesDeployKeyShow200Response
  *
@@ -382,7 +383,7 @@ class OrganizationsServersSitesDeployKeyShow200Response implements ModelInterfac
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

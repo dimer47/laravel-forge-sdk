@@ -1,4 +1,5 @@
 <?php
+
 /**
  * UpdateEnvironmentRequest
  *
@@ -417,8 +418,8 @@ class UpdateEnvironmentRequest implements ModelInterface, ArrayAccess, \JsonSeri
             array_push($this->openAPINullablesSetToNull, 'encryption_key');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('encryption_key', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('encryption_key', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -491,7 +492,7 @@ class UpdateEnvironmentRequest implements ModelInterface, ArrayAccess, \JsonSeri
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

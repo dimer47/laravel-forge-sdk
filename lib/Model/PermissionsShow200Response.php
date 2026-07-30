@@ -1,4 +1,5 @@
 <?php
+
 /**
  * PermissionsShow200Response
  *
@@ -382,7 +383,7 @@ class PermissionsShow200Response implements ModelInterface, ArrayAccess, \JsonSe
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

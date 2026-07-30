@@ -1,4 +1,5 @@
 <?php
+
 /**
  * OrganizationsServersSitesCommandsOutputShow200Response
  *
@@ -382,7 +383,7 @@ class OrganizationsServersSitesCommandsOutputShow200Response implements ModelInt
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

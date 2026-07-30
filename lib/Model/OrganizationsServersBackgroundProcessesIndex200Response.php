@@ -1,4 +1,5 @@
 <?php
+
 /**
  * OrganizationsServersBackgroundProcessesIndex200Response
  *
@@ -456,7 +457,7 @@ class OrganizationsServersBackgroundProcessesIndex200Response implements ModelIn
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

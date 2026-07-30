@@ -1,4 +1,5 @@
 <?php
+
 /**
  * UpdateBackupConfigurationRequest
  *
@@ -587,8 +588,8 @@ class UpdateBackupConfigurationRequest implements ModelInterface, ArrayAccess, \
             array_push($this->openAPINullablesSetToNull, 'name');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('name', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('name', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -625,8 +626,8 @@ class UpdateBackupConfigurationRequest implements ModelInterface, ArrayAccess, \
             array_push($this->openAPINullablesSetToNull, 'bucket');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('bucket', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('bucket', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -659,8 +660,8 @@ class UpdateBackupConfigurationRequest implements ModelInterface, ArrayAccess, \
             array_push($this->openAPINullablesSetToNull, 'directory');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('directory', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('directory', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -856,8 +857,8 @@ class UpdateBackupConfigurationRequest implements ModelInterface, ArrayAccess, \
             array_push($this->openAPINullablesSetToNull, 'notification_email');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('notification_email', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('notification_email', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -962,7 +963,7 @@ class UpdateBackupConfigurationRequest implements ModelInterface, ArrayAccess, \
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

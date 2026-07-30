@@ -1,4 +1,5 @@
 <?php
+
 /**
  * RecipeLogResourceAttributes
  *
@@ -402,8 +403,8 @@ class RecipeLogResourceAttributes implements ModelInterface, ArrayAccess, \JsonS
             array_push($this->openAPINullablesSetToNull, 'executed_by');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('executed_by', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('executed_by', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -490,8 +491,8 @@ class RecipeLogResourceAttributes implements ModelInterface, ArrayAccess, \JsonS
             array_push($this->openAPINullablesSetToNull, 'output');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('output', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('output', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -524,8 +525,8 @@ class RecipeLogResourceAttributes implements ModelInterface, ArrayAccess, \JsonS
             array_push($this->openAPINullablesSetToNull, 'started_at');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('started_at', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('started_at', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -558,8 +559,8 @@ class RecipeLogResourceAttributes implements ModelInterface, ArrayAccess, \JsonS
             array_push($this->openAPINullablesSetToNull, 'finished_at');
         } else {
             $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
-            $index = array_search('finished_at', $nullablesSetToNull);
-            if ($index !== FALSE) {
+            $index = array_search('finished_at', $nullablesSetToNull, true);
+            if ($index !== false) {
                 unset($nullablesSetToNull[$index]);
                 $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
             }
@@ -632,7 +633,7 @@ class RecipeLogResourceAttributes implements ModelInterface, ArrayAccess, \JsonS
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * OrganizationsServersSitesDeploymentsStore202Response
  *
@@ -382,7 +383,7 @@ class OrganizationsServersSitesDeploymentsStore202Response implements ModelInter
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**
