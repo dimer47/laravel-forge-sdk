@@ -16,10 +16,25 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Generate changelog
+        run: |
+          previous=$(git describe --tags --abbrev=0 "${GITHUB_REF_NAME}^" 2>/dev/null || true)
+          range=${previous:+$previous..}${GITHUB_REF_NAME}
+          {
+            echo "## Commits"
+            echo
+            git log --no-merges --pretty=format:'- %s (%h)' "$range"
+            echo
+            if [ -n "$previous" ]; then
+              echo
+              echo "**Full Changelog**: https://github.com/${GITHUB_REPOSITORY}/compare/${previous}...${GITHUB_REF_NAME}"
+            fi
+          } > CHANGELOG_RELEASE.md
+
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
-          generate_release_notes: true
+          body_path: CHANGELOG_RELEASE.md
           draft: false
           prerelease: false
         env:
