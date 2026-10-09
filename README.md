@@ -1,4 +1,4 @@
-# OpenAPIClient-php
+# Laravel Forge PHP SDK (`dimer47/laravel-forge-sdk`)
 
 Laravel Forge - API Documentation
 
@@ -11,23 +11,11 @@ PHP 8.1 and later.
 
 ### Composer
 
-To install the bindings via [Composer](https://getcomposer.org/), add the following to `composer.json`:
+Install the package via [Composer](https://getcomposer.org/):
 
-```json
-{
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "https://github.com/GIT_USER_ID/GIT_REPO_ID.git"
-    }
-  ],
-  "require": {
-    "GIT_USER_ID/GIT_REPO_ID": "*@dev"
-  }
-}
+```bash
+composer require dimer47/laravel-forge-sdk
 ```
-
-Then run `composer install`
 
 ### Manual Installation
 
@@ -35,7 +23,7 @@ Download the files and include `autoload.php`:
 
 ```php
 <?php
-require_once('/path/to/OpenAPIClient-php/vendor/autoload.php');
+require_once('/path/to/laravel-forge-sdk/vendor/autoload.php');
 ```
 
 ## Getting Started
@@ -881,6 +869,39 @@ Authentication schemes defined for the API:
     - **resources:create-databases**: Allow members to create managed database clusters
     - **resources:delete-databases**: Allow members to delete managed database clusters
     - **resources:manage-databases**: Allow members to manage managed database cluster settings
+
+## Regenerating the SDK
+
+The code in `lib/`, `docs/` and `test/` is generated from `api/laravel-forge-openapi.yaml` with OpenAPI Generator **7.22.0**.
+Fix the spec, never the generated code by hand.
+
+1. Edit `api/laravel-forge-openapi.yaml`.
+2. Generate (the namespace must stay `Dimer47\LaravelForgeSdk`):
+
+```bash
+openapi-generator-cli version-manager set 7.22.0
+openapi-generator-cli generate \
+  -i api/laravel-forge-openapi.yaml \
+  -g php \
+  -o . \
+  --additional-properties=invokerPackage='Dimer47\LaravelForgeSdk',packageName=laravel-forge-sdk
+```
+
+3. Restore the files the generator overwrites but that are maintained by hand (this README, `composer.json`, CI):
+
+```bash
+git checkout -- README.md composer.json .github .gitignore
+```
+
+4. Format, analyse and test:
+
+```bash
+composer cs-fix
+composer analyse
+vendor/bin/phpunit
+```
+
+5. Review `git diff`: only the files impacted by the spec change should differ.
 
 ## Tests
 
