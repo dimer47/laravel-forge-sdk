@@ -53,7 +53,6 @@ docs/Model/CertificateType.md
 docs/Model/CertificateVerificationMethod.md
 docs/Model/CommandOutputResource.md
 docs/Model/CommandOutputResourceAttributes.md
-docs/Model/CommandOutputResourceAttributesOutput.md
 docs/Model/CommandResource.md
 docs/Model/CommandResourceAttributes.md
 docs/Model/CommandResourceRelationships.md
@@ -539,7 +538,6 @@ lib/Model/CertificateType.php
 lib/Model/CertificateVerificationMethod.php
 lib/Model/CommandOutputResource.php
 lib/Model/CommandOutputResourceAttributes.php
-lib/Model/CommandOutputResourceAttributesOutput.php
 lib/Model/CommandResource.php
 lib/Model/CommandResourceAttributes.php
 lib/Model/CommandResourceRelationships.php
@@ -973,7 +971,6 @@ lib/Model/VpcResourceAttributesSubnetsInner.php
 lib/Model/WwwRedirectType.php
 lib/ObjectSerializer.php
 phpunit.xml.dist
-test/Model/CommandOutputResourceAttributesOutputTest.php
 test/Model/CreateLoadBalancerSiteRequestBalancingInnerTest.php
 test/Model/CreateLoadBalancerSiteRequestTest.php
 test/Model/CreateNpmCredentialRequestTest.php

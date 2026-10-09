@@ -58,7 +58,7 @@ class CommandOutputResourceAttributes implements ModelInterface, ArrayAccess, \J
      * @var string[]
      */
     protected static $openAPITypes = [
-        'output' => '\Dimer47\LaravelForgeSdk\Model\CommandOutputResourceAttributesOutput'
+        'output' => 'string'
     ];
 
     /**
@@ -296,7 +296,7 @@ class CommandOutputResourceAttributes implements ModelInterface, ArrayAccess, \J
     /**
      * Gets output
      *
-     * @return \Dimer47\LaravelForgeSdk\Model\CommandOutputResourceAttributesOutput
+     * @return string
      */
     public function getOutput()
     {
@@ -306,7 +306,7 @@ class CommandOutputResourceAttributes implements ModelInterface, ArrayAccess, \J
     /**
      * Sets output
      *
-     * @param \Dimer47\LaravelForgeSdk\Model\CommandOutputResourceAttributesOutput $output output
+     * @param string $output The output of the command execution.
      *
      * @return self
      */

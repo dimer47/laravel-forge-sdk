@@ -17703,13 +17703,9 @@ components:
           properties:
             output:
               description: The output of the command execution.
+              type: string
               examples:
               - Now using node v22.0.0 (npm v10.5.1)
-              anyOf:
-              - type: string
-              - type: string
-                enum:
-                - ''
           required:
           - output
         links:

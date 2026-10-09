@@ -365,7 +365,6 @@ Class | Method | HTTP request | Description
 - [CertificateVerificationMethod](docs/Model/CertificateVerificationMethod.md)
 - [CommandOutputResource](docs/Model/CommandOutputResource.md)
 - [CommandOutputResourceAttributes](docs/Model/CommandOutputResourceAttributes.md)
-- [CommandOutputResourceAttributesOutput](docs/Model/CommandOutputResourceAttributesOutput.md)
 - [CommandResource](docs/Model/CommandResource.md)
 - [CommandResourceAttributes](docs/Model/CommandResourceAttributes.md)
 - [CommandResourceRelationships](docs/Model/CommandResourceRelationships.md)
