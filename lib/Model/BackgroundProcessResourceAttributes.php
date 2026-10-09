@@ -265,6 +265,12 @@ class BackgroundProcessResourceAttributes implements ModelInterface, ArrayAccess
     public const STATUS_RESTARTING = 'restarting';
     public const STATUS_STARTING = 'starting';
     public const STATUS_STOPPING = 'stopping';
+    public const STATUS_RUNNING = 'running';
+    public const STATUS_STOPPED = 'stopped';
+    public const STATUS_BACKOFF = 'backoff';
+    public const STATUS_EXITED = 'exited';
+    public const STATUS_FATAL = 'fatal';
+    public const STATUS_UNKNOWN = 'unknown';
 
     /**
      * Gets allowable values of the enum
@@ -280,6 +286,12 @@ class BackgroundProcessResourceAttributes implements ModelInterface, ArrayAccess
             self::STATUS_RESTARTING,
             self::STATUS_STARTING,
             self::STATUS_STOPPING,
+            self::STATUS_RUNNING,
+            self::STATUS_STOPPED,
+            self::STATUS_BACKOFF,
+            self::STATUS_EXITED,
+            self::STATUS_FATAL,
+            self::STATUS_UNKNOWN,
         ];
     }
 
